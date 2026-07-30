@@ -1,0 +1,118 @@
+{
+  "dashboard_title": "World Signal / 全球热搜",
+  "timezone": "Asia/Singapore",
+  "top_n_country": 10,
+  "top_n_global": 30,
+  "top_n_breakout": 20,
+  "request_timeout_seconds": 25,
+  "request_retries": 3,
+  "countries": [
+    {
+      "code": "US",
+      "name_zh": "美国",
+      "name_en": "United States",
+      "region": "北美",
+      "flag": "🇺🇸",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "CN",
+      "name_zh": "中国",
+      "name_en": "China",
+      "region": "东亚",
+      "flag": "🇨🇳",
+      "weight": 1.0,
+      "provider": "bilibili_trending"
+    },
+    {
+      "code": "IN",
+      "name_zh": "印度",
+      "name_en": "India",
+      "region": "南亚",
+      "flag": "🇮🇳",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "BR",
+      "name_zh": "巴西",
+      "name_en": "Brazil",
+      "region": "拉美",
+      "flag": "🇧🇷",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "MX",
+      "name_zh": "墨西哥",
+      "name_en": "Mexico",
+      "region": "拉美",
+      "flag": "🇲🇽",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "GB",
+      "name_zh": "英国",
+      "name_en": "United Kingdom",
+      "region": "欧洲",
+      "flag": "🇬🇧",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "DE",
+      "name_zh": "德国",
+      "name_en": "Germany",
+      "region": "欧洲",
+      "flag": "🇩🇪",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "JP",
+      "name_zh": "日本",
+      "name_en": "Japan",
+      "region": "东亚",
+      "flag": "🇯🇵",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "ID",
+      "name_zh": "印度尼西亚",
+      "name_en": "Indonesia",
+      "region": "东南亚",
+      "flag": "🇮🇩",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    },
+    {
+      "code": "NG",
+      "name_zh": "尼日利亚",
+      "name_en": "Nigeria",
+      "region": "非洲",
+      "flag": "🇳🇬",
+      "weight": 1.0,
+      "provider": "google_trends_rss"
+    }
+  ],
+  "aliases": {
+    "donald trump": [
+      "trump",
+      "特朗普",
+      "ドナルド・トランプ"
+    ],
+    "bitcoin": [
+      "btc",
+      "比特币",
+      "ビットコイン"
+    ],
+    "artificial intelligence": [
+      "ai",
+      "人工智能",
+      "人工知能"
+    ]
+  }
+}

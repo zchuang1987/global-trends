@@ -1,118 +1,109 @@
 {
-  "dashboard_title": "World Signal / 全球热搜",
+  "schema_version": 2,
+  "dashboard_title": "World Signal / 全球渠道热搜",
   "timezone": "Asia/Singapore",
-  "top_n_country": 10,
+  "top_n_channel": 20,
   "top_n_global": 30,
   "top_n_breakout": 20,
-  "request_timeout_seconds": 25,
-  "request_retries": 3,
-  "countries": [
+  "request_timeout_seconds": 35,
+  "request_retries": 2,
+  "google_regions": ["US", "IN", "BR", "GB", "JP", "DE", "ID", "MX", "NG"],
+  "youtube_regions": ["US", "IN", "BR", "GB", "JP"],
+  "channels": [
     {
-      "code": "US",
-      "name_zh": "美国",
-      "name_en": "United States",
-      "region": "北美",
-      "flag": "🇺🇸",
+      "code": "google",
+      "name": "Google",
+      "label": "Google 搜索趋势",
+      "mark": "G",
       "weight": 1.0,
-      "provider": "google_trends_rss"
+      "provider": "google_trends",
+      "official": true,
+      "source_url": "https://trends.google.com/trending"
     },
     {
-      "code": "CN",
-      "name_zh": "中国",
-      "name_en": "China",
-      "region": "东亚",
-      "flag": "🇨🇳",
+      "code": "tiktok",
+      "name": "TikTok",
+      "label": "TikTok 热门标签",
+      "mark": "TT",
       "weight": 1.0,
-      "provider": "bilibili_trending"
+      "provider": "tiktok_creative_center",
+      "official": true,
+      "source_url": "https://ads.tiktok.com/business/creativecenter/hashtag/statistics/pc/en"
     },
     {
-      "code": "IN",
-      "name_zh": "印度",
-      "name_en": "India",
-      "region": "南亚",
-      "flag": "🇮🇳",
+      "code": "x",
+      "name": "X / Twitter",
+      "label": "X 全球趋势",
+      "mark": "X",
       "weight": 1.0,
-      "provider": "google_trends_rss"
+      "provider": "x_trends",
+      "official": false,
+      "source_url": "https://trends24.in/"
     },
     {
-      "code": "BR",
-      "name_zh": "巴西",
-      "name_en": "Brazil",
-      "region": "拉美",
-      "flag": "🇧🇷",
-      "weight": 1.0,
-      "provider": "google_trends_rss"
+      "code": "reddit",
+      "name": "Reddit",
+      "label": "Reddit Popular",
+      "mark": "R",
+      "weight": 0.95,
+      "provider": "reddit_popular",
+      "official": true,
+      "source_url": "https://www.reddit.com/r/popular/hot/"
     },
     {
-      "code": "MX",
-      "name_zh": "墨西哥",
-      "name_en": "Mexico",
-      "region": "拉美",
-      "flag": "🇲🇽",
+      "code": "youtube",
+      "name": "YouTube",
+      "label": "YouTube 热门视频",
+      "mark": "YT",
       "weight": 1.0,
-      "provider": "google_trends_rss"
+      "provider": "youtube_popular",
+      "official": false,
+      "source_url": "https://www.youtube.com/"
     },
     {
-      "code": "GB",
-      "name_zh": "英国",
-      "name_en": "United Kingdom",
-      "region": "欧洲",
-      "flag": "🇬🇧",
-      "weight": 1.0,
-      "provider": "google_trends_rss"
+      "code": "instagram",
+      "name": "Instagram",
+      "label": "Instagram 热门内容",
+      "mark": "IG",
+      "weight": 0.9,
+      "provider": "instagram_trends",
+      "official": false,
+      "source_url": "https://www.instagram.com/explore/"
     },
     {
-      "code": "DE",
-      "name_zh": "德国",
-      "name_en": "Germany",
-      "region": "欧洲",
-      "flag": "🇩🇪",
-      "weight": 1.0,
-      "provider": "google_trends_rss"
+      "code": "bilibili",
+      "name": "Bilibili",
+      "label": "B站热搜",
+      "mark": "B",
+      "weight": 0.95,
+      "provider": "bilibili_trending",
+      "official": true,
+      "source_url": "https://www.bilibili.com/v/popular/rank/all"
     },
     {
-      "code": "JP",
-      "name_zh": "日本",
-      "name_en": "Japan",
-      "region": "东亚",
-      "flag": "🇯🇵",
+      "code": "baidu",
+      "name": "百度",
+      "label": "百度热搜",
+      "mark": "百",
       "weight": 1.0,
-      "provider": "google_trends_rss"
+      "provider": "baidu_hot",
+      "official": true,
+      "source_url": "https://top.baidu.com/board?tab=realtime"
     },
     {
-      "code": "ID",
-      "name_zh": "印度尼西亚",
-      "name_en": "Indonesia",
-      "region": "东南亚",
-      "flag": "🇮🇩",
+      "code": "weibo",
+      "name": "微博",
+      "label": "微博热搜",
+      "mark": "微",
       "weight": 1.0,
-      "provider": "google_trends_rss"
-    },
-    {
-      "code": "NG",
-      "name_zh": "尼日利亚",
-      "name_en": "Nigeria",
-      "region": "非洲",
-      "flag": "🇳🇬",
-      "weight": 1.0,
-      "provider": "google_trends_rss"
+      "provider": "weibo_hot",
+      "official": true,
+      "source_url": "https://s.weibo.com/top/summary?cate=realtimehot"
     }
   ],
   "aliases": {
-    "donald trump": [
-      "trump",
-      "特朗普",
-      "ドナルド・トランプ"
-    ],
-    "bitcoin": [
-      "btc",
-      "比特币",
-      "ビットコイン"
-    ],
-    "artificial intelligence": [
-      "ai",
-      "人工智能",
-      "人工知能"
-    ]
+    "artificial intelligence": ["ai", "人工智能", "人工知能"],
+    "bitcoin": ["btc", "比特币", "ビットコイン"],
+    "donald trump": ["trump", "特朗普", "ドナルド・トランプ"]
   }
 }

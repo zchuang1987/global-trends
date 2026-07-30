@@ -1,75 +1,83 @@
-# World Signal / 全球热搜采集器
+# Global Trends Collector / 全球渠道热搜
 
-每天采集十个重点市场的热搜，生成：
+每天采集一次九个渠道的公开趋势信号，生成：
 
-- 十国每日 Top 10；
-- 全球综合 Top 30；
-- 正在爆发 Top 20；
-- 数据源健康状态和历史快照。
+- 全球综合热搜：渠道内名次归一化后，聚合同一话题；跨渠道出现会加权。
+- 正在爆发榜：和上一次采集比较名次、指数与渠道覆盖。
+- 各渠道榜单：保留原标题、原始链接和平台指标。
+- 数据源健康：明确区分官方公开源、代理来源、缓存和待配置来源。
 
-## 默认观察市场
+## 九个渠道与数据源
 
-美国、中国、印度、巴西、墨西哥、英国、德国、日本、印度尼西亚、尼日利亚。
+| 渠道 | 默认来源 | 默认状态 | 说明 |
+|---|---|---:|---|
+| Google | Google Trends Trending Now RSS | 官方公开源 | 内部合并 9 个代表性区域，页面不再按国家展示 |
+| TikTok | TikTok Creative Center | 官方页面，经 Jina 读取代理 | 未登录页面通常只公开榜首样本 |
+| X / Twitter | Trends24 Worldwide | 公开代理 | 配置 `X_BEARER_TOKEN` 后自动切换到 X 官方 API Worldwide |
+| Reddit | `r/popular` Hot Atom Feed | 官方公共 Feed | 热门帖子榜，不是关键词热搜 |
+| YouTube | YouTube Data API `mostPopular` | API 或公开转发代理 | 配置 `YOUTUBE_API_KEY` 后使用官方 API；否则尝试 Trending2Day 转发 |
+| Instagram | 用户配置的数据源 | 待配置 | Instagram 没有公开的全站排名热搜 API，不用其他平台内容冒充 |
+| Bilibili | B站公开搜索热词接口 | 官方公开端点 | B站热搜关键词 |
+| 百度 | 百度实时热搜榜页面 | 官方公开页面 | 解析页面内公开热榜数据 |
+| 微博 | 微博 `hot_band` 网页接口 | 官方公开端点 | 微博实时热搜 |
 
-九个市场来自 Google Trends 的公开 Trending Now RSS；中国来自 Bilibili 公开热搜。所有数据先在来源内部归一化，避免把搜索量与平台热度原值直接相加。
+## 本地运行
 
-## 手动更新
-
-在 PowerShell 中运行：
+Windows PowerShell：
 
 ```powershell
 .\run_daily.ps1
 ```
 
-完成后直接打开 `index.html`。页面是单文件自包含仪表盘，不需要启动服务器。
+或直接：
 
-## 云端每日更新
-
-仓库包含 `.github/workflows/daily-trends.yml`：
-
-- 每天新加坡时间 08:07 运行；
-- 也可以在 GitHub Actions 页面手动运行；
-- 运行 `collector.py` 并验证三类榜单；
-- 把 `index.html`、最新数据和历史快照提交回默认分支；
-- 使用 GitHub Pages 发布最新仪表盘。
-
-云端首跑成功后，电脑无需开机。若使用私有仓库，GitHub Pages 是否可用取决于账户套餐。
-
-## 修改国家
-
-编辑 `config.json` 中的 `countries`。Google Trends 国家使用两位地区代码，并将 `provider` 设为 `google_trends_rss`。
-
-中国当前使用：
-
-```json
-{
-  "code": "CN",
-  "provider": "bilibili_trending"
-}
+```powershell
+python collector.py
+python collector.py --validate-only
 ```
 
-## 多语言合并
+生成文件：
 
-`config.json` 的 `aliases` 可添加同一主题的多语言别名。程序还会自动合并高度相似的拼写变体。完全不同语言的实体名称需要加入别名表，避免错误合并。
+- `index.html`：可离线打开的完整仪表盘。
+- `data/latest.json`：最新结构化数据。
+- `data/history/*.json`：每次采集快照。
 
-## 文件说明
+## 可选密钥
 
-- `collector.py`：采集、归一化、聚类、评分和页面生成；
-- `config.json`：国家、权重、榜单长度和多语言别名；
-- `dashboard.template.html`：仪表盘模板；
-- `index.html`：每次运行后生成的最新仪表盘；
-- `data/latest.json`：最新结构化数据；
-- `data/history/`：历史快照，用于计算爆发速度；
-- `run_daily.ps1`：每日自动化入口。
+密钥不是启动采集器的必要条件，但会提高渠道质量：
 
-## 失败处理
+```text
+X_BEARER_TOKEN          X API 的 Bearer Token
+YOUTUBE_API_KEY         YouTube Data API v3 Key
+INSTAGRAM_TRENDS_URL    合规 Instagram 数据服务的 JSON 地址
+INSTAGRAM_TRENDS_TOKEN  上述服务需要时使用的 Bearer Token
+```
 
-单一来源暂时失败时，采集器会保留该国家上一次成功数据，并在页面标记为“沿用”。如果从未成功采集过该国家，验证会失败，从而避免发布空榜。
+`INSTAGRAM_TRENDS_URL` 返回格式可以是数组，也可以放在 `items`、`data` 或 `trends` 字段中。每项至少需要 `title`，可选 `url`、`metric`、`metric_text` 和 `image`。
 
-## 评分口径
+## 云端每日运行
 
-- 国家榜：各国源内名次 72% + 源内规模百分位 28%；
-- 全球榜：在榜国家平均强度 25% + 最高本地强度 20% + 跨国覆盖 40% + 新鲜度 15%；
-- 爆发榜：首次运行使用当前强度代理；后续使用综合分变化、名次跃升、新进入榜和跨国扩散。
+`.github/workflows/daily-trends.yml` 在 GitHub Actions 中每天 **08:07（Asia/Singapore）** 运行：
 
-榜单反映“相对热度信号”，不是跨平台绝对搜索量。
+1. 采集九个渠道。
+2. 校验数据质量。
+3. 提交最新 JSON 与历史快照。
+4. 发布到 GitHub Pages。
+
+可选密钥请放在仓库的 **Settings → Secrets and variables → Actions → New repository secret**，不要写进代码。
+
+也可以在仓库的 **Actions → Collect channel trends → Run workflow** 手动执行。
+
+## 排名口径
+
+- 渠道分：68% 名次、22% 公开指标、10% 多区域覆盖。
+- 综合榜：以同一话题的最强渠道分为基础，跨渠道同时出现获得额外分。
+- 爆发榜：比较上次采集；首次出现记为 `NEW`，上升记为 `↑N`。
+- 不同平台没有统一的绝对搜索量，因此综合分是跨渠道注意力指数，不等同于真实搜索次数。
+
+## 已知边界
+
+- 平台可能改变页面结构、风控或公开范围；失败时会保留上次成功数据并显示“沿用上次”。
+- X 官方趋势 API 为付费接口；未提供令牌时使用 Trends24，页面会明确标注。
+- YouTube 已从单一 Trending 页转向分类 Charts；本项目采用 Data API 的 `mostPopular` 区域榜合并作为每日热门视频信号。
+- Instagram 不提供公开的全站排名热搜，因此默认不会生成虚假的 Instagram 榜。

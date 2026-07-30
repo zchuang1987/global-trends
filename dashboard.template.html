@@ -4,972 +4,714 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>World Signal / 全球热搜</title>
+  <title>World Signal / 全球渠道热搜</title>
   <style>
     :root {
-      --ink: #10213f;
-      --ink-soft: #4a5b78;
-      --navy: #0d2344;
-      --blue: #315efb;
-      --cyan: #19a7ce;
-      --coral: #ff6d5a;
-      --amber: #f5a524;
-      --paper: #f4f7fb;
-      --surface: #ffffff;
-      --line: #dbe3ef;
-      --line-strong: #bdc9da;
-      --success: #1a936f;
-      --shadow: 0 18px 50px rgba(25, 52, 93, .12);
-      --display: "Bahnschrift", "Arial Narrow", sans-serif;
-      --body: "Segoe UI Variable", "Segoe UI", sans-serif;
-      --mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+      --paper: #edf3f6;
+      --paper-2: #f8fbfc;
+      --ink: #152636;
+      --muted: #60717d;
+      --line: #cbd8de;
+      --amber: #f0a938;
+      --teal: #078a83;
+      --coral: #d75345;
+      --lavender: #7f6bb2;
+      --blue: #3678a8;
+      --shadow: 0 18px 50px rgba(23, 52, 68, .10);
+      --radius: 18px;
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
+      color: var(--ink);
       background:
-        linear-gradient(rgba(49, 94, 251, .035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(49, 94, 251, .035) 1px, transparent 1px),
+        linear-gradient(rgba(21, 38, 54, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(21, 38, 54, .035) 1px, transparent 1px),
         var(--paper);
       background-size: 32px 32px;
-      color: var(--ink);
-      font-family: var(--body);
-      min-height: 100vh;
+      font-family: "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
     }
 
-    button, input { font: inherit; }
-    button, a { -webkit-tap-highlight-color: transparent; }
     a { color: inherit; }
-
-    .topline {
-      height: 6px;
-      background: linear-gradient(90deg, var(--blue), var(--cyan) 48%, var(--coral));
+    button, input { font: inherit; }
+    button:focus-visible, a:focus-visible, input:focus-visible {
+      outline: 3px solid rgba(54, 120, 168, .35);
+      outline-offset: 3px;
     }
 
-    .shell {
-      width: min(1500px, calc(100% - 40px));
-      margin: 0 auto;
-    }
+    .shell { width: min(1480px, calc(100% - 36px)); margin: 0 auto; }
 
-    .masthead {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      min-height: 78px;
+    header {
+      position: relative;
+      overflow: hidden;
+      padding: 34px 0 28px;
+      background: rgba(248, 251, 252, .82);
       border-bottom: 1px solid var(--line);
-      gap: 24px;
+      backdrop-filter: blur(12px);
     }
 
-    .brand {
-      display: flex;
-      align-items: baseline;
-      gap: 14px;
-      text-decoration: none;
+    header::after {
+      content: "";
+      position: absolute;
+      top: -84px;
+      right: -28px;
+      width: 420px;
+      height: 220px;
+      border: 38px solid rgba(240, 169, 56, .17);
+      border-radius: 50%;
+      transform: rotate(-9deg);
+      pointer-events: none;
     }
 
-    .brand-mark {
-      font-family: var(--display);
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: -.04em;
+    .mast {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 28px;
     }
 
-    .brand-sub {
-      color: var(--ink-soft);
-      font-size: 12px;
-      font-family: var(--mono);
+    .eyebrow, .mono {
+      font-family: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
       letter-spacing: .08em;
-      text-transform: uppercase;
     }
 
-    .live {
+    .eyebrow {
       display: flex;
       align-items: center;
-      gap: 9px;
-      color: var(--ink-soft);
-      font: 12px/1.2 var(--mono);
+      gap: 10px;
+      margin-bottom: 10px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
     .live-dot {
       width: 9px;
       height: 9px;
       border-radius: 50%;
-      background: var(--success);
-      box-shadow: 0 0 0 5px rgba(26, 147, 111, .12);
-    }
-
-    .live.partial .live-dot {
-      background: var(--amber);
-      box-shadow: 0 0 0 5px rgba(245, 165, 36, .14);
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(300px, .7fr);
-      gap: 80px;
-      align-items: end;
-      padding: 70px 0 48px;
-    }
-
-    .eyebrow {
-      margin: 0 0 15px;
-      color: var(--blue);
-      font: 700 12px/1 var(--mono);
-      letter-spacing: .14em;
-      text-transform: uppercase;
+      background: var(--teal);
+      box-shadow: 0 0 0 6px rgba(7, 138, 131, .12);
     }
 
     h1 {
-      margin: 0;
       max-width: 900px;
-      font-family: var(--display);
-      font-size: clamp(50px, 7vw, 104px);
-      line-height: .89;
-      letter-spacing: -.065em;
-      font-weight: 680;
+      margin: 0;
+      font-family: "Arial Black", "Noto Sans SC", sans-serif;
+      font-size: clamp(38px, 5.4vw, 82px);
+      line-height: .94;
+      letter-spacing: -.055em;
     }
 
     h1 span {
       display: block;
-      color: transparent;
-      -webkit-text-stroke: 1.5px var(--ink);
-    }
-
-    .hero-note {
-      border-left: 3px solid var(--coral);
-      padding-left: 20px;
-      color: var(--ink-soft);
-      font-size: 15px;
-      line-height: 1.8;
-      max-width: 470px;
-    }
-
-    .hero-note strong { color: var(--ink); }
-
-    .signal-band {
-      display: grid;
-      grid-template-columns: repeat(10, minmax(90px, 1fr));
-      border: 1px solid var(--line-strong);
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      overflow-x: auto;
-      scrollbar-width: thin;
-    }
-
-    .signal-cell {
-      min-width: 90px;
-      padding: 16px 14px 13px;
-      border: 0;
-      border-right: 1px solid var(--line);
-      background: transparent;
-      color: var(--ink);
-      text-align: left;
-      cursor: pointer;
-      transition: background .18s ease, color .18s ease;
-    }
-
-    .signal-cell:last-child { border-right: 0; }
-    .signal-cell:hover, .signal-cell:focus-visible {
-      background: #edf2ff;
-      outline: 0;
-    }
-
-    .signal-cell.active {
-      color: white;
-      background: var(--navy);
-    }
-
-    .signal-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 16px;
-      font: 700 12px/1 var(--mono);
-    }
-
-    .pulse-bars {
-      display: flex;
-      height: 18px;
-      gap: 3px;
-      align-items: flex-end;
-    }
-
-    .pulse-bars i {
-      display: block;
-      width: 4px;
-      min-height: 3px;
-      background: var(--cyan);
-      animation: breathe 2.5s ease-in-out infinite;
-      animation-delay: calc(var(--i) * -170ms);
-    }
-
-    .signal-cell.active .pulse-bars i { background: #83def3; }
-    .signal-status {
       margin-top: 10px;
-      color: var(--ink-soft);
-      font-size: 11px;
-    }
-    .signal-cell.active .signal-status { color: #b7c6dc; }
-
-    @keyframes breathe {
-      0%, 100% { opacity: .45; transform: scaleY(.65); }
-      50% { opacity: 1; transform: scaleY(1); }
+      color: var(--muted);
+      font-family: "Segoe UI", "Noto Sans SC", sans-serif;
+      font-size: clamp(15px, 1.4vw, 20px);
+      font-weight: 500;
+      letter-spacing: .01em;
+      line-height: 1.5;
     }
 
-    .toolbar {
+    .stamp {
+      min-width: 250px;
+      padding: 16px 18px;
+      background: var(--ink);
+      color: #fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .stamp small { color: #b7c8d2; font-size: 11px; }
+    .stamp strong { display: block; margin: 7px 0 4px; font-size: 16px; }
+    .stamp span { color: #dbe7ec; font-size: 12px; }
+
+    .signal-wrap {
       position: sticky;
       top: 0;
       z-index: 20;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: center;
-      margin-top: 28px;
-      padding: 14px 0;
-      background: rgba(244, 247, 251, .92);
+      background: rgba(237, 243, 246, .93);
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(14px);
     }
 
-    .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
-    .tab {
-      border: 1px solid transparent;
+    .signal-rail {
+      display: grid;
+      grid-template-columns: repeat(9, minmax(96px, 1fr));
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+
+    .signal {
+      min-width: 112px;
+      padding: 13px 12px 12px;
+      border: 0;
+      border-right: 1px solid var(--line);
       background: transparent;
-      color: var(--ink-soft);
+      color: var(--ink);
+      text-align: left;
+      cursor: pointer;
+      transition: background .18s ease, transform .18s ease;
+    }
+
+    .signal:first-child { border-left: 1px solid var(--line); }
+    .signal:hover { background: rgba(255, 255, 255, .66); }
+    .signal .topline { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .signal .mark {
+      display: grid;
+      place-items: center;
+      min-width: 28px;
+      height: 24px;
+      padding: 0 6px;
+      border: 1px solid currentColor;
+      border-radius: 99px;
+      font-weight: 800;
+      font-size: 11px;
+    }
+    .signal b { display: block; margin-top: 7px; font-size: 12px; white-space: nowrap; }
+    .signal small { color: var(--muted); font-size: 10px; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+    .status-dot.stale { background: var(--amber); }
+    .status-dot.error, .status-dot.needs_configuration { background: var(--coral); }
+
+    main { padding: 30px 0 72px; }
+
+    .control-bar {
+      display: grid;
+      grid-template-columns: auto minmax(220px, 380px);
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 24px;
+    }
+
+    .tabs {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 5px;
+      background: rgba(255,255,255,.7);
+      border: 1px solid var(--line);
+      border-radius: 13px;
+    }
+
+    .tab {
+      border: 0;
+      border-radius: 9px;
       padding: 9px 13px;
-      border-radius: 6px;
-      font-weight: 650;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
       cursor: pointer;
     }
-    .tab:hover, .tab:focus-visible { border-color: var(--line-strong); outline: 0; }
-    .tab.active { color: white; background: var(--blue); }
+
+    .tab.active { background: var(--ink); color: #fff; }
 
     .search {
-      width: min(320px, 38vw);
-      border: 1px solid var(--line-strong);
-      background: white;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 11px 14px;
+      background: rgba(255,255,255,.74);
       color: var(--ink);
-      padding: 10px 13px;
-      border-radius: 6px;
-      outline: 0;
     }
-    .search:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(49, 94, 251, .12); }
 
-    .view { display: none; padding: 46px 0 80px; }
-    .view.active { display: block; }
+    .view { display: none; }
+    .view.active { display: block; animation: reveal .32s ease both; }
 
-    .section-head {
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .summary-card {
+      min-height: 128px;
+      padding: 20px;
+      background: rgba(248,251,252,.86);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 8px 28px rgba(23,52,68,.05);
+    }
+
+    .summary-card.lead {
+      color: #fff;
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .summary-card .label { color: var(--muted); font-size: 12px; }
+    .summary-card.lead .label { color: #bdccd4; }
+    .summary-card .value {
+      display: block;
+      margin: 15px 0 5px;
+      font-family: "Arial Black", "Noto Sans SC", sans-serif;
+      font-size: clamp(29px, 3.2vw, 48px);
+      letter-spacing: -.04em;
+      line-height: 1;
+    }
+    .summary-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .summary-card.lead p { color: #d4e0e6; }
+
+    .panel {
+      overflow: hidden;
+      background: rgba(248,251,252,.9);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .panel-head {
       display: flex;
       justify-content: space-between;
       align-items: end;
-      gap: 30px;
-      margin-bottom: 24px;
+      gap: 18px;
+      padding: 20px 22px 17px;
+      border-bottom: 1px solid var(--line);
     }
 
-    .section-kicker {
-      color: var(--coral);
-      font: 700 11px/1 var(--mono);
-      letter-spacing: .12em;
+    .panel-head h2, .section-title h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
+    .panel-head p, .section-title p { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+    .panel-head .mono { color: var(--muted); font-size: 10px; }
+
+    .rank-table { width: 100%; border-collapse: collapse; }
+    .rank-table th {
+      padding: 10px 14px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-align: left;
       text-transform: uppercase;
-      margin-bottom: 9px;
     }
-
-    h2 {
-      margin: 0;
-      font-family: var(--display);
-      font-size: clamp(30px, 3.4vw, 50px);
-      line-height: 1;
-      letter-spacing: -.035em;
-    }
-
-    .section-meta {
-      color: var(--ink-soft);
-      max-width: 510px;
-      line-height: 1.65;
-      text-align: right;
+    .rank-table td { padding: 13px 14px; border-bottom: 1px solid rgba(203,216,222,.72); vertical-align: middle; }
+    .rank-table tr:last-child td { border-bottom: 0; }
+    .rank-table tbody tr { transition: background .16s ease; }
+    .rank-table tbody tr:hover { background: rgba(54,120,168,.055); }
+    .rank-num {
+      width: 54px;
+      color: var(--muted);
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-weight: 800;
       font-size: 13px;
     }
+    .rank-num.top { color: var(--coral); font-size: 20px; }
+    .topic-link { display: inline-block; max-width: 720px; font-weight: 750; text-decoration: none; line-height: 1.35; }
+    .topic-link:hover { color: var(--blue); }
+    .meta-line { margin-top: 5px; color: var(--muted); font-size: 11px; }
+    .score { font-family: "Cascadia Mono", Consolas, monospace; font-size: 13px; font-weight: 800; }
+    .bar { width: 96px; height: 5px; margin-top: 5px; overflow: hidden; background: #dce5e9; border-radius: 99px; }
+    .bar i { display: block; height: 100%; background: var(--teal); border-radius: inherit; }
 
-    .ranking-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.55fr) minmax(300px, .65fr);
-      gap: 24px;
-      align-items: start;
-    }
-
-    .rank-list {
-      border-top: 2px solid var(--ink);
-      background: rgba(255, 255, 255, .7);
-    }
-
-    .rank-row {
-      display: grid;
-      grid-template-columns: 56px minmax(220px, 1fr) 140px 95px 32px;
-      gap: 14px;
-      align-items: center;
-      width: 100%;
-      padding: 15px 14px 15px 4px;
-      border: 0;
-      border-bottom: 1px solid var(--line);
-      background: transparent;
-      color: inherit;
-      text-align: left;
-      cursor: pointer;
-      transition: background .16s ease, transform .16s ease;
-    }
-    .rank-row:hover, .rank-row:focus-visible {
-      outline: 0;
-      background: white;
-      transform: translateX(3px);
-    }
-    .rank-row.selected { background: white; box-shadow: inset 4px 0 0 var(--blue); }
-
-    .rank-num {
-      font: 700 17px/1 var(--mono);
-      color: var(--ink-soft);
-      text-align: center;
-    }
-
-    .topic-title {
-      display: block;
-      font-family: var(--display);
-      font-size: 20px;
-      line-height: 1.18;
-      font-weight: 650;
-      overflow-wrap: anywhere;
-    }
-
-    .topic-sub {
-      display: block;
-      color: var(--ink-soft);
-      font-size: 11px;
-      margin-top: 5px;
-      font-family: var(--mono);
-    }
-
-    .flags {
-      display: flex;
-      gap: 4px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .flag-chip {
+    .badges { display: flex; flex-wrap: wrap; gap: 5px; }
+    .badge {
       display: inline-flex;
       align-items: center;
-      min-height: 24px;
-      padding: 3px 6px;
-      border-radius: 4px;
-      background: #eaf0f9;
-      color: var(--ink-soft);
-      font-size: 11px;
+      min-height: 22px;
+      padding: 3px 7px;
+      color: var(--blue);
+      background: rgba(54,120,168,.09);
+      border: 1px solid rgba(54,120,168,.18);
+      border-radius: 99px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .badge.hot { color: #9c3b30; background: rgba(215,83,69,.09); border-color: rgba(215,83,69,.2); }
+
+    .breakout-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
     }
 
-    .score {
-      font: 700 16px/1 var(--mono);
-      text-align: right;
-    }
-    .score small {
-      display: block;
-      margin-top: 5px;
-      color: var(--ink-soft);
-      font-size: 9px;
-      letter-spacing: .1em;
+    .breakout-card {
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      align-items: center;
+      gap: 14px;
+      min-height: 104px;
+      padding: 17px;
+      background: rgba(248,251,252,.9);
+      border: 1px solid var(--line);
+      border-radius: 16px;
     }
 
+    .breakout-card .number {
+      color: var(--coral);
+      font-family: "Arial Black", sans-serif;
+      font-size: 26px;
+      text-align: center;
+    }
+    .breakout-card h3 { margin: 0 0 7px; font-size: 15px; line-height: 1.35; }
     .movement {
-      width: 27px;
-      height: 27px;
-      border-radius: 50%;
+      padding: 5px 8px;
+      color: #fff;
+      background: var(--coral);
+      border-radius: 8px;
+      font-family: "Cascadia Mono", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 18px;
+      margin: 2px 0 16px;
+    }
+
+    .channel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .channel-card {
+      min-width: 0;
+      background: rgba(248,251,252,.92);
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      overflow: hidden;
+      box-shadow: 0 9px 28px rgba(23,52,68,.055);
+    }
+
+    .channel-card-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 17px 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .channel-title { display: flex; align-items: center; gap: 10px; }
+    .channel-title .logo {
       display: grid;
       place-items: center;
-      background: #e9eef7;
-      color: var(--ink-soft);
-      font: 700 10px/1 var(--mono);
+      min-width: 36px;
+      height: 32px;
+      padding: 0 7px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 9px;
+      font-size: 11px;
+      font-weight: 900;
     }
-    .movement.up { background: #dff5ee; color: #087557; }
-    .movement.new { background: #ffe5df; color: #bd3f2e; }
-    .movement.down { background: #eef0f3; color: #707b8c; }
+    .channel-title h3 { margin: 0; font-size: 14px; }
+    .channel-title small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; }
+    .health-tag { color: var(--teal); font-size: 10px; font-weight: 800; }
+    .health-tag.stale { color: #9b680f; }
+    .health-tag.error, .health-tag.needs_configuration { color: var(--coral); }
 
-    .focus-card {
-      position: sticky;
-      top: 80px;
-      min-height: 460px;
-      padding: 26px;
-      background: var(--navy);
-      color: white;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-    .focus-card::after {
-      content: "";
-      position: absolute;
-      width: 250px;
-      height: 250px;
-      right: -105px;
-      bottom: -110px;
-      border: 36px solid rgba(25, 167, 206, .22);
-      border-radius: 50%;
-    }
-
-    .focus-label {
-      color: #83def3;
-      font: 700 10px/1 var(--mono);
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .focus-rank {
-      margin: 26px 0 8px;
-      color: #a9b7cb;
-      font: 14px/1 var(--mono);
-    }
-    .focus-title {
-      margin: 0 0 18px;
-      font-family: var(--display);
-      font-size: clamp(30px, 4vw, 48px);
-      line-height: .98;
-      letter-spacing: -.04em;
-      overflow-wrap: anywhere;
-    }
-    .focus-score {
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-      padding: 18px 0;
-      border-top: 1px solid rgba(255, 255, 255, .15);
-      border-bottom: 1px solid rgba(255, 255, 255, .15);
-    }
-    .focus-score strong {
-      color: #83def3;
-      font: 700 40px/1 var(--mono);
-    }
-    .focus-score span { color: #a9b7cb; font-size: 12px; }
-    .focus-detail {
-      position: relative;
-      z-index: 1;
-      color: #c7d1df;
-      line-height: 1.7;
-      font-size: 13px;
-      margin: 20px 0;
-    }
-    .focus-link {
-      position: relative;
-      z-index: 1;
-      display: inline-flex;
-      align-items: center;
+    .channel-list { margin: 0; padding: 0; list-style: none; }
+    .channel-list li {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr) auto;
       gap: 8px;
-      color: white;
-      text-decoration: none;
-      border-bottom: 1px solid #83def3;
-      padding-bottom: 4px;
-      font-weight: 650;
-      font-size: 13px;
+      align-items: center;
+      padding: 10px 15px;
+      border-bottom: 1px solid rgba(203,216,222,.64);
+    }
+    .channel-list li:last-child { border-bottom: 0; }
+    .channel-list .n { color: var(--muted); font-family: "Cascadia Mono", Consolas, monospace; font-size: 10px; }
+    .channel-list a { overflow: hidden; font-size: 12px; font-weight: 650; text-decoration: none; text-overflow: ellipsis; white-space: nowrap; }
+    .channel-list a:hover { color: var(--blue); }
+    .metric { color: var(--muted); font-size: 9px; white-space: nowrap; }
+    .empty {
+      min-height: 244px;
+      display: grid;
+      place-content: center;
+      padding: 28px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.65;
     }
 
-    .burst-list {
+    .source-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
     }
-    .burst-card {
-      position: relative;
-      min-height: 190px;
-      padding: 22px;
+    .source-card {
+      padding: 18px;
+      background: rgba(248,251,252,.9);
       border: 1px solid var(--line);
-      background: white;
-      overflow: hidden;
+      border-radius: 16px;
     }
-    .burst-card::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: linear-gradient(var(--coral), var(--amber));
-    }
-    .burst-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      color: var(--ink-soft);
-      font: 11px/1 var(--mono);
-    }
-    .burst-card h3 {
-      margin: 28px 0 12px;
-      font: 650 25px/1.05 var(--display);
-      letter-spacing: -.025em;
-      overflow-wrap: anywhere;
-    }
-    .burst-reason {
-      color: var(--ink-soft);
-      font-size: 12px;
-      line-height: 1.6;
-    }
-    .burst-meter {
-      position: absolute;
-      left: 22px;
-      right: 22px;
-      bottom: 18px;
-      height: 3px;
-      background: #edf0f5;
-    }
-    .burst-meter i {
-      display: block;
-      height: 100%;
-      background: linear-gradient(90deg, var(--coral), var(--amber));
-    }
+    .source-card h3 { display: flex; justify-content: space-between; gap: 10px; margin: 0 0 10px; font-size: 15px; }
+    .source-card p { min-height: 38px; margin: 0 0 12px; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .source-card a { color: var(--blue); font-size: 11px; }
+    .mode { font-family: "Cascadia Mono", Consolas, monospace; color: var(--lavender); font-size: 9px; }
 
-    .country-tabs {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
+    .method {
+      margin-top: 16px;
+      padding: 18px 20px;
+      background: rgba(240,169,56,.1);
+      border: 1px solid rgba(240,169,56,.35);
+      border-radius: 16px;
     }
-    .country-tab {
-      border: 1px solid var(--line);
-      background: white;
-      color: var(--ink);
-      padding: 9px 12px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .country-tab:hover, .country-tab:focus-visible { border-color: var(--blue); outline: 0; }
-    .country-tab.active { color: white; background: var(--navy); border-color: var(--navy); }
-
-    .country-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: rgba(255, 255, 255, .82);
-      border-top: 2px solid var(--ink);
-    }
-    .country-table th, .country-table td {
-      padding: 15px 14px;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      vertical-align: middle;
-    }
-    .country-table th {
-      color: var(--ink-soft);
-      font: 700 10px/1 var(--mono);
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-    .country-table td:first-child {
-      width: 58px;
-      text-align: center;
-      font: 700 14px/1 var(--mono);
-      color: var(--ink-soft);
-    }
-    .country-table td:nth-child(3), .country-table td:nth-child(4) { width: 150px; }
-    .country-table a { color: var(--blue); text-decoration: none; font-weight: 650; }
-    .country-table a:hover { text-decoration: underline; }
-
-    .method-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      border-top: 2px solid var(--ink);
-      border-left: 1px solid var(--line);
-    }
-    .method-card {
-      min-height: 210px;
-      padding: 28px;
-      background: white;
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-    .method-card span {
-      color: var(--coral);
-      font: 700 11px/1 var(--mono);
-      letter-spacing: .1em;
-    }
-    .method-card h3 {
-      margin: 22px 0 12px;
-      font: 650 25px/1 var(--display);
-    }
-    .method-card p {
-      color: var(--ink-soft);
-      line-height: 1.75;
-      font-size: 13px;
-      margin: 0;
-    }
-
-    .health-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 24px;
-    }
-    .health-item {
-      padding: 12px;
-      border: 1px solid var(--line);
-      background: white;
-      font: 11px/1.35 var(--mono);
-    }
-    .health-item b { display: block; margin-bottom: 6px; }
-    .health-item.ok b { color: var(--success); }
-    .health-item.stale b { color: var(--amber); }
-    .health-item.error b { color: var(--coral); }
-
-    .empty {
-      padding: 60px 20px;
-      text-align: center;
-      color: var(--ink-soft);
-      border: 1px dashed var(--line-strong);
-      background: rgba(255,255,255,.55);
-    }
+    .method h3 { margin: 0 0 8px; font-size: 14px; }
+    .method p { margin: 5px 0; color: #5d594f; font-size: 12px; line-height: 1.6; }
 
     footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      padding: 28px 0 50px;
+      padding: 22px 0 34px;
+      color: var(--muted);
       border-top: 1px solid var(--line);
-      color: var(--ink-soft);
       font-size: 11px;
-      font-family: var(--mono);
     }
 
-    @media (max-width: 980px) {
-      .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 54px; }
-      .hero-note { max-width: 650px; }
-      .ranking-layout { grid-template-columns: 1fr; }
-      .focus-card { position: relative; top: 0; min-height: 360px; }
-      .rank-row { grid-template-columns: 50px minmax(160px, 1fr) 110px 80px 28px; }
-      .health-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    [hidden] { display: none !important; }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    @media (max-width: 700px) {
-      .shell { width: min(100% - 24px, 1500px); }
-      .masthead { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
-      .brand-sub { display: none; }
-      .hero { padding: 44px 0 34px; }
-      h1 { font-size: clamp(52px, 18vw, 78px); }
-      .toolbar { grid-template-columns: 1fr; gap: 10px; }
-      .search { width: 100%; }
-      .section-head { align-items: start; flex-direction: column; gap: 12px; }
-      .section-meta { text-align: left; }
-      .rank-row { grid-template-columns: 40px 1fr 64px 26px; padding-right: 8px; }
-      .rank-row .flags { display: none; }
-      .topic-title { font-size: 17px; }
-      .burst-list, .method-grid { grid-template-columns: 1fr; }
-      .country-table th:nth-child(3), .country-table td:nth-child(3) { display: none; }
-      .country-table th, .country-table td { padding: 12px 8px; }
-      .health-grid { grid-template-columns: 1fr 1fr; }
-      footer { flex-direction: column; }
+    @media (max-width: 1050px) {
+      .summary-grid { grid-template-columns: repeat(2, 1fr); }
+      .summary-card.lead { grid-column: span 2; }
+      .channel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 22px, 1480px); }
+      header { padding-top: 24px; }
+      .mast { grid-template-columns: 1fr; }
+      .stamp { min-width: 0; width: 100%; }
+      .control-bar { grid-template-columns: 1fr; }
+      .tabs { display: grid; grid-template-columns: repeat(2, 1fr); }
+      .tab { text-align: center; }
+      .summary-grid { grid-template-columns: 1fr 1fr; }
+      .summary-card.lead { grid-column: span 2; }
+      .breakout-grid, .channel-grid, .source-grid { grid-template-columns: 1fr; }
+      .rank-table th:nth-child(4), .rank-table td:nth-child(4) { display: none; }
+      .rank-table td { padding: 12px 9px; }
+      .bar { width: 58px; }
+      .topic-link { max-width: 52vw; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-      }
+      * { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
     }
   </style>
 </head>
 <body>
-  <div class="topline"></div>
-  <header class="shell masthead">
-    <a class="brand" href="#">
-      <span class="brand-mark">WORLD SIGNAL</span>
-      <span class="brand-sub">Daily cross-market search intelligence</span>
-    </a>
-    <div class="live" id="liveStatus">
-      <span class="live-dot"></span>
-      <span id="generatedTime">载入数据</span>
+  <header>
+    <div class="shell mast">
+      <div>
+        <div class="eyebrow"><i class="live-dot"></i> Daily cross-platform pulse</div>
+        <h1>WORLD SIGNAL<span>从搜索、视频与社交平台读取同一天的注意力变化</span></h1>
+      </div>
+      <div class="stamp">
+        <small class="mono">LAST COLLECTION</small>
+        <strong id="generatedAt">—</strong>
+        <span id="healthLine">正在读取渠道状态…</span>
+      </div>
     </div>
   </header>
 
+  <div class="signal-wrap">
+    <div class="shell signal-rail" id="signalRail" aria-label="渠道状态"></div>
+  </div>
+
   <main class="shell">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">10 markets · one daily pulse</p>
-        <h1>世界正在<span>搜索什么</span></h1>
-      </div>
-      <p class="hero-note">
-        把十个重点市场的本地热搜放在同一坐标系里。
-        <strong>保留原始语言</strong>，用跨国覆盖、榜内强度和新鲜度形成每日全球排名。
-      </p>
-    </section>
-
-    <section class="signal-band" id="signalBand" aria-label="十国采集状态"></section>
-
-    <nav class="toolbar" aria-label="榜单导航">
-      <div class="tabs">
-        <button class="tab active" data-view="global">全球综合榜</button>
+    <div class="control-bar">
+      <nav class="tabs" aria-label="榜单视图">
+        <button class="tab active" data-view="global">综合热搜</button>
         <button class="tab" data-view="breakout">正在爆发</button>
-        <button class="tab" data-view="countries">十国热搜</button>
-        <button class="tab" data-view="method">口径与健康</button>
-      </div>
-      <input class="search" id="searchInput" type="search" placeholder="搜索任意语言的主题…" aria-label="搜索主题">
-    </nav>
+        <button class="tab" data-view="channels">各渠道榜单</button>
+        <button class="tab" data-view="sources">数据源说明</button>
+      </nav>
+      <input class="search" id="searchInput" type="search" placeholder="搜索榜单中的话题…" aria-label="搜索话题">
+    </div>
 
     <section class="view active" id="view-global">
-      <header class="section-head">
-        <div>
-          <div class="section-kicker">Global composite</div>
-          <h2>全球综合热搜</h2>
+      <div class="summary-grid" id="summaryGrid"></div>
+      <div class="panel">
+        <div class="panel-head">
+          <div><h2>全球综合热搜</h2><p>按渠道内名次归一化，并奖励跨平台同时出现的信号</p></div>
+          <div class="mono">COMPOSITE / 100</div>
         </div>
-        <p class="section-meta">不是把原始搜索量相加，而是比较每个来源内部的相对位置，再加入跨国覆盖和新鲜度。</p>
-      </header>
-      <div class="ranking-layout">
-        <div class="rank-list" id="globalList"></div>
-        <aside class="focus-card" id="focusCard"></aside>
+        <div style="overflow-x:auto">
+          <table class="rank-table">
+            <thead><tr><th>排名</th><th>话题</th><th>指数</th><th>覆盖渠道</th></tr></thead>
+            <tbody id="globalBody"></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <section class="view" id="view-breakout">
-      <header class="section-head">
-        <div>
-          <div class="section-kicker">Acceleration watch</div>
-          <h2>正在爆发</h2>
-        </div>
-        <p class="section-meta" id="breakoutMeta"></p>
-      </header>
-      <div class="burst-list" id="breakoutList"></div>
+      <div class="section-title">
+        <div><h2>正在爆发</h2><p>相较上次采集，名次、综合分或渠道覆盖正在快速上升</p></div>
+        <div class="mono" id="breakoutCount"></div>
+      </div>
+      <div class="breakout-grid" id="breakoutGrid"></div>
     </section>
 
-    <section class="view" id="view-countries">
-      <header class="section-head">
-        <div>
-          <div class="section-kicker">Market detail</div>
-          <h2 id="countryHeading">十国每日热搜</h2>
-        </div>
-        <p class="section-meta">标题保留来源语言。点击主题可直接打开对应趋势搜索或平台搜索页。</p>
-      </header>
-      <div class="country-tabs" id="countryTabs"></div>
-      <div id="countryTable"></div>
+    <section class="view" id="view-channels">
+      <div class="section-title">
+        <div><h2>各渠道每日榜</h2><p>保留原始语言；点击标题直接打开平台来源</p></div>
+        <div class="mono">9 CHANNELS</div>
+      </div>
+      <div class="channel-grid" id="channelGrid"></div>
     </section>
 
-    <section class="view" id="view-method">
-      <header class="section-head">
-        <div>
-          <div class="section-kicker">Transparent methodology</div>
-          <h2>口径与采集健康</h2>
-        </div>
-        <p class="section-meta">任何单一平台都不是“全球”。这里明确展示来源差异、缓存状态和冷启动限制。</p>
-      </header>
-      <div class="method-grid" id="methodGrid"></div>
-      <div class="health-grid" id="healthGrid"></div>
+    <section class="view" id="view-sources">
+      <div class="section-title">
+        <div><h2>数据源与采集口径</h2><p>官方、代理、需授权三种来源明确分开</p></div>
+        <div class="mono">TRANSPARENCY LOG</div>
+      </div>
+      <div class="source-grid" id="sourceGrid"></div>
+      <div class="method" id="method"></div>
     </section>
   </main>
 
-  <footer class="shell">
-    <span>WORLD SIGNAL · PUBLIC READ-ONLY SOURCES</span>
-    <span id="footerStamp"></span>
+  <footer>
+    <div class="shell">World Signal Collector · 每日一次 · 原始平台规则或页面结构变化时，渠道健康状态会直接显示异常。</div>
   </footer>
 
+  <script id="trend-data" type="application/json">__DATA_JSON__</script>
   <script>
-    const DATA = __TRENDS_DATA__;
-    const state = {
-      activeView: "global",
-      activeCountry: DATA.country_lists[0]?.code || "US",
-      selectedTopic: DATA.global_topics[0]?.id || null,
-      search: ""
+    const DATA = JSON.parse(document.getElementById("trend-data").textContent);
+    const byCode = Object.fromEntries(DATA.health.map(row => [row.code, row]));
+    const statusText = {ok:"在线", stale:"沿用上次", error:"失败", needs_configuration:"需数据源"};
+    const modeText = {
+      official:"官方公开源", official_api:"官方 API", official_public_feed:"官方公共 Feed",
+      official_public_page:"官方公开页面", official_public_endpoint:"官方公开端点",
+      official_via_fetch_proxy:"官方页面（读取代理）", public_proxy:"公开代理",
+      public_api_proxy:"API 公开代理", configured_provider:"已配置数据源",
+      cached:"缓存", needs_configuration:"待配置", error:"错误"
     };
+    const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[char]));
+    const generated = new Date(DATA.generated_at);
+    document.getElementById("generatedAt").textContent = generated.toLocaleString("zh-CN", {
+      timeZone: DATA.timezone, month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit", hour12:false
+    });
+    document.getElementById("healthLine").textContent =
+      `${DATA.summary.channels_active}/${DATA.summary.channels_total} 个渠道有数据 · ${DATA.summary.signals_total} 条信号`;
 
-    const $ = (selector) => document.querySelector(selector);
-    const $$ = (selector) => [...document.querySelectorAll(selector)];
-    const escapeHtml = (value = "") => String(value)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-    const safeUrl = (value = "") => /^https?:\/\//i.test(value) ? value : "#";
-    const matchesSearch = (value) => !state.search || String(value).toLocaleLowerCase().includes(state.search);
-
-    function formatTime(iso) {
-      const date = new Date(iso);
-      return new Intl.DateTimeFormat("zh-CN", {
-        month: "short", day: "numeric", hour: "2-digit", minute: "2-digit",
-        timeZone: DATA.timezone, hour12: false
-      }).format(date);
+    function badges(codes) {
+      return `<div class="badges">${codes.map(code =>
+        `<span class="badge">${esc(byCode[code]?.name || code)}</span>`).join("")}</div>`;
     }
 
-    function movementBadge(topic) {
-      if (topic.is_new) return '<span class="movement new" title="新进入榜">N</span>';
-      if (topic.rank_change > 0) return `<span class="movement up" title="上升 ${topic.rank_change} 位">+${topic.rank_change}</span>`;
-      if (topic.rank_change < 0) return `<span class="movement down" title="下降 ${Math.abs(topic.rank_change)} 位">${topic.rank_change}</span>`;
-      return '<span class="movement" title="名次不变">—</span>';
+    function primaryUrl(topic) {
+      return topic.signals?.[0]?.source_url || "#";
     }
 
-    function renderSignalBand() {
-      $("#signalBand").innerHTML = DATA.country_lists.map((country, index) => {
-        const bars = Array.from({length: 7}, (_, bar) => {
-          const height = 4 + ((country.items.length * 7 + bar * 11 + index * 5) % 15);
-          return `<i style="height:${height}px;--i:${bar}"></i>`;
-        }).join("");
-        const statusText = country.status === "ok" ? `${country.items.length} 条 · 正常`
-          : country.status === "stale" ? "沿用上次数据" : "采集失败";
-        return `
-          <button class="signal-cell ${state.activeCountry === country.code ? "active" : ""}"
-                  data-country="${escapeHtml(country.code)}">
-            <span class="signal-head"><span>${country.flag} ${escapeHtml(country.code)}</span><span>${String(index + 1).padStart(2, "0")}</span></span>
-            <span class="pulse-bars">${bars}</span>
-            <span class="signal-status">${escapeHtml(statusText)}</span>
-          </button>`;
-      }).join("");
-      $$("#signalBand .signal-cell").forEach(button => button.addEventListener("click", () => {
-        state.activeCountry = button.dataset.country;
-        switchView("countries");
-        renderSignalBand();
-        renderCountryTabs();
-        renderCountryTable();
-      }));
+    document.getElementById("signalRail").innerHTML = DATA.health.map(row => `
+      <button class="signal" data-channel="${esc(row.code)}" title="${esc(row.note || row.error)}">
+        <span class="topline"><span class="mark">${esc(row.mark)}</span><i class="status-dot ${esc(row.status)}"></i></span>
+        <b>${esc(row.name)}</b><small>${row.item_count} 条 · ${esc(statusText[row.status] || row.status)}</small>
+      </button>`).join("");
+
+    document.getElementById("summaryGrid").innerHTML = `
+      <article class="summary-card lead">
+        <span class="label">今日频道雷达</span>
+        <span class="value">${DATA.summary.channels_active}<small style="font-size:.42em"> / ${DATA.summary.channels_total}</small></span>
+        <p>有数据的渠道。未公开全站热榜的平台会显示为“需数据源”，不会用其他平台内容填充。</p>
+      </article>
+      <article class="summary-card"><span class="label">原始信号</span><span class="value">${DATA.summary.signals_total}</span><p>九个渠道榜单清洗、去重前的有效条目。</p></article>
+      <article class="summary-card"><span class="label">跨渠道话题</span><span class="value">${DATA.summary.cross_channel_topics}</span><p>同一话题同时出现在两个或更多平台。</p></article>
+      <article class="summary-card"><span class="label">爆发信号</span><span class="value">${DATA.rankings.breakout.length}</span><p>相较上次采集出现新增或明显上升。</p></article>`;
+
+    function renderGlobal(filter = "") {
+      const needle = filter.trim().toLocaleLowerCase();
+      const rows = DATA.rankings.global.filter(topic => !needle || topic.title.toLocaleLowerCase().includes(needle));
+      document.getElementById("globalBody").innerHTML = rows.length ? rows.map(topic => `
+        <tr data-search="${esc(topic.title.toLocaleLowerCase())}">
+          <td class="rank-num ${topic.rank <= 3 ? "top" : ""}">${String(topic.rank).padStart(2,"0")}</td>
+          <td>
+            <a class="topic-link" href="${esc(primaryUrl(topic))}" target="_blank" rel="noopener">${esc(topic.title)}</a>
+            <div class="meta-line">${topic.channel_count > 1 ? `${topic.channel_count} 个渠道同时出现` : esc(topic.signals[0]?.channel_name || "")}</div>
+          </td>
+          <td><span class="score">${topic.score.toFixed(1)}</span><div class="bar"><i style="width:${Math.max(2, topic.score)}%"></i></div></td>
+          <td>${badges(topic.channels)}</td>
+        </tr>`).join("") : `<tr><td colspan="4" class="empty">没有匹配的话题</td></tr>`;
     }
 
-    function filteredTopics(list) {
-      return list.filter(topic => matchesSearch([
-        topic.title,
-        topic.canonical,
-        topic.news_title,
-        ...topic.countries.map(country => `${country.title} ${country.name_zh} ${country.code}`)
-      ].join(" ")));
-    }
-
-    function renderGlobal() {
-      const topics = filteredTopics(DATA.global_topics);
-      if (!topics.length) {
-        $("#globalList").innerHTML = '<div class="empty">没有匹配的全球主题。换一个关键词试试。</div>';
-        $("#focusCard").innerHTML = '<div class="focus-label">No matching signal</div>';
-        return;
-      }
-      if (!topics.some(topic => topic.id === state.selectedTopic)) state.selectedTopic = topics[0].id;
-      $("#globalList").innerHTML = topics.map(topic => `
-        <button class="rank-row ${state.selectedTopic === topic.id ? "selected" : ""}" data-topic="${topic.id}">
-          <span class="rank-num">${String(topic.rank).padStart(2, "0")}</span>
-          <span>
-            <span class="topic-title">${escapeHtml(topic.title)}</span>
-            <span class="topic-sub">${escapeHtml(topic.source)} · ${topic.country_count} market${topic.country_count > 1 ? "s" : ""}</span>
-          </span>
-          <span class="flags">${topic.countries.slice(0, 5).map(country =>
-            `<span class="flag-chip" title="${escapeHtml(country.name_zh)} #${country.rank}">${country.flag} ${country.code}</span>`
-          ).join("")}</span>
-          <span class="score">${topic.global_score.toFixed(1)}<small>GLOBAL</small></span>
-          ${movementBadge(topic)}
-        </button>`).join("");
-      $$("#globalList .rank-row").forEach(row => row.addEventListener("click", () => {
-        state.selectedTopic = row.dataset.topic;
-        renderGlobal();
-      }));
-      renderFocus(topics.find(topic => topic.id === state.selectedTopic) || topics[0]);
-    }
-
-    function renderFocus(topic) {
-      const countries = topic.countries.map(country =>
-        `${country.flag} ${escapeHtml(country.name_zh)} #${country.rank}`
-      ).join(" · ");
-      const news = topic.news_title
-        ? `<p class="focus-detail"><strong>相关报道</strong><br>${escapeHtml(topic.news_title)}${topic.news_source ? ` — ${escapeHtml(topic.news_source)}` : ""}</p>`
-        : `<p class="focus-detail">覆盖：${countries || "单一市场"}<br>新鲜度：${topic.freshness.toFixed(0)} / 100</p>`;
-      const link = topic.news_url || topic.source_url;
-      $("#focusCard").innerHTML = `
-        <div class="focus-label">Selected signal</div>
-        <div class="focus-rank">GLOBAL #${String(topic.rank).padStart(2, "0")}</div>
-        <h3 class="focus-title">${escapeHtml(topic.title)}</h3>
-        <div class="focus-score"><strong>${topic.global_score.toFixed(1)}</strong><span>综合热度 / 100</span></div>
-        ${news}
-        <p class="focus-detail">${countries}</p>
-        <a class="focus-link" href="${safeUrl(link)}" target="_blank" rel="noreferrer">打开来源 <span aria-hidden="true">↗</span></a>`;
-    }
-
-    function renderBreakout() {
-      const topics = filteredTopics(DATA.breakout_topics);
-      $("#breakoutMeta").textContent = `${DATA.comparison_mode}。首次运行建立基线，第二次更新后开始反映真实的跨日加速。`;
-      $("#breakoutList").innerHTML = topics.length ? topics.map(topic => `
-        <article class="burst-card">
-          <div class="burst-top">
-            <span>BURST #${String(topic.breakout_rank).padStart(2, "0")}</span>
-            <strong>${topic.breakout_score.toFixed(1)}</strong>
+    function renderBreakout(filter = "") {
+      const needle = filter.trim().toLocaleLowerCase();
+      const rows = DATA.rankings.breakout.filter(topic => !needle || topic.title.toLocaleLowerCase().includes(needle));
+      document.getElementById("breakoutCount").textContent = `${rows.length} SIGNALS`;
+      document.getElementById("breakoutGrid").innerHTML = rows.length ? rows.map(topic => `
+        <article class="breakout-card">
+          <div class="number">${String(topic.breakout_rank).padStart(2,"0")}</div>
+          <div>
+            <h3><a href="${esc(primaryUrl(topic))}" target="_blank" rel="noopener" style="text-decoration:none">${esc(topic.title)}</a></h3>
+            ${badges(topic.channels)}
           </div>
-          <h3>${escapeHtml(topic.title)}</h3>
-          <div class="burst-reason">${escapeHtml(topic.breakout_reason)}</div>
-          <div class="burst-meter"><i style="width:${Math.max(3, topic.breakout_score)}%"></i></div>
-        </article>`).join("") : '<div class="empty">没有匹配的爆发主题。</div>';
+          <span class="movement">${esc(topic.movement)}</span>
+        </article>`).join("") : `<div class="empty">本次没有匹配的爆发信号</div>`;
     }
 
-    function renderCountryTabs() {
-      $("#countryTabs").innerHTML = DATA.country_lists.map(country => `
-        <button class="country-tab ${state.activeCountry === country.code ? "active" : ""}"
-                data-country="${country.code}">${country.flag} ${escapeHtml(country.name_zh)}</button>`).join("");
-      $$("#countryTabs .country-tab").forEach(button => button.addEventListener("click", () => {
-        state.activeCountry = button.dataset.country;
-        renderSignalBand();
-        renderCountryTabs();
-        renderCountryTable();
-      }));
+    function renderChannels(filter = "") {
+      const needle = filter.trim().toLocaleLowerCase();
+      document.getElementById("channelGrid").innerHTML = DATA.health.map(row => {
+        const items = (DATA.channel_items[row.code] || []).filter(item =>
+          !needle || item.title.toLocaleLowerCase().includes(needle));
+        const list = items.length ? `<ol class="channel-list">${items.map(item => `
+          <li>
+            <span class="n">${String(item.rank).padStart(2,"0")}</span>
+            <a href="${esc(item.source_url)}" target="_blank" rel="noopener" title="${esc(item.title)}">${esc(item.title)}</a>
+            <span class="metric">${esc(item.metric_text || "")}</span>
+          </li>`).join("")}</ol>` :
+          `<div class="empty">${needle ? "没有匹配的话题" : esc(row.note || row.error || "当前没有可展示数据")}</div>`;
+        return `<article class="channel-card" id="channel-${esc(row.code)}">
+          <div class="channel-card-head">
+            <div class="channel-title"><span class="logo">${esc(row.mark)}</span><div><h3>${esc(row.name)}</h3><small>${esc(row.label)}</small></div></div>
+            <span class="health-tag ${esc(row.status)}">${esc(statusText[row.status] || row.status)}</span>
+          </div>${list}
+        </article>`;
+      }).join("");
     }
 
-    function renderCountryTable() {
-      const country = DATA.country_lists.find(item => item.code === state.activeCountry) || DATA.country_lists[0];
-      $("#countryHeading").textContent = `${country.flag} ${country.name_zh}每日热搜`;
-      const items = country.items.filter(item => matchesSearch(`${item.title} ${item.news_title} ${item.source}`));
-      $("#countryTable").innerHTML = items.length ? `
-        <table class="country-table">
-          <thead><tr><th>Rank</th><th>主题</th><th>热度信号</th><th>来源</th></tr></thead>
-          <tbody>${items.map(item => `
-            <tr>
-              <td>${String(item.rank).padStart(2, "0")}</td>
-              <td>
-                <a href="${safeUrl(item.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
-                ${item.news_title ? `<div class="topic-sub">${escapeHtml(item.news_title)}</div>` : ""}
-              </td>
-              <td><span class="score">${item.local_score.toFixed(1)}</span><div class="topic-sub">${escapeHtml(item.traffic_text)}</div></td>
-              <td>${escapeHtml(item.source)}</td>
-            </tr>`).join("")}</tbody>
-        </table>` : '<div class="empty">该国家没有匹配的主题。</div>';
+    document.getElementById("sourceGrid").innerHTML = DATA.health.map(row => `
+      <article class="source-card">
+        <h3><span>${esc(row.name)}</span><span class="mode">${esc(modeText[row.mode] || row.mode)}</span></h3>
+        <p>${esc(row.note || row.error || "渠道正常")}</p>
+        <a href="${esc(row.source_url)}" target="_blank" rel="noopener">查看数据源 ↗</a>
+      </article>`).join("");
+
+    document.getElementById("method").innerHTML = `
+      <h3>如何理解这两个总榜</h3>
+      <p><b>综合热搜：</b>${esc(DATA.methodology.global)}</p>
+      <p><b>正在爆发：</b>${esc(DATA.methodology.breakout)}</p>
+      <p><b>边界：</b>${esc(DATA.methodology.caveat)}</p>`;
+
+    let currentView = "global";
+    function setView(view) {
+      currentView = view;
+      document.querySelectorAll(".tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
+      document.querySelectorAll(".view").forEach(section => section.classList.toggle("active", section.id === `view-${view}`));
+      document.getElementById("searchInput").hidden = view === "sources";
     }
 
-    function renderMethod() {
-      const method = DATA.methodology;
-      $("#methodGrid").innerHTML = [
-        ["01 / COUNTRY", "国家榜", method.country_ranking],
-        ["02 / GLOBAL", "全球榜", method.global_ranking],
-        ["03 / BURST", "爆发榜", method.breakout_ranking],
-        ["04 / SCOPE", "数据边界", method.scope_note]
-      ].map(item => `<article class="method-card"><span>${item[0]}</span><h3>${item[1]}</h3><p>${escapeHtml(item[2])}</p></article>`).join("");
-      $("#healthGrid").innerHTML = DATA.health.sources.map(source => `
-        <div class="health-item ${source.status}">
-          <b>${source.status === "ok" ? "● OK" : source.status === "stale" ? "● STALE" : "● ERROR"} · ${source.code}</b>
-          <span>${escapeHtml(source.message)}</span>
-        </div>`).join("");
-    }
+    document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => setView(tab.dataset.view)));
+    document.getElementById("searchInput").addEventListener("input", event => {
+      renderGlobal(event.target.value);
+      renderBreakout(event.target.value);
+      renderChannels(event.target.value);
+    });
+    document.querySelectorAll(".signal").forEach(button => button.addEventListener("click", () => {
+      setView("channels");
+      requestAnimationFrame(() => document.getElementById(`channel-${button.dataset.channel}`)?.scrollIntoView({behavior:"smooth", block:"center"}));
+    }));
 
-    function switchView(view) {
-      state.activeView = view;
-      $$(".tab").forEach(tab => tab.classList.toggle("active", tab.dataset.view === view));
-      $$(".view").forEach(section => section.classList.toggle("active", section.id === `view-${view}`));
-      if (view === "global") renderGlobal();
-      if (view === "breakout") renderBreakout();
-      if (view === "countries") { renderCountryTabs(); renderCountryTable(); }
-      if (view === "method") renderMethod();
-    }
-
-    function init() {
-      $("#generatedTime").textContent = `${DATA.health.status === "healthy" ? "全部来源正常" : "部分来源沿用"} · ${formatTime(DATA.generated_at)}`;
-      $("#liveStatus").classList.toggle("partial", DATA.health.status !== "healthy");
-      $("#footerStamp").textContent = `UPDATED ${formatTime(DATA.generated_at)} · ${DATA.market_count} MARKETS · ${DATA.topic_count} SIGNALS`;
-      renderSignalBand();
-      renderGlobal();
-      renderBreakout();
-      renderCountryTabs();
-      renderCountryTable();
-      renderMethod();
-
-      $$(".tab").forEach(tab => tab.addEventListener("click", () => switchView(tab.dataset.view)));
-      $("#searchInput").addEventListener("input", event => {
-        state.search = event.target.value.trim().toLocaleLowerCase();
-        if (state.activeView === "global") renderGlobal();
-        if (state.activeView === "breakout") renderBreakout();
-        if (state.activeView === "countries") renderCountryTable();
-      });
-    }
-
-    init();
+    renderGlobal();
+    renderBreakout();
+    renderChannels();
   </script>
 </body>
 </html>

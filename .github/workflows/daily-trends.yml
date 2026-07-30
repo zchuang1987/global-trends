@@ -1,4 +1,4 @@
-name: Collect and publish daily trends
+name: Collect channel trends
 
 on:
   workflow_dispatch:
@@ -12,12 +12,17 @@ permissions:
   id-token: write
 
 concurrency:
-  group: world-signal-pages
+  group: world-signal-channel-pages
   cancel-in-progress: false
 
 jobs:
   collect:
     runs-on: ubuntu-latest
+    env:
+      X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      INSTAGRAM_TRENDS_URL: ${{ secrets.INSTAGRAM_TRENDS_URL }}
+      INSTAGRAM_TRENDS_TOKEN: ${{ secrets.INSTAGRAM_TRENDS_TOKEN }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v6

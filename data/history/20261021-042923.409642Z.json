@@ -1,0 +1,3527 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-21T04:29:23.409642Z",
+  "timezone": "Asia/Singapore",
+  "title": "World Signal / 全球渠道热搜",
+  "summary": {
+    "channels_total": 9,
+    "channels_active": 8,
+    "signals_total": 143,
+    "cross_channel_topics": 0
+  },
+  "health": [
+    {
+      "code": "google",
+      "name": "Google",
+      "label": "Google 搜索趋势",
+      "mark": "G",
+      "official": true,
+      "source_url": "https://trends.google.com/trending",
+      "status": "ok",
+      "mode": "official",
+      "item_count": 20,
+      "note": "合并 9/9 个 Google Trends 区域榜",
+      "error": ""
+    },
+    {
+      "code": "tiktok",
+      "name": "TikTok",
+      "label": "TikTok 热门标签",
+      "mark": "TT",
+      "official": true,
+      "source_url": "https://ads.tiktok.com/business/creativecenter/hashtag/statistics/pc/en",
+      "status": "stale",
+      "mode": "cached",
+      "item_count": 3,
+      "note": "本次采集失败，沿用上次成功数据",
+      "error": "RuntimeError: TikTok Creative Center returned no public hashtag rows"
+    },
+    {
+      "code": "x",
+      "name": "X / Twitter",
+      "label": "X 全球趋势",
+      "mark": "X",
+      "official": false,
+      "source_url": "https://trends24.in/",
+      "status": "ok",
+      "mode": "public_proxy",
+      "item_count": 20,
+      "note": "X 未配置付费 API 令牌；当前使用 Trends24 Worldwide 公开代理",
+      "error": ""
+    },
+    {
+      "code": "reddit",
+      "name": "Reddit",
+      "label": "Reddit Popular",
+      "mark": "R",
+      "official": true,
+      "source_url": "https://www.reddit.com/r/popular/hot/",
+      "status": "ok",
+      "mode": "official_public_feed",
+      "item_count": 20,
+      "note": "Reddit r/popular 的 Hot 公共 Atom feed；属于热门帖子榜，不是关键词热搜",
+      "error": ""
+    },
+    {
+      "code": "youtube",
+      "name": "YouTube",
+      "label": "YouTube 热门视频",
+      "mark": "YT",
+      "official": false,
+      "source_url": "https://www.youtube.com/",
+      "status": "ok",
+      "mode": "official_api",
+      "item_count": 20,
+      "note": "合并 5/5 个 YouTube mostPopular 区域榜；使用 YouTube Data API",
+      "error": ""
+    },
+    {
+      "code": "instagram",
+      "name": "Instagram",
+      "label": "Instagram 热门内容",
+      "mark": "IG",
+      "official": false,
+      "source_url": "https://www.instagram.com/explore/",
+      "status": "needs_configuration",
+      "mode": "needs_configuration",
+      "item_count": 0,
+      "note": "Instagram 没有公开的全站排名热搜 API；如购买合规数据源，可设置 INSTAGRAM_TRENDS_URL（返回 title/url/metric 的 JSON 列表）",
+      "error": ""
+    },
+    {
+      "code": "bilibili",
+      "name": "Bilibili",
+      "label": "B站热搜",
+      "mark": "B",
+      "official": true,
+      "source_url": "https://www.bilibili.com/v/popular/rank/all",
+      "status": "ok",
+      "mode": "official_public_endpoint",
+      "item_count": 20,
+      "note": "B站公开搜索热词接口",
+      "error": ""
+    },
+    {
+      "code": "baidu",
+      "name": "百度",
+      "label": "百度热搜",
+      "mark": "百",
+      "official": true,
+      "source_url": "https://top.baidu.com/board?tab=realtime",
+      "status": "ok",
+      "mode": "official_public_page",
+      "item_count": 20,
+      "note": "百度实时热搜榜公开页面",
+      "error": ""
+    },
+    {
+      "code": "weibo",
+      "name": "微博",
+      "label": "微博热搜",
+      "mark": "微",
+      "official": true,
+      "source_url": "https://s.weibo.com/top/summary?cate=realtimehot",
+      "status": "ok",
+      "mode": "official_public_endpoint",
+      "item_count": 20,
+      "note": "微博公开网页使用的 hot-band 接口",
+      "error": ""
+    }
+  ],
+  "channel_items": {
+    "google": [
+      {
+        "title": "spurs vs thunder",
+        "canonical": "spurs vs thunder",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 1,
+        "metric_text": "1000+",
+        "metric": 1000,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=GB&q=spurs+vs+thunder",
+        "region": "GB",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8i80zKDokuxlf24TRaMOuSdO-wOpdMc16lDyKd-qmYA1H3AQcuSmILNI7Ks",
+        "regions": [
+          "GB",
+          "NG"
+        ],
+        "region_count": 2,
+        "local_score": 96.7
+      },
+      {
+        "title": "10 things i hate about you",
+        "canonical": "10 things i hate about you",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 2,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=10+things+i+hate+about+you",
+        "region": "MX",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs_zyEEDefCMa_1WPblqWd2IMS6MEqGadBS232Ix31kqvargn1ap4q9i_rdyI",
+        "regions": [
+          "MX",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 88.0
+      },
+      {
+        "title": "aday mara",
+        "canonical": "aday mara",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 3,
+        "metric_text": "500+",
+        "metric": 500,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=aday+mara",
+        "region": "BR",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJpuIcr4H5zRvQUGuL5qHGxu0MyqEBrUUZ6stvxHhDDmxs5vaFXvgCrdfyVAs",
+        "regions": [
+          "BR",
+          "MX"
+        ],
+        "region_count": 2,
+        "local_score": 87.3
+      },
+      {
+        "title": "enquete a fazenda",
+        "canonical": "enquete a fazenda",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 4,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=enquete+a+fazenda",
+        "region": "BR",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSOO3XWZoxC0uG5jyJpAZJTHzUWbfvIFPRC90KTqOtZZvJeyGgBeGNBFAaLhc",
+        "regions": [
+          "BR"
+        ],
+        "region_count": 1,
+        "local_score": 77.5
+      },
+      {
+        "title": "zazie beetz",
+        "canonical": "zazie beetz",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 5,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=US&q=zazie+beetz",
+        "region": "US",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1PQZ696ayyx_srG_SDmc9-gmiC867vsY5mgsx_rg-jaUwXw0FTzSsNn6Z4Qg",
+        "regions": [
+          "US"
+        ],
+        "region_count": 1,
+        "local_score": 73.9
+      },
+      {
+        "title": "south indian bank share",
+        "canonical": "south indian bank share",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 6,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=south+indian+bank+share",
+        "region": "IN",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDe5bc0cuUkp7VQtqCTk5heIiCuIfy6x0oG8XsgV0GTZfXA0lz998wCxPT6b4",
+        "regions": [
+          "IN"
+        ],
+        "region_count": 1,
+        "local_score": 70.3
+      },
+      {
+        "title": "autowrack",
+        "canonical": "autowrack",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 7,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=DE&q=autowrack",
+        "region": "DE",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaDnFWFKqR6Nv7eCW8nK-7ijpiyg1C5QJNtgPShzsDlvLjDDPtP2iedr4m2GE",
+        "regions": [
+          "DE"
+        ],
+        "region_count": 1,
+        "local_score": 66.7
+      },
+      {
+        "title": "横断歩道",
+        "canonical": "横断歩道",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 8,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=JP&q=%E6%A8%AA%E6%96%AD%E6%AD%A9%E9%81%93",
+        "region": "JP",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVmlU9LzopFn697dw0S7sudQ2dtp87gtsIA3N9WZ0C_WUjitv2t8OGFEtaU-M",
+        "regions": [
+          "JP"
+        ],
+        "region_count": 1,
+        "local_score": 63.2
+      },
+      {
+        "title": "chet holmgren",
+        "canonical": "chet holmgren",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 9,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=chet+holmgren",
+        "region": "MX",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO1AktWkXZDKsG_wQ7RrPNLD0cOsgdNt47JI7RPgzJiB-LDv7U6cx8Fdt6RKc",
+        "regions": [
+          "MX"
+        ],
+        "region_count": 1,
+        "local_score": 57.4
+      },
+      {
+        "title": "vasco vs boca",
+        "canonical": "vasco vs boca",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 10,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=GB&q=vasco+vs+boca",
+        "region": "GB",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRysxmmFB9JZl427mzRcVzjj4gG7toRFTJvdIOIe7qZ-Qs_UeR0VAai_bRJy1w",
+        "regions": [
+          "GB"
+        ],
+        "region_count": 1,
+        "local_score": 53.8
+      },
+      {
+        "title": "lhkpn",
+        "canonical": "lhkpn",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 11,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=lhkpn",
+        "region": "ID",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS749GgD5Fi6peAJWYab0egRkjOjnZeNZ-X4sqDEk-dcDfOm4NnB3gMLciPU14",
+        "regions": [
+          "ID"
+        ],
+        "region_count": 1,
+        "local_score": 50.2
+      },
+      {
+        "title": "nigeria vs puerto rico",
+        "canonical": "nigeria vs puerto rico",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 12,
+        "metric_text": "500+",
+        "metric": 500,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=NG&q=nigeria+vs+puerto+rico",
+        "region": "NG",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRt9I-EeZHeS26Cjx_AGnscEac_a25w1FKNoNSgA3J4kHP9krXdudKYbfXK4LU",
+        "regions": [
+          "NG"
+        ],
+        "region_count": 1,
+        "local_score": 51.8
+      },
+      {
+        "title": "lakers roster",
+        "canonical": "lakers roster",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 13,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=US&q=lakers+roster",
+        "region": "US",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSKUFOGuAPRZVHInw7kd5sAXQMGn8Ui8wVTg0W1dX5kqtsD5EMv62m-spH6Bk",
+        "regions": [
+          "US"
+        ],
+        "region_count": 1,
+        "local_score": 45.3
+      },
+      {
+        "title": "ultratech cement share price",
+        "canonical": "ultratech cement share price",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 14,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=ultratech+cement+share+price",
+        "region": "IN",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm3cE6oWul35xpKGEG9eO_TlUEKxQIz7D6wajyUhve84SWrlLXbF2r6nFTB64",
+        "regions": [
+          "IN"
+        ],
+        "region_count": 1,
+        "local_score": 41.7
+      },
+      {
+        "title": "zirkus",
+        "canonical": "zirkus",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 15,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=DE&q=zirkus",
+        "region": "DE",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3E_H4ALODRe7oENy5AsAdDLwF1QMkaA7XuruJzUpVesIbXksXSTsFATxX5sY",
+        "regions": [
+          "DE"
+        ],
+        "region_count": 1,
+        "local_score": 38.1
+      },
+      {
+        "title": "playstation",
+        "canonical": "playstation",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 16,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=JP&q=playstation",
+        "region": "JP",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOLBjbOqCxI--2jOJHNFci8H8RLqRk6xA_rtHdcAsYcHcQnBhnfZxnCmBPK8",
+        "regions": [
+          "JP"
+        ],
+        "region_count": 1,
+        "local_score": 34.5
+      },
+      {
+        "title": "cek desil nik",
+        "canonical": "cek desil nik",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 17,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=cek+desil+nik",
+        "region": "ID",
+        "image": "",
+        "regions": [
+          "ID"
+        ],
+        "region_count": 1,
+        "local_score": 31.0
+      },
+      {
+        "title": "fernando collor",
+        "canonical": "fernando collor",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 18,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=fernando+collor",
+        "region": "BR",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqEWVIaFv-2FKnHHdDG5d1wmoB_FbOsLVwemxlECbFwD9YBrnkaEWUqsyn64M",
+        "regions": [
+          "BR"
+        ],
+        "region_count": 1,
+        "local_score": 25.2
+      },
+      {
+        "title": "jared mccain",
+        "canonical": "jared mccain",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 19,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=jared+mccain",
+        "region": "MX",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBE5mWqeGuDgblQoL5ZxqSqX5BIK2nP_GDmNCw75pw_SBbzi5Lhj0lV8hYkPk",
+        "regions": [
+          "MX"
+        ],
+        "region_count": 1,
+        "local_score": 21.6
+      },
+      {
+        "title": "jocasta marvel",
+        "canonical": "jocasta marvel",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 20,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=jocasta+marvel",
+        "region": "BR",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejP1HleUV9rPgMnUSdk36qNCYYaVEJdlWl0NXKzuBQjUlDXbswcK7XtGb7ys",
+        "regions": [
+          "BR"
+        ],
+        "region_count": 1,
+        "local_score": 20.2
+      }
+    ],
+    "tiktok": [
+      {
+        "title": "#justgolive",
+        "canonical": "justgolive",
+        "channel_code": "tiktok",
+        "channel_name": "TikTok",
+        "rank": 1,
+        "metric_text": "45.2K posts · 38.1M views",
+        "metric": 38100000,
+        "published_at": "2026-08-08T02:09:12.790255Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.tiktok.com/tag/justgolive",
+        "category": "News & Entertainment",
+        "local_score": 90.8
+      },
+      {
+        "title": "#tiktokshopbacktoschool",
+        "canonical": "tiktokshopbacktoschool",
+        "channel_code": "tiktok",
+        "channel_name": "TikTok",
+        "rank": 2,
+        "metric_text": "293.3K posts · 177.4M views",
+        "metric": 177400000,
+        "published_at": "2026-08-08T02:09:12.790255Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.tiktok.com/tag/tiktokshopbacktoschool",
+        "category": "Apparel & Accessories",
+        "local_score": 58.5
+      },
+      {
+        "title": "#petal",
+        "canonical": "petal",
+        "channel_code": "tiktok",
+        "channel_name": "TikTok",
+        "rank": 3,
+        "metric_text": "87.6K posts · 371.2M views",
+        "metric": 371200000,
+        "published_at": "2026-08-08T02:09:12.790255Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.tiktok.com/tag/petal",
+        "category": "News & Entertainment",
+        "local_score": 25.3
+      }
+    ],
+    "x": [
+      {
+        "title": "Paredes",
+        "canonical": "paredes",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 1,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Paredes",
+        "local_score": 93.3
+      },
+      {
+        "title": "Maracanã",
+        "canonical": "maracanã",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 2,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Maracan%C3%A3",
+        "local_score": 88.6
+      },
+      {
+        "title": "Wemby",
+        "canonical": "wemby",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 3,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Wemby",
+        "local_score": 83.9
+      },
+      {
+        "title": "Chet",
+        "canonical": "chet",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 4,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Chet",
+        "local_score": 79.1
+      },
+      {
+        "title": "Shai",
+        "canonical": "shai",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 5,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Shai",
+        "local_score": 74.4
+      },
+      {
+        "title": "Point Coffee 5RB DiGoPay",
+        "canonical": "point coffee 5rb digopay",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 6,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Point%20Coffee%205RB%20DiGoPay",
+        "local_score": 69.6
+      },
+      {
+        "title": "Léo Jardim",
+        "canonical": "léo jardim",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 7,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=L%C3%A9o%20Jardim",
+        "local_score": 64.9
+      },
+      {
+        "title": "Spurs",
+        "canonical": "spurs",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 8,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Spurs",
+        "local_score": 60.2
+      },
+      {
+        "title": "#dwts",
+        "canonical": "dwts",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 9,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=%23dwts",
+        "local_score": 55.4
+      },
+      {
+        "title": "#RoçaAFazenda",
+        "canonical": "roçaafazenda",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 10,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=%23Ro%C3%A7aAFazenda",
+        "local_score": 50.7
+      },
+      {
+        "title": "Sixers",
+        "canonical": "sixers",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 11,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Sixers",
+        "local_score": 46.0
+      },
+      {
+        "title": "Knicks",
+        "canonical": "knicks",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 12,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Knicks",
+        "local_score": 41.2
+      },
+      {
+        "title": "O Vasco",
+        "canonical": "o vasco",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 13,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=O%20Vasco",
+        "local_score": 36.5
+      },
+      {
+        "title": "#今だけのおトクな食べくらべポテナゲ登場",
+        "canonical": "今だけのおトクな食べくらべポテナゲ登場",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 14,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=%23%E4%BB%8A%E3%81%A0%E3%81%91%E3%81%AE%E3%81%8A%E3%83%88%E3%82%AF%E3%81%AA%E9%A3%9F%E3%81%B9%E3%81%8F%E3%82%89%E3%81%B9%E3%83%9D%E3%83%86%E3%83%8A%E3%82%B2%E7%99%BB%E5%A0%B4",
+        "local_score": 31.8
+      },
+      {
+        "title": "雪ミクライブ",
+        "canonical": "雪ミクライブ",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 15,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=%E9%9B%AA%E3%83%9F%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%96",
+        "local_score": 27.0
+      },
+      {
+        "title": "LeBron",
+        "canonical": "lebron",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 16,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=LeBron",
+        "local_score": 22.3
+      },
+      {
+        "title": "Thiago Mendes",
+        "canonical": "thiago mendes",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 17,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=Thiago%20Mendes",
+        "local_score": 17.5
+      },
+      {
+        "title": "#ミートボールいつ食べたい",
+        "canonical": "ミートボールいつ食べたい",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 18,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=%23%E3%83%9F%E3%83%BC%E3%83%88%E3%83%9C%E3%83%BC%E3%83%AB%E3%81%84%E3%81%A4%E9%A3%9F%E3%81%B9%E3%81%9F%E3%81%84",
+        "local_score": 12.8
+      },
+      {
+        "title": "#MasterChefBR",
+        "canonical": "masterchefbr",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 19,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=%23MasterChefBR",
+        "local_score": 8.1
+      },
+      {
+        "title": "jihyo",
+        "canonical": "jihyo",
+        "channel_code": "x",
+        "channel_name": "X / Twitter",
+        "rank": 20,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://twitter.com/search?q=jihyo",
+        "local_score": 3.3
+      }
+    ],
+    "reddit": [
+      {
+        "title": "I woke up with this text from my landlord.",
+        "canonical": "i woke up with this text from my landlord",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 1,
+        "metric_text": "mildlyinfuriating",
+        "metric": 0,
+        "published_at": "2026-10-20T18:13:46Z",
+        "age_hours": 10.26,
+        "source_url": "https://www.reddit.com/r/mildlyinfuriating/comments/1xazo63/i_woke_up_with_this_text_from_my_landlord/",
+        "subreddit": "mildlyinfuriating",
+        "local_score": 93.3
+      },
+      {
+        "title": "Married men, what’s one thing unmarried men should know before getting married?",
+        "canonical": "married men whats one thing unmarried men should know before getting married",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 2,
+        "metric_text": "AskReddit",
+        "metric": 0,
+        "published_at": "2026-10-20T21:08:32Z",
+        "age_hours": 7.35,
+        "source_url": "https://www.reddit.com/r/AskReddit/comments/1xb49gp/married_men_whats_one_thing_unmarried_men_should/",
+        "subreddit": "AskReddit",
+        "local_score": 88.6
+      },
+      {
+        "title": "Musk ordered Starlink slowdown for Ukraine: WSJ",
+        "canonical": "musk ordered starlink slowdown for ukraine wsj",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 3,
+        "metric_text": "worldnews",
+        "metric": 0,
+        "published_at": "2026-10-20T20:50:14Z",
+        "age_hours": 7.65,
+        "source_url": "https://www.reddit.com/r/worldnews/comments/1xb3sok/musk_ordered_starlink_slowdown_for_ukraine_wsj/",
+        "subreddit": "worldnews",
+        "local_score": 83.9
+      },
+      {
+        "title": "Gucci male model in 1995 vs now,",
+        "canonical": "gucci male model in 1995 vs now",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 4,
+        "metric_text": "interestingasfuck",
+        "metric": 0,
+        "published_at": "2026-10-20T16:26:57Z",
+        "age_hours": 12.04,
+        "source_url": "https://www.reddit.com/r/interestingasfuck/comments/1xawrlj/gucci_male_model_in_1995_vs_now/",
+        "subreddit": "interestingasfuck",
+        "local_score": 79.1
+      },
+      {
+        "title": "Camera man exposes Trump waving to invisible crowd",
+        "canonical": "camera man exposes trump waving to invisible crowd",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 5,
+        "metric_text": "SipsTea",
+        "metric": 0,
+        "published_at": "2026-10-21T00:53:06Z",
+        "age_hours": 3.6,
+        "source_url": "https://www.reddit.com/r/SipsTea/comments/1xb9br8/camera_man_exposes_trump_waving_to_invisible_crowd/",
+        "subreddit": "SipsTea",
+        "local_score": 74.4
+      },
+      {
+        "title": "Actor who successfully grifted a streaming company?",
+        "canonical": "actor who successfully grifted a streaming company",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 6,
+        "metric_text": "okbuddycinephile",
+        "metric": 0,
+        "published_at": "2026-10-20T13:59:24Z",
+        "age_hours": 14.5,
+        "source_url": "https://www.reddit.com/r/okbuddycinephile/comments/1xaswe4/actor_who_successfully_grifted_a_streaming_company/",
+        "subreddit": "okbuddycinephile",
+        "local_score": 69.6
+      },
+      {
+        "title": "Trump was heckled back-to-back in Kansas after once again claiming protesters are being paid to disrupt his events. One heckler had a pretty direct response: “I do it for free, I don’t fucking like you!”",
+        "canonical": "trump was heckled backtoback in kansas after once again claiming protesters are being paid to disrupt his events one heckler had a pretty direct response i do it for free i dont fucking like you",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 7,
+        "metric_text": "SipsTea",
+        "metric": 0,
+        "published_at": "2026-10-20T10:11:41Z",
+        "age_hours": 18.3,
+        "source_url": "https://www.reddit.com/r/SipsTea/comments/1xao8ng/trump_was_heckled_backtoback_in_kansas_after_once/",
+        "subreddit": "SipsTea",
+        "local_score": 64.9
+      },
+      {
+        "title": "XBOX Next-Gen Console Set For Holidays 2028, Next-Gen Handheld Device Holidays 2027 | As it stands, the price of the Helix console has internally been projected to cost consumers between $1,200 and $1,800, unless Microsoft decides to subsidize the cost.",
+        "canonical": "xbox nextgen console set for holidays 2028 nextgen handheld device holidays 2027 as it stands the price of the helix console has internally been projected to cost consumers between 1200 and 1800 unless microsoft decides to subsidize the cost",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 8,
+        "metric_text": "gaming",
+        "metric": 0,
+        "published_at": "2026-10-20T18:38:45Z",
+        "age_hours": 9.84,
+        "source_url": "https://www.reddit.com/r/gaming/comments/1xb0cai/xbox_nextgen_console_set_for_holidays_2028/",
+        "subreddit": "gaming",
+        "local_score": 60.2
+      },
+      {
+        "title": "Meirl",
+        "canonical": "meirl",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 9,
+        "metric_text": "meirl",
+        "metric": 0,
+        "published_at": "2026-10-21T00:48:45Z",
+        "age_hours": 3.68,
+        "source_url": "https://www.reddit.com/r/meirl/comments/1xb98hb/meirl/",
+        "subreddit": "meirl",
+        "local_score": 55.4
+      },
+      {
+        "title": "Demands for AI Filter on Steam Grow as Next Fest Is Flooded with AI Slop",
+        "canonical": "demands for ai filter on steam grow as next fest is flooded with ai slop",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 10,
+        "metric_text": "pcmasterrace",
+        "metric": 0,
+        "published_at": "2026-10-20T11:06:49Z",
+        "age_hours": 17.38,
+        "source_url": "https://www.reddit.com/r/pcmasterrace/comments/1xap7mm/demands_for_ai_filter_on_steam_grow_as_next_fest/",
+        "subreddit": "pcmasterrace",
+        "local_score": 50.7
+      },
+      {
+        "title": "Vivek heckled at town hall over disgusting attack ad",
+        "canonical": "vivek heckled at town hall over disgusting attack ad",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 11,
+        "metric_text": "Ohio",
+        "metric": 0,
+        "published_at": "2026-10-21T00:18:45Z",
+        "age_hours": 4.18,
+        "source_url": "https://www.reddit.com/r/Ohio/comments/1xb8luj/vivek_heckled_at_town_hall_over_disgusting_attack/",
+        "subreddit": "Ohio",
+        "local_score": 46.0
+      },
+      {
+        "title": "Report: Next-Gen Xbox Project Helix Targets 2028 Release, $1,200 to $1,800 Price",
+        "canonical": "report nextgen xbox project helix targets 2028 release 1200 to 1800 price",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 12,
+        "metric_text": "xbox",
+        "metric": 0,
+        "published_at": "2026-10-20T19:02:25Z",
+        "age_hours": 9.45,
+        "source_url": "https://www.reddit.com/r/xbox/comments/1xb0yx9/report_nextgen_xbox_project_helix_targets_2028/",
+        "subreddit": "xbox",
+        "local_score": 41.2
+      },
+      {
+        "title": "Hegseth's 'made up story'...",
+        "canonical": "hegseths made up story",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 13,
+        "metric_text": "PoursTea",
+        "metric": 0,
+        "published_at": "2026-10-21T00:34:45Z",
+        "age_hours": 3.91,
+        "source_url": "https://www.reddit.com/r/PoursTea/comments/1xb8y0t/hegseths_made_up_story/",
+        "subreddit": "PoursTea",
+        "local_score": 36.5
+      },
+      {
+        "title": "Trump Warns America Will Burn if Republicans Lose This Election",
+        "canonical": "trump warns america will burn if republicans lose this election",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 14,
+        "metric_text": "politics",
+        "metric": 0,
+        "published_at": "2026-10-20T15:28:18Z",
+        "age_hours": 13.02,
+        "source_url": "https://www.reddit.com/r/politics/comments/1xav6a8/trump_warns_america_will_burn_if_republicans_lose/",
+        "subreddit": "politics",
+        "local_score": 31.8
+      },
+      {
+        "title": "Who ever asked for a white Chun-Li?",
+        "canonical": "who ever asked for a white chunli",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 15,
+        "metric_text": "Gamingcirclejerk",
+        "metric": 0,
+        "published_at": "2026-10-20T18:43:10Z",
+        "age_hours": 9.77,
+        "source_url": "https://www.reddit.com/r/Gamingcirclejerk/comments/1xb0gjh/who_ever_asked_for_a_white_chunli/",
+        "subreddit": "Gamingcirclejerk",
+        "local_score": 27.0
+      },
+      {
+        "title": "Anthropic logged net loss of over $80 billion in first half of 2026",
+        "canonical": "anthropic logged net loss of over 80 billion in first half of 2026",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 16,
+        "metric_text": "technology",
+        "metric": 0,
+        "published_at": "2026-10-20T23:36:46Z",
+        "age_hours": 4.88,
+        "source_url": "https://www.reddit.com/r/technology/comments/1xb7op7/anthropic_logged_net_loss_of_over_80_billion_in/",
+        "subreddit": "technology",
+        "local_score": 22.3
+      },
+      {
+        "title": "meirl",
+        "canonical": "meirl",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 17,
+        "metric_text": "meirl",
+        "metric": 0,
+        "published_at": "2026-10-20T09:56:37Z",
+        "age_hours": 18.55,
+        "source_url": "https://www.reddit.com/r/meirl/comments/1xanzf7/meirl/",
+        "subreddit": "meirl",
+        "local_score": 17.5
+      },
+      {
+        "title": "Do you believe we were persistent hunters in the past or is it a bunch of hogwash?",
+        "canonical": "do you believe we were persistent hunters in the past or is it a bunch of hogwash",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 18,
+        "metric_text": "HistoryMemes",
+        "metric": 0,
+        "published_at": "2026-10-20T15:24:46Z",
+        "age_hours": 13.08,
+        "source_url": "https://www.reddit.com/r/HistoryMemes/comments/1xav2v4/do_you_believe_we_were_persistent_hunters_in_the/",
+        "subreddit": "HistoryMemes",
+        "local_score": 12.8
+      },
+      {
+        "title": "How a lot of people seem to think \"more attractive=better\" when it comes to character design",
+        "canonical": "how a lot of people seem to think more attractivebetter when it comes to character design",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 19,
+        "metric_text": "hatethissmug",
+        "metric": 0,
+        "published_at": "2026-10-20T21:09:19Z",
+        "age_hours": 7.33,
+        "source_url": "https://www.reddit.com/r/hatethissmug/comments/1xb4a6b/how_a_lot_of_people_seem_to_think_more/",
+        "subreddit": "hatethissmug",
+        "local_score": 8.1
+      },
+      {
+        "title": "Shoutout Katie Zacharia",
+        "canonical": "shoutout katie zacharia",
+        "channel_code": "reddit",
+        "channel_name": "Reddit",
+        "rank": 20,
+        "metric_text": "StandUpComedy",
+        "metric": 0,
+        "published_at": "2026-10-20T21:51:51Z",
+        "age_hours": 6.63,
+        "source_url": "https://www.reddit.com/r/StandUpComedy/comments/1xb5bmx/shoutout_katie_zacharia/",
+        "subreddit": "StandUpComedy",
+        "local_score": 3.3
+      }
+    ],
+    "youtube": [
+      {
+        "title": "Ramayana: Ravana Tandav (Song) | Namit M, Nitesh T | Ranbir, Yash | AR Rahman, Vishal D, Kumar V",
+        "canonical": "ramayana ravana tandav song namit m nitesh t ranbir yash ar rahman vishal d kumar v",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 1,
+        "metric_text": "6,215,764 views",
+        "metric": 6215764,
+        "published_at": "2026-10-20T15:34:01Z",
+        "age_hours": 12.92,
+        "source_url": "https://www.youtube.com/watch?v=p1potl1sbjA",
+        "region": "US",
+        "video_id": "p1potl1sbjA",
+        "channel_title": "T-Series",
+        "image": "https://i.ytimg.com/vi/p1potl1sbjA/hqdefault.jpg",
+        "regions": [
+          "US",
+          "IN",
+          "GB"
+        ],
+        "region_count": 3,
+        "local_score": 99.5
+      },
+      {
+        "title": "FIRESTARTER",
+        "canonical": "firestarter",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 2,
+        "metric_text": "737,831 views",
+        "metric": 737831,
+        "published_at": "2026-10-20T04:19:21Z",
+        "age_hours": 24.17,
+        "source_url": "https://www.youtube.com/watch?v=miIihGHZ_7A",
+        "region": "US",
+        "video_id": "miIihGHZ_7A",
+        "channel_title": "K/DA - Topic",
+        "image": "https://i.ytimg.com/vi/miIihGHZ_7A/hqdefault.jpg",
+        "regions": [
+          "US",
+          "BR",
+          "GB"
+        ],
+        "region_count": 3,
+        "local_score": 93.0
+      },
+      {
+        "title": "Shrek 2 Remastered - Announce Trailer | PS5 Games",
+        "canonical": "shrek 2 remastered announce trailer ps5 games",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 3,
+        "metric_text": "711,857 views",
+        "metric": 711857,
+        "published_at": "2026-10-20T18:15:36Z",
+        "age_hours": 10.23,
+        "source_url": "https://www.youtube.com/watch?v=KtxiiD3IyAo",
+        "region": "US",
+        "video_id": "KtxiiD3IyAo",
+        "channel_title": "PlayStation",
+        "image": "https://i.ytimg.com/vi/KtxiiD3IyAo/hqdefault.jpg",
+        "regions": [
+          "US",
+          "BR",
+          "GB"
+        ],
+        "region_count": 3,
+        "local_score": 89.3
+      },
+      {
+        "title": "Path to Doomsday - Avengers: Endgame | New PvE Mode Trailer | Marvel Rivals",
+        "canonical": "path to doomsday avengers endgame new pve mode trailer marvel rivals",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 4,
+        "metric_text": "591,324 views",
+        "metric": 591324,
+        "published_at": "2026-10-20T15:00:34Z",
+        "age_hours": 13.48,
+        "source_url": "https://www.youtube.com/watch?v=RUEk4Bak3Xk",
+        "region": "US",
+        "video_id": "RUEk4Bak3Xk",
+        "channel_title": "Marvel Rivals",
+        "image": "https://i.ytimg.com/vi/RUEk4Bak3Xk/hqdefault.jpg",
+        "regions": [
+          "US",
+          "BR",
+          "GB"
+        ],
+        "region_count": 3,
+        "local_score": 85.5
+      },
+      {
+        "title": "Pokémon TCG Pocket: Dual Fusion 🧬 | Official Trailer",
+        "canonical": "pokémon tcg pocket dual fusion official trailer",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 5,
+        "metric_text": "251,620 views",
+        "metric": 251620,
+        "published_at": "2026-10-20T13:01:26Z",
+        "age_hours": 15.47,
+        "source_url": "https://www.youtube.com/watch?v=fGszU4YxLBI",
+        "region": "US",
+        "video_id": "fGszU4YxLBI",
+        "channel_title": "The Official Pokémon YouTube channel",
+        "image": "https://i.ytimg.com/vi/fGszU4YxLBI/hqdefault.jpg",
+        "regions": [
+          "US",
+          "BR",
+          "GB"
+        ],
+        "region_count": 3,
+        "local_score": 80.8
+      },
+      {
+        "title": "Honest Trailers | Spider-Man: Brand New Day",
+        "canonical": "honest trailers spiderman brand new day",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 6,
+        "metric_text": "454,496 views",
+        "metric": 454496,
+        "published_at": "2026-10-20T17:00:19Z",
+        "age_hours": 11.48,
+        "source_url": "https://www.youtube.com/watch?v=eQf6nDraYQg",
+        "region": "US",
+        "video_id": "eQf6nDraYQg",
+        "channel_title": "Screen Junkies",
+        "image": "https://i.ytimg.com/vi/eQf6nDraYQg/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 74.7
+      },
+      {
+        "title": "Minecraft Speedrunner VS 6 Hunters FINALE",
+        "canonical": "minecraft speedrunner vs 6 hunters finale",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 7,
+        "metric_text": "1,409,320 views",
+        "metric": 1409320,
+        "published_at": "2026-10-20T19:30:08Z",
+        "age_hours": 8.99,
+        "source_url": "https://www.youtube.com/watch?v=g22Z__ShvVY",
+        "region": "US",
+        "video_id": "g22Z__ShvVY",
+        "channel_title": "Dream",
+        "image": "https://i.ytimg.com/vi/g22Z__ShvVY/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 72.6
+      },
+      {
+        "title": "Unstable SMP Speedruns Minecraft!",
+        "canonical": "unstable smp speedruns minecraft",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 8,
+        "metric_text": "1,152,198 views",
+        "metric": 1152198,
+        "published_at": "2026-10-20T14:41:20Z",
+        "age_hours": 13.8,
+        "source_url": "https://www.youtube.com/watch?v=eSWni1Ze2eQ",
+        "region": "US",
+        "video_id": "eSWni1Ze2eQ",
+        "channel_title": "Wemmbu: The Sequel",
+        "image": "https://i.ytimg.com/vi/eSWni1Ze2eQ/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 68.8
+      },
+      {
+        "title": "Starting The GTA V Story Mode... [Ep. 1/5]",
+        "canonical": "starting the gta v story mode ep 15",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 9,
+        "metric_text": "484,286 views",
+        "metric": 484286,
+        "published_at": "2026-10-20T11:50:43Z",
+        "age_hours": 16.64,
+        "source_url": "https://www.youtube.com/watch?v=krDFU2IPORQ",
+        "region": "US",
+        "video_id": "krDFU2IPORQ",
+        "channel_title": "Joe Bart Games",
+        "image": "https://i.ytimg.com/vi/krDFU2IPORQ/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 64.0
+      },
+      {
+        "title": "Dhanda Nyoliwala - No Favours (Official Music Video)",
+        "canonical": "dhanda nyoliwala no favours official music video",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 10,
+        "metric_text": "1,836,783 views",
+        "metric": 1836783,
+        "published_at": "2026-10-20T05:30:10Z",
+        "age_hours": 22.99,
+        "source_url": "https://www.youtube.com/watch?v=aFssZKYEB2Q",
+        "region": "IN",
+        "video_id": "aFssZKYEB2Q",
+        "channel_title": "Dhanda Nyoliwala",
+        "image": "https://i.ytimg.com/vi/aFssZKYEB2Q/hqdefault.jpg",
+        "regions": [
+          "IN",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 62.3
+      },
+      {
+        "title": "CATWOMAN | Swamp Sessions",
+        "canonical": "catwoman swamp sessions",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 11,
+        "metric_text": "129,121 views",
+        "metric": 129121,
+        "published_at": "2026-10-20T19:56:10Z",
+        "age_hours": 8.55,
+        "source_url": "https://www.youtube.com/watch?v=QC6Jz_1hytI",
+        "region": "US",
+        "video_id": "QC6Jz_1hytI",
+        "channel_title": "Doechii",
+        "image": "https://i.ytimg.com/vi/QC6Jz_1hytI/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 55.0
+      },
+      {
+        "title": "Slayground | Official Teaser HD | A24",
+        "canonical": "slayground official teaser hd a24",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 12,
+        "metric_text": "714,770 views",
+        "metric": 714770,
+        "published_at": "2026-10-20T13:00:34Z",
+        "age_hours": 15.48,
+        "source_url": "https://www.youtube.com/watch?v=XsReYk7AqPg",
+        "region": "US",
+        "video_id": "XsReYk7AqPg",
+        "channel_title": "A24",
+        "image": "https://i.ytimg.com/vi/XsReYk7AqPg/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 53.8
+      },
+      {
+        "title": "The Hunting Wives: Season 2 | Official Trailer | Netflix",
+        "canonical": "the hunting wives season 2 official trailer netflix",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 13,
+        "metric_text": "201,017 views",
+        "metric": 201017,
+        "published_at": "2026-10-20T14:00:00Z",
+        "age_hours": 14.49,
+        "source_url": "https://www.youtube.com/watch?v=Vhwp06fwk6k",
+        "region": "US",
+        "video_id": "Vhwp06fwk6k",
+        "channel_title": "Netflix",
+        "image": "https://i.ytimg.com/vi/Vhwp06fwk6k/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 48.5
+      },
+      {
+        "title": "I Shouldn’t Have Went In This Cave…",
+        "canonical": "i shouldnt have went in this cave",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 14,
+        "metric_text": "225,354 views",
+        "metric": 225354,
+        "published_at": "2026-10-20T22:00:13Z",
+        "age_hours": 6.49,
+        "source_url": "https://www.youtube.com/watch?v=IcMYAzm2nBY",
+        "region": "US",
+        "video_id": "IcMYAzm2nBY",
+        "channel_title": "CaseOh",
+        "image": "https://i.ytimg.com/vi/IcMYAzm2nBY/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 45.1
+      },
+      {
+        "title": "Above the Below (2026) Official Trailer - Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin",
+        "canonical": "above the below 2026 official trailer idris elba caitlin fitzgerald hero fiennes tiffin",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 15,
+        "metric_text": "764,347 views",
+        "metric": 764347,
+        "published_at": "2026-10-20T16:00:03Z",
+        "age_hours": 12.49,
+        "source_url": "https://www.youtube.com/watch?v=uO4wsV7HEUY",
+        "region": "US",
+        "video_id": "uO4wsV7HEUY",
+        "channel_title": "Lionsgate Movies",
+        "image": "https://i.ytimg.com/vi/uO4wsV7HEUY/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 43.2
+      },
+      {
+        "title": "Tiger Muthuvel Pandian (From \"Jailer 2\")",
+        "canonical": "tiger muthuvel pandian from jailer 2",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 16,
+        "metric_text": "780,746 views",
+        "metric": 780746,
+        "published_at": "2026-10-20T10:30:25Z",
+        "age_hours": 17.98,
+        "source_url": "https://www.youtube.com/watch?v=JFa201BcJvU",
+        "region": "IN",
+        "video_id": "JFa201BcJvU",
+        "channel_title": "Anirudh Ravichander - Topic",
+        "image": "https://i.ytimg.com/vi/JFa201BcJvU/hqdefault.jpg",
+        "regions": [
+          "IN",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 39.6
+      },
+      {
+        "title": "Veezha Veera Lyrical (Tamil) | OM | Dhanush | Mammootty | Sai Pallavi | Rajkumar | Sai Abhyankkar",
+        "canonical": "veezha veera lyrical tamil om dhanush mammootty sai pallavi rajkumar sai abhyankkar",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 17,
+        "metric_text": "9,150,088 views",
+        "metric": 9150088,
+        "published_at": "2026-10-19T13:30:22Z",
+        "age_hours": 38.98,
+        "source_url": "https://www.youtube.com/watch?v=-ZnYdmreOrk",
+        "region": "IN",
+        "video_id": "-ZnYdmreOrk",
+        "channel_title": "Divo Music",
+        "image": "https://i.ytimg.com/vi/-ZnYdmreOrk/hqdefault.jpg",
+        "regions": [
+          "IN"
+        ],
+        "region_count": 1,
+        "local_score": 36.1
+      },
+      {
+        "title": "MAZZEL / Touch -Music Video-",
+        "canonical": "mazzel touch music video",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 18,
+        "metric_text": "1,505,039 views",
+        "metric": 1505039,
+        "published_at": "2026-10-19T12:00:07Z",
+        "age_hours": 40.49,
+        "source_url": "https://www.youtube.com/watch?v=DN5JpXHDrLk",
+        "region": "JP",
+        "video_id": "DN5JpXHDrLk",
+        "channel_title": "MAZZEL",
+        "image": "https://i.ytimg.com/vi/DN5JpXHDrLk/hqdefault.jpg",
+        "regions": [
+          "JP"
+        ],
+        "region_count": 1,
+        "local_score": 30.0
+      },
+      {
+        "title": "❌Ángel Caído (R.I.P. Santa Fe Klan)❌ 🐀",
+        "canonical": "ángel caído rip santa fe klan",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 19,
+        "metric_text": "887,945 views",
+        "metric": 887945,
+        "published_at": "2026-10-20T03:30:09Z",
+        "age_hours": 24.99,
+        "source_url": "https://www.youtube.com/watch?v=gApykAFAgbg",
+        "region": "US",
+        "video_id": "gApykAFAgbg",
+        "channel_title": "TornillO Oficial",
+        "image": "https://i.ytimg.com/vi/gApykAFAgbg/hqdefault.jpg",
+        "regions": [
+          "US"
+        ],
+        "region_count": 1,
+        "local_score": 25.7
+      },
+      {
+        "title": "JULLIANY SOUZA, NÍVEA SOARES - JESUS É O CENTRO (AO VIVO)",
+        "canonical": "julliany souza nívea soares jesus é o centro ao vivo",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 20,
+        "metric_text": "182,384 views",
+        "metric": 182384,
+        "published_at": "2026-10-20T14:00:09Z",
+        "age_hours": 14.49,
+        "source_url": "https://www.youtube.com/watch?v=tICXq7wcZRo",
+        "region": "BR",
+        "video_id": "tICXq7wcZRo",
+        "channel_title": "Julliany Souza",
+        "image": "https://i.ytimg.com/vi/tICXq7wcZRo/hqdefault.jpg",
+        "regions": [
+          "BR"
+        ],
+        "region_count": 1,
+        "local_score": 20.0
+      }
+    ],
+    "instagram": [],
+    "bilibili": [
+      {
+        "title": "徐静雨说詹姆斯王者归来",
+        "canonical": "徐静雨说詹姆斯王者归来",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 1,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%BE%90%E9%9D%99%E9%9B%A8%E8%AF%B4%E8%A9%B9%E5%A7%86%E6%96%AF%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png",
+        "local_score": 93.3
+      },
+      {
+        "title": "人间异想计划实机首曝",
+        "canonical": "人间异想计划实机首曝",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 2,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%BA%E9%97%B4%E5%BC%82%E6%83%B3%E8%AE%A1%E5%88%92%E5%AE%9E%E6%9C%BA%E9%A6%96%E6%9B%9D",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png",
+        "local_score": 88.6
+      },
+      {
+        "title": "巴黎4-2巴萨",
+        "canonical": "巴黎42巴萨",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 3,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E9%BB%8E4-2%E5%B7%B4%E8%90%A8",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png",
+        "local_score": 83.9
+      },
+      {
+        "title": "TES vs HLE S16数据前瞻",
+        "canonical": "tes vs hle s16数据前瞻",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 4,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=TES+vs+HLE+S16%E6%95%B0%E6%8D%AE%E5%89%8D%E7%9E%BB",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "local_score": 79.1
+      },
+      {
+        "title": "DeepSeek全面开源DeepInfer",
+        "canonical": "deepseek全面开源deepinfer",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 5,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=DeepSeek%E5%85%A8%E9%9D%A2%E5%BC%80%E6%BA%90",
+        "image": "",
+        "local_score": 74.4
+      },
+      {
+        "title": "巴萨11连胜如何遭巴黎终结",
+        "canonical": "巴萨11连胜如何遭巴黎终结",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 6,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E8%90%A811%E8%BF%9E%E8%83%9C%E5%A6%82%E4%BD%95%E9%81%AD%E5%B7%B4%E9%BB%8E%E7%BB%88%E7%BB%93",
+        "image": "",
+        "local_score": 69.6
+      },
+      {
+        "title": "热梗是否会对中文表达造成负面影响",
+        "canonical": "热梗是否会对中文表达造成负面影响",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 7,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E7%83%AD%E6%A2%97%E6%98%AF%E5%90%A6%E4%BC%9A%E5%AF%B9%E4%B8%AD%E6%96%87%E8%A1%A8%E8%BE%BE%E9%80%A0%E6%88%90%E8%B4%9F%E9%9D%A2%E5%BD%B1%E5%93%8D",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "local_score": 64.9
+      },
+      {
+        "title": "NBA揭幕战76人击败尼克斯",
+        "canonical": "nba揭幕战76人击败尼克斯",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 8,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=NBA%E6%8F%AD%E5%B9%95%E6%88%9876%E4%BA%BA%E5%87%BB%E8%B4%A5%E5%B0%BC%E5%85%8B%E6%96%AF",
+        "image": "",
+        "local_score": 60.2
+      },
+      {
+        "title": "银鳕鱼是鳕鱼吗",
+        "canonical": "银鳕鱼是鳕鱼吗",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 9,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E9%93%B6%E9%B3%95%E9%B1%BC%E6%98%AF%E9%B3%95%E9%B1%BC%E5%90%97",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "local_score": 55.4
+      },
+      {
+        "title": "詹姆斯76人生涯首分",
+        "canonical": "詹姆斯76人生涯首分",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 10,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E8%A9%B9%E5%A7%86%E6%96%AF76%E4%BA%BA%E7%94%9F%E6%B6%AF%E9%A6%96%E5%88%86",
+        "image": "",
+        "local_score": 50.7
+      },
+      {
+        "title": "LOL梅尔大型改动介绍",
+        "canonical": "lol梅尔大型改动介绍",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 11,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=LOL%E6%A2%85%E5%B0%94%E5%A4%A7%E5%9E%8B%E6%94%B9%E5%8A%A8%E4%BB%8B%E7%BB%8D",
+        "image": "",
+        "local_score": 46.0
+      },
+      {
+        "title": "花少8变跟着贝尔去冒险",
+        "canonical": "花少8变跟着贝尔去冒险",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 12,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E8%8A%B1%E5%B0%918%E5%8F%98%E8%B7%9F%E7%9D%80%E8%B4%9D%E5%B0%94%E5%8E%BB%E5%86%92%E9%99%A9",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "local_score": 41.2
+      },
+      {
+        "title": "前三季度我国GDP同比增长4.6% ​",
+        "canonical": "前三季度我国gdp同比增长46 ​",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 13,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%89%8D%E4%B8%89%E5%AD%A3%E5%BA%A6%E6%88%91%E5%9B%BDGDP%E5%90%8C%E6%AF%94%E5%A2%9E%E9%95%BF4.6%25+%E2%80%8B",
+        "image": "",
+        "local_score": 36.5
+      },
+      {
+        "title": "绝区零3.3版本更新",
+        "canonical": "绝区零33版本更新",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 14,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E7%BB%9D%E5%8C%BA%E9%9B%B63.3%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0",
+        "image": "https://i0.hdslb.com/bfs/activity-plat/static/20251027/aafcb8031fd171c428daaa9b45867226/VaxAnHMq6w.gif",
+        "local_score": 31.8
+      },
+      {
+        "title": "IG出征单曲 仁川共鸣",
+        "canonical": "ig出征单曲 仁川共鸣",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 15,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=IG%E5%87%BA%E5%BE%81%E5%8D%95%E6%9B%B2+%E4%BB%81%E5%B7%9D%E5%85%B1%E9%B8%A3",
+        "image": "",
+        "local_score": 27.0
+      },
+      {
+        "title": "迟到时经历的生死时刻",
+        "canonical": "迟到时经历的生死时刻",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 16,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E8%BF%9F%E5%88%B0%E6%97%B6%E7%BB%8F%E5%8E%86%E7%9A%84%E7%94%9F%E6%AD%BB%E6%97%B6%E5%88%BB",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221117/eaf2dd702d7cc14d8d9511190245d057/EeuqbMwao9.png",
+        "local_score": 22.3
+      },
+      {
+        "title": "UP主拆解爆款AI代码动画",
+        "canonical": "up主拆解爆款ai代码动画",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 17,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=UP%E4%B8%BB%E6%8B%86%E8%A7%A3%E7%88%86%E6%AC%BEAI%E4%BB%A3%E7%A0%81%E5%8A%A8%E7%94%BB",
+        "image": "",
+        "local_score": 17.5
+      },
+      {
+        "title": "4万字拆解9分动画边缘行者",
+        "canonical": "4万字拆解9分动画边缘行者",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 18,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=4%E4%B8%87%E5%AD%97%E6%8B%86%E8%A7%A39%E5%88%86%E5%8A%A8%E7%94%BB%E8%BE%B9%E7%BC%98%E8%A1%8C%E8%80%85",
+        "image": "",
+        "local_score": 12.8
+      },
+      {
+        "title": "中年人的重阳节摇滚单曲",
+        "canonical": "中年人的重阳节摇滚单曲",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 19,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%B9%B4%E4%BA%BA%E7%9A%84%E9%87%8D%E9%98%B3%E8%8A%82%E6%91%87%E6%BB%9A%E5%8D%95%E6%9B%B2",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221117/eaf2dd702d7cc14d8d9511190245d057/EeuqbMwao9.png",
+        "local_score": 8.1
+      },
+      {
+        "title": "体验中国首列绿皮火车自助餐",
+        "canonical": "体验中国首列绿皮火车自助餐",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 20,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%BD%93%E9%AA%8C%E4%B8%AD%E5%9B%BD%E9%A6%96%E5%88%97%E7%BB%BF%E7%9A%AE%E7%81%AB%E8%BD%A6%E8%87%AA%E5%8A%A9%E9%A4%90",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "local_score": 3.3
+      }
+    ],
+    "baidu": [
+      {
+        "title": "红飘带闪耀新时代",
+        "canonical": "红飘带闪耀新时代",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 1,
+        "metric_text": "7,904,414 热度",
+        "metric": 7904414,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E7%BA%A2%E9%A3%98%E5%B8%A6%E9%97%AA%E8%80%80%E6%96%B0%E6%97%B6%E4%BB%A3",
+        "local_score": 93.3
+      },
+      {
+        "title": "国台办点赞周杰伦",
+        "canonical": "国台办点赞周杰伦",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 2,
+        "metric_text": "7,808,806 热度",
+        "metric": 7808806,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%8F%B0%E5%8A%9E%E7%82%B9%E8%B5%9E%E5%91%A8%E6%9D%B0%E4%BC%A6",
+        "local_score": 89.7
+      },
+      {
+        "title": "星巴克明日起在中国施行消费入座",
+        "canonical": "星巴克明日起在中国施行消费入座",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 3,
+        "metric_text": "7,713,409 热度",
+        "metric": 7713409,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E6%98%9F%E5%B7%B4%E5%85%8B%E6%98%8E%E6%97%A5%E8%B5%B7%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%96%BD%E8%A1%8C%E6%B6%88%E8%B4%B9%E5%85%A5%E5%BA%A7",
+        "local_score": 86.1
+      },
+      {
+        "title": "三个维度看前三季度经济含金量",
+        "canonical": "三个维度看前三季度经济含金量",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 4,
+        "metric_text": "7,617,170 热度",
+        "metric": 7617170,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%89%E4%B8%AA%E7%BB%B4%E5%BA%A6%E7%9C%8B%E5%89%8D%E4%B8%89%E5%AD%A3%E5%BA%A6%E7%BB%8F%E6%B5%8E%E5%90%AB%E9%87%91%E9%87%8F",
+        "local_score": 82.5
+      },
+      {
+        "title": "宝马员工争着离职",
+        "canonical": "宝马员工争着离职",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 5,
+        "metric_text": "7,522,436 热度",
+        "metric": 7522436,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E5%AE%9D%E9%A9%AC%E5%91%98%E5%B7%A5%E4%BA%89%E7%9D%80%E7%A6%BB%E8%81%8C",
+        "local_score": 78.9
+      },
+      {
+        "title": "马刺雷霆爆发大面积冲突",
+        "canonical": "马刺雷霆爆发大面积冲突",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 6,
+        "metric_text": "7,428,988 热度",
+        "metric": 7428988,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E9%A9%AC%E5%88%BA%E9%9B%B7%E9%9C%86%E7%88%86%E5%8F%91%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%86%B2%E7%AA%81",
+        "local_score": 75.4
+      },
+      {
+        "title": "世界乱成一锅粥 中国安心过日子",
+        "canonical": "世界乱成一锅粥 中国安心过日子",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 7,
+        "metric_text": "7,334,079 热度",
+        "metric": 7334079,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%96%E7%95%8C%E4%B9%B1%E6%88%90%E4%B8%80%E9%94%85%E7%B2%A5+%E4%B8%AD%E5%9B%BD%E5%AE%89%E5%BF%83%E8%BF%87%E6%97%A5%E5%AD%90",
+        "local_score": 71.8
+      },
+      {
+        "title": "又一地宣布：生物地理不计入中考总分",
+        "canonical": "又一地宣布生物地理不计入中考总分",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 8,
+        "metric_text": "7,231,671 热度",
+        "metric": 7231671,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E5%8F%88%E4%B8%80%E5%9C%B0%E5%AE%A3%E5%B8%83%EF%BC%9A%E7%94%9F%E7%89%A9%E5%9C%B0%E7%90%86%E4%B8%8D%E8%AE%A1%E5%85%A5%E4%B8%AD%E8%80%83%E6%80%BB%E5%88%86",
+        "local_score": 68.2
+      },
+      {
+        "title": "“喝大水”火了 疾控部门紧急提醒",
+        "canonical": "喝大水火了 疾控部门紧急提醒",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 9,
+        "metric_text": "7,139,445 热度",
+        "metric": 7139445,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E2%80%9C%E5%96%9D%E5%A4%A7%E6%B0%B4%E2%80%9D%E7%81%AB%E4%BA%86+%E7%96%BE%E6%8E%A7%E9%83%A8%E9%97%A8%E7%B4%A7%E6%80%A5%E6%8F%90%E9%86%92",
+        "local_score": 64.6
+      },
+      {
+        "title": "国台办回应张凌赫赴台交流被拒",
+        "canonical": "国台办回应张凌赫赴台交流被拒",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 10,
+        "metric_text": "7,046,264 热度",
+        "metric": 7046264,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%8F%B0%E5%8A%9E%E5%9B%9E%E5%BA%94%E5%BC%A0%E5%87%8C%E8%B5%AB%E8%B5%B4%E5%8F%B0%E4%BA%A4%E6%B5%81%E8%A2%AB%E6%8B%92",
+        "local_score": 61.0
+      },
+      {
+        "title": "年轻人“旁听”遵义会议爆火",
+        "canonical": "年轻人旁听遵义会议爆火",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 11,
+        "metric_text": "6,948,269 热度",
+        "metric": 6948269,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E5%B9%B4%E8%BD%BB%E4%BA%BA%E2%80%9C%E6%97%81%E5%90%AC%E2%80%9D%E9%81%B5%E4%B9%89%E4%BC%9A%E8%AE%AE%E7%88%86%E7%81%AB",
+        "local_score": 57.4
+      },
+      {
+        "title": "粉红豹现身法国骚乱现场系AI伪造",
+        "canonical": "粉红豹现身法国骚乱现场系ai伪造",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 12,
+        "metric_text": "6,848,610 热度",
+        "metric": 6848610,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E7%B2%89%E7%BA%A2%E8%B1%B9%E7%8E%B0%E8%BA%AB%E6%B3%95%E5%9B%BD%E9%AA%9A%E4%B9%B1%E7%8E%B0%E5%9C%BA%E7%B3%BBAI%E4%BC%AA%E9%80%A0",
+        "local_score": 53.8
+      },
+      {
+        "title": "丈夫1个拥抱 妻子断了5根肋骨",
+        "canonical": "丈夫1个拥抱 妻子断了5根肋骨",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 13,
+        "metric_text": "6,760,166 热度",
+        "metric": 6760166,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%88%E5%A4%AB1%E4%B8%AA%E6%8B%A5%E6%8A%B1+%E5%A6%BB%E5%AD%90%E6%96%AD%E4%BA%865%E6%A0%B9%E8%82%8B%E9%AA%A8",
+        "local_score": 50.2
+      },
+      {
+        "title": "男子患癌晚期 弟弟陪诊后也查出癌症",
+        "canonical": "男子患癌晚期 弟弟陪诊后也查出癌症",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 14,
+        "metric_text": "6,655,391 热度",
+        "metric": 6655391,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E6%82%A3%E7%99%8C%E6%99%9A%E6%9C%9F+%E5%BC%9F%E5%BC%9F%E9%99%AA%E8%AF%8A%E5%90%8E%E4%B9%9F%E6%9F%A5%E5%87%BA%E7%99%8C%E7%97%87",
+        "local_score": 46.6
+      },
+      {
+        "title": "父亲猥亵12岁女儿一审获刑三年",
+        "canonical": "父亲猥亵12岁女儿一审获刑三年",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 15,
+        "metric_text": "6,571,998 热度",
+        "metric": 6571998,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E7%88%B6%E4%BA%B2%E7%8C%A5%E4%BA%B512%E5%B2%81%E5%A5%B3%E5%84%BF%E4%B8%80%E5%AE%A1%E8%8E%B7%E5%88%91%E4%B8%89%E5%B9%B4",
+        "local_score": 43.0
+      },
+      {
+        "title": "中东“榜一大哥”率团来华提飞行汽车",
+        "canonical": "中东榜一大哥率团来华提飞行汽车",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 16,
+        "metric_text": "6,473,364 热度",
+        "metric": 6473364,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%AD%E4%B8%9C%E2%80%9C%E6%A6%9C%E4%B8%80%E5%A4%A7%E5%93%A5%E2%80%9D%E7%8E%87%E5%9B%A2%E6%9D%A5%E5%8D%8E%E6%8F%90%E9%A3%9E%E8%A1%8C%E6%B1%BD%E8%BD%A6",
+        "local_score": 39.4
+      },
+      {
+        "title": "中使馆预警 泰方：普通游客不会遭绑架",
+        "canonical": "中使馆预警 泰方普通游客不会遭绑架",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 17,
+        "metric_text": "6,369,906 热度",
+        "metric": 6369906,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%AD%E4%BD%BF%E9%A6%86%E9%A2%84%E8%AD%A6+%E6%B3%B0%E6%96%B9%EF%BC%9A%E6%99%AE%E9%80%9A%E6%B8%B8%E5%AE%A2%E4%B8%8D%E4%BC%9A%E9%81%AD%E7%BB%91%E6%9E%B6",
+        "local_score": 35.8
+      },
+      {
+        "title": "男孩因耐克鞋挑衅殴打同学致重伤",
+        "canonical": "男孩因耐克鞋挑衅殴打同学致重伤",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 18,
+        "metric_text": "6,276,071 热度",
+        "metric": 6276071,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%A9%E5%9B%A0%E8%80%90%E5%85%8B%E9%9E%8B%E6%8C%91%E8%A1%85%E6%AE%B4%E6%89%93%E5%90%8C%E5%AD%A6%E8%87%B4%E9%87%8D%E4%BC%A4",
+        "local_score": 32.2
+      },
+      {
+        "title": "重庆坠亡幼童父亲称已将狗处理",
+        "canonical": "重庆坠亡幼童父亲称已将狗处理",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 19,
+        "metric_text": "6,190,395 热度",
+        "metric": 6190395,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E9%87%8D%E5%BA%86%E5%9D%A0%E4%BA%A1%E5%B9%BC%E7%AB%A5%E7%88%B6%E4%BA%B2%E7%A7%B0%E5%B7%B2%E5%B0%86%E7%8B%97%E5%A4%84%E7%90%86",
+        "local_score": 28.6
+      },
+      {
+        "title": "日本优衣库将涨价 中国市场：不跟涨",
+        "canonical": "日本优衣库将涨价 中国市场不跟涨",
+        "channel_code": "baidu",
+        "channel_name": "百度",
+        "rank": 20,
+        "metric_text": "6,096,063 热度",
+        "metric": 6096063,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://www.baidu.com/s?wd=%E6%97%A5%E6%9C%AC%E4%BC%98%E8%A1%A3%E5%BA%93%E5%B0%86%E6%B6%A8%E4%BB%B7+%E4%B8%AD%E5%9B%BD%E5%B8%82%E5%9C%BA%EF%BC%9A%E4%B8%8D%E8%B7%9F%E6%B6%A8",
+        "local_score": 25.0
+      }
+    ],
+    "weibo": [
+      {
+        "title": "宝马员工争着离职挤崩系统",
+        "canonical": "宝马员工争着离职挤崩系统",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 1,
+        "metric_text": "2,380,230 热度",
+        "metric": 2380230,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E5%AE%9D%E9%A9%AC%E5%91%98%E5%B7%A5%E4%BA%89%E7%9D%80%E7%A6%BB%E8%81%8C%E6%8C%A4%E5%B4%A9%E7%B3%BB%E7%BB%9F",
+        "category": "汽车",
+        "label": "热",
+        "local_score": 93.3
+      },
+      {
+        "title": "拟出台的中国AI禁令震动全球",
+        "canonical": "拟出台的中国ai禁令震动全球",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 2,
+        "metric_text": "987,327 热度",
+        "metric": 987327,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E6%8B%9F%E5%87%BA%E5%8F%B0%E7%9A%84%E4%B8%AD%E5%9B%BDAI%E7%A6%81%E4%BB%A4%E9%9C%87%E5%8A%A8%E5%85%A8%E7%90%83",
+        "category": "财经,互联网",
+        "label": "",
+        "local_score": 88.4
+      },
+      {
+        "title": "一组数字看震撼人心的伟大远征",
+        "canonical": "一组数字看震撼人心的伟大远征",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 3,
+        "metric_text": "869,535 热度",
+        "metric": 869535,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E4%B8%80%E7%BB%84%E6%95%B0%E5%AD%97%E7%9C%8B%E9%9C%87%E6%92%BC%E4%BA%BA%E5%BF%83%E7%9A%84%E4%BC%9F%E5%A4%A7%E8%BF%9C%E5%BE%81",
+        "category": "民生新闻",
+        "label": "",
+        "local_score": 84.7
+      },
+      {
+        "title": "扁鹊老婆",
+        "canonical": "扁鹊老婆",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 4,
+        "metric_text": "850,794 热度",
+        "metric": 850794,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E6%89%81%E9%B9%8A%E8%80%81%E5%A9%86",
+        "category": "游戏",
+        "label": "新",
+        "local_score": 81.1
+      },
+      {
+        "title": "武志红 李雪",
+        "canonical": "武志红 李雪",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 5,
+        "metric_text": "797,558 热度",
+        "metric": 797558,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E6%AD%A6%E5%BF%97%E7%BA%A2+%E6%9D%8E%E9%9B%AA",
+        "category": "情感",
+        "label": "新",
+        "local_score": 77.4
+      },
+      {
+        "title": "坠亡幼童爷爷称一家人不谈补偿问题",
+        "canonical": "坠亡幼童爷爷称一家人不谈补偿问题",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 6,
+        "metric_text": "780,702 热度",
+        "metric": 780702,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E5%9D%A0%E4%BA%A1%E5%B9%BC%E7%AB%A5%E7%88%B7%E7%88%B7%E7%A7%B0%E4%B8%80%E5%AE%B6%E4%BA%BA%E4%B8%8D%E8%B0%88%E8%A1%A5%E5%81%BF%E9%97%AE%E9%A2%98",
+        "category": "舆论监督",
+        "label": "新",
+        "local_score": 73.8
+      },
+      {
+        "title": "国家癌症中心公布发病前五癌症",
+        "canonical": "国家癌症中心公布发病前五癌症",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 7,
+        "metric_text": "729,601 热度",
+        "metric": 729601,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E5%9B%BD%E5%AE%B6%E7%99%8C%E7%97%87%E4%B8%AD%E5%BF%83%E5%85%AC%E5%B8%83%E5%8F%91%E7%97%85%E5%89%8D%E4%BA%94%E7%99%8C%E7%97%87",
+        "category": "健康医疗",
+        "label": "",
+        "local_score": 70.1
+      },
+      {
+        "title": "目前我国只批准两款L3车型",
+        "canonical": "目前我国只批准两款l3车型",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 8,
+        "metric_text": "695,408 热度",
+        "metric": 695408,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E7%9B%AE%E5%89%8D%E6%88%91%E5%9B%BD%E5%8F%AA%E6%89%B9%E5%87%86%E4%B8%A4%E6%AC%BEL3%E8%BD%A6%E5%9E%8B",
+        "category": "汽车",
+        "label": "",
+        "local_score": 66.4
+      },
+      {
+        "title": "甲状腺癌为何越来越多",
+        "canonical": "甲状腺癌为何越来越多",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 9,
+        "metric_text": "595,896 热度",
+        "metric": 595896,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E7%94%B2%E7%8A%B6%E8%85%BA%E7%99%8C%E4%B8%BA%E4%BD%95%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A",
+        "category": "健康医疗",
+        "label": "",
+        "local_score": 62.6
+      },
+      {
+        "title": "雷霆马刺大冲突",
+        "canonical": "雷霆马刺大冲突",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 10,
+        "metric_text": "525,205 热度",
+        "metric": 525205,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E9%9B%B7%E9%9C%86%E9%A9%AC%E5%88%BA%E5%A4%A7%E5%86%B2%E7%AA%81",
+        "category": "体育",
+        "label": "",
+        "local_score": 58.9
+      },
+      {
+        "title": "曝艺人自费高定",
+        "canonical": "曝艺人自费高定",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 11,
+        "metric_text": "509,194 热度",
+        "metric": 509194,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E6%9B%9D%E8%89%BA%E4%BA%BA%E8%87%AA%E8%B4%B9%E9%AB%98%E5%AE%9A",
+        "category": "艺人",
+        "label": "热",
+        "local_score": 55.2
+      },
+      {
+        "title": "父亲遛狗幼童坠亡称已将狗处理",
+        "canonical": "父亲遛狗幼童坠亡称已将狗处理",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 12,
+        "metric_text": "484,698 热度",
+        "metric": 484698,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E7%88%B6%E4%BA%B2%E9%81%9B%E7%8B%97%E5%B9%BC%E7%AB%A5%E5%9D%A0%E4%BA%A1%E7%A7%B0%E5%B7%B2%E5%B0%86%E7%8B%97%E5%A4%84%E7%90%86",
+        "category": "民生新闻",
+        "label": "新",
+        "local_score": 51.6
+      },
+      {
+        "title": "刘恺威曾谈对杨幂的第一印象",
+        "canonical": "刘恺威曾谈对杨幂的第一印象",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 13,
+        "metric_text": "464,137 热度",
+        "metric": 464137,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E5%88%98%E6%81%BA%E5%A8%81%E6%9B%BE%E8%B0%88%E5%AF%B9%E6%9D%A8%E5%B9%82%E7%9A%84%E7%AC%AC%E4%B8%80%E5%8D%B0%E8%B1%A1",
+        "category": "艺人",
+        "label": "热",
+        "local_score": 47.9
+      },
+      {
+        "title": "律师谈肖战二开不退票",
+        "canonical": "律师谈肖战二开不退票",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 14,
+        "metric_text": "449,416 热度",
+        "metric": 449416,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E5%BE%8B%E5%B8%88%E8%B0%88%E8%82%96%E6%88%98%E4%BA%8C%E5%BC%80%E4%B8%8D%E9%80%80%E7%A5%A8",
+        "category": "艺人",
+        "label": "新",
+        "local_score": 44.3
+      },
+      {
+        "title": "陈瑜林子濠结婚",
+        "canonical": "陈瑜林子濠结婚",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 15,
+        "metric_text": "423,692 热度",
+        "metric": 423692,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E9%99%88%E7%91%9C%E6%9E%97%E5%AD%90%E6%BF%A0%E7%BB%93%E5%A9%9A",
+        "category": "艺人",
+        "label": "新",
+        "local_score": 40.6
+      },
+      {
+        "title": "A股",
+        "canonical": "a股",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 16,
+        "metric_text": "403,064 热度",
+        "metric": 403064,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=A%E8%82%A1",
+        "category": "财经",
+        "label": "新",
+        "local_score": 37.0
+      },
+      {
+        "title": "易梦玲因护照被偷错过维密秀",
+        "canonical": "易梦玲因护照被偷错过维密秀",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 17,
+        "metric_text": "387,519 热度",
+        "metric": 387519,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E6%98%93%E6%A2%A6%E7%8E%B2%E5%9B%A0%E6%8A%A4%E7%85%A7%E8%A2%AB%E5%81%B7%E9%94%99%E8%BF%87%E7%BB%B4%E5%AF%86%E7%A7%80",
+        "category": "艺人",
+        "label": "热",
+        "local_score": 33.4
+      },
+      {
+        "title": "男子捡到38000元留了道题给失主",
+        "canonical": "男子捡到38000元留了道题给失主",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 18,
+        "metric_text": "368,229 热度",
+        "metric": 368229,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E6%8D%A1%E5%88%B038000%E5%85%83%E7%95%99%E4%BA%86%E9%81%93%E9%A2%98%E7%BB%99%E5%A4%B1%E4%B8%BB",
+        "category": "正能量",
+        "label": "",
+        "local_score": 29.7
+      },
+      {
+        "title": "周深谈鸟巢演唱会暴雨",
+        "canonical": "周深谈鸟巢演唱会暴雨",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 19,
+        "metric_text": "345,411 热度",
+        "metric": 345411,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=%E5%91%A8%E6%B7%B1%E8%B0%88%E9%B8%9F%E5%B7%A2%E6%BC%94%E5%94%B1%E4%BC%9A%E6%9A%B4%E9%9B%A8",
+        "category": "演出",
+        "label": "新",
+        "local_score": 26.0
+      },
+      {
+        "title": "13岁男孩被打后多次求助宿管遭拒",
+        "canonical": "13岁男孩被打后多次求助宿管遭拒",
+        "channel_code": "weibo",
+        "channel_name": "微博",
+        "rank": 20,
+        "metric_text": "345,140 热度",
+        "metric": 345140,
+        "published_at": "2026-10-21T04:29:23.409642Z",
+        "age_hours": 0.0,
+        "source_url": "https://s.weibo.com/weibo?q=13%E5%B2%81%E7%94%B7%E5%AD%A9%E8%A2%AB%E6%89%93%E5%90%8E%E5%A4%9A%E6%AC%A1%E6%B1%82%E5%8A%A9%E5%AE%BF%E7%AE%A1%E9%81%AD%E6%8B%92",
+        "category": "民生新闻",
+        "label": "新",
+        "local_score": 22.4
+      }
+    ]
+  },
+  "rankings": {
+    "global": [
+      {
+        "id": "38263c556dfa",
+        "canonical": "ramayana ravana tandav song namit m nitesh t ranbir yash ar rahman vishal d kumar v",
+        "title": "Ramayana: Ravana Tandav (Song) | Namit M, Nitesh T | Ranbir, Yash | AR Rahman, Vishal D, Kumar V",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 1,
+            "metric_text": "6,215,764 views",
+            "source_url": "https://www.youtube.com/watch?v=p1potl1sbjA"
+          }
+        ],
+        "rank": 1,
+        "score": 100.0
+      },
+      {
+        "id": "9e90292f10f2",
+        "canonical": "spurs vs thunder",
+        "title": "spurs vs thunder",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 1,
+            "metric_text": "1000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=GB&q=spurs+vs+thunder"
+          }
+        ],
+        "rank": 2,
+        "score": 97.2
+      },
+      {
+        "id": "b1fc0d62e35b",
+        "canonical": "paredes",
+        "title": "Paredes",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 1,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Paredes"
+          }
+        ],
+        "rank": 3,
+        "score": 93.8
+      },
+      {
+        "id": "8f034c0ce0d2",
+        "canonical": "宝马员工争着离职挤崩系统",
+        "title": "宝马员工争着离职挤崩系统",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 1,
+            "metric_text": "2,380,230 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E5%AE%9D%E9%A9%AC%E5%91%98%E5%B7%A5%E4%BA%89%E7%9D%80%E7%A6%BB%E8%81%8C%E6%8C%A4%E5%B4%A9%E7%B3%BB%E7%BB%9F"
+          }
+        ],
+        "rank": 4,
+        "score": 93.8
+      },
+      {
+        "id": "9630c57ecc8e",
+        "canonical": "红飘带闪耀新时代",
+        "title": "红飘带闪耀新时代",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 1,
+            "metric_text": "7,904,414 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E7%BA%A2%E9%A3%98%E5%B8%A6%E9%97%AA%E8%80%80%E6%96%B0%E6%97%B6%E4%BB%A3"
+          }
+        ],
+        "rank": 5,
+        "score": 93.8
+      },
+      {
+        "id": "146684ab5334",
+        "canonical": "firestarter",
+        "title": "FIRESTARTER",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 2,
+            "metric_text": "737,831 views",
+            "source_url": "https://www.youtube.com/watch?v=miIihGHZ_7A"
+          }
+        ],
+        "rank": 6,
+        "score": 93.5
+      },
+      {
+        "id": "8c8ab889ca13",
+        "canonical": "justgolive",
+        "title": "#justgolive",
+        "channel_count": 1,
+        "channels": [
+          "tiktok"
+        ],
+        "signals": [
+          {
+            "channel_code": "tiktok",
+            "channel_name": "TikTok",
+            "rank": 1,
+            "metric_text": "45.2K posts · 38.1M views",
+            "source_url": "https://www.tiktok.com/tag/justgolive"
+          }
+        ],
+        "rank": 7,
+        "score": 91.3
+      },
+      {
+        "id": "e1c003bba131",
+        "canonical": "国台办点赞周杰伦",
+        "title": "国台办点赞周杰伦",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 2,
+            "metric_text": "7,808,806 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%8F%B0%E5%8A%9E%E7%82%B9%E8%B5%9E%E5%91%A8%E6%9D%B0%E4%BC%A6"
+          }
+        ],
+        "rank": 8,
+        "score": 90.2
+      },
+      {
+        "id": "6fb584caf0a5",
+        "canonical": "shrek 2 remastered announce trailer ps5 games",
+        "title": "Shrek 2 Remastered - Announce Trailer | PS5 Games",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 3,
+            "metric_text": "711,857 views",
+            "source_url": "https://www.youtube.com/watch?v=KtxiiD3IyAo"
+          }
+        ],
+        "rank": 9,
+        "score": 89.7
+      },
+      {
+        "id": "d77f3cc92171",
+        "canonical": "i woke up with this text from my landlord",
+        "title": "I woke up with this text from my landlord.",
+        "channel_count": 1,
+        "channels": [
+          "reddit"
+        ],
+        "signals": [
+          {
+            "channel_code": "reddit",
+            "channel_name": "Reddit",
+            "rank": 1,
+            "metric_text": "mildlyinfuriating",
+            "source_url": "https://www.reddit.com/r/mildlyinfuriating/comments/1xazo63/i_woke_up_with_this_text_from_my_landlord/"
+          }
+        ],
+        "rank": 10,
+        "score": 89.1
+      },
+      {
+        "id": "3abf4607a0ca",
+        "canonical": "徐静雨说詹姆斯王者归来",
+        "title": "徐静雨说詹姆斯王者归来",
+        "channel_count": 1,
+        "channels": [
+          "bilibili"
+        ],
+        "signals": [
+          {
+            "channel_code": "bilibili",
+            "channel_name": "Bilibili",
+            "rank": 1,
+            "metric_text": "",
+            "source_url": "https://search.bilibili.com/all?keyword=%E5%BE%90%E9%9D%99%E9%9B%A8%E8%AF%B4%E8%A9%B9%E5%A7%86%E6%96%AF%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5"
+          }
+        ],
+        "rank": 11,
+        "score": 89.1
+      },
+      {
+        "id": "ab8b4a256f13",
+        "canonical": "maracanã",
+        "title": "Maracanã",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 2,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Maracan%C3%A3"
+          }
+        ],
+        "rank": 12,
+        "score": 89.0
+      },
+      {
+        "id": "72b411080524",
+        "canonical": "拟出台的中国ai禁令震动全球",
+        "title": "拟出台的中国AI禁令震动全球",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 2,
+            "metric_text": "987,327 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E6%8B%9F%E5%87%BA%E5%8F%B0%E7%9A%84%E4%B8%AD%E5%9B%BDAI%E7%A6%81%E4%BB%A4%E9%9C%87%E5%8A%A8%E5%85%A8%E7%90%83"
+          }
+        ],
+        "rank": 13,
+        "score": 88.8
+      },
+      {
+        "id": "7880d3e805fd",
+        "canonical": "10 things i hate about you",
+        "title": "10 things i hate about you",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 2,
+            "metric_text": "200+",
+            "source_url": "https://trends.google.com/trends/explore?geo=MX&q=10+things+i+hate+about+you"
+          }
+        ],
+        "rank": 14,
+        "score": 88.4
+      },
+      {
+        "id": "2a3636299b56",
+        "canonical": "aday mara",
+        "title": "aday mara",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 3,
+            "metric_text": "500+",
+            "source_url": "https://trends.google.com/trends/explore?geo=MX&q=aday+mara"
+          }
+        ],
+        "rank": 15,
+        "score": 87.7
+      },
+      {
+        "id": "03633c18b3d7",
+        "canonical": "星巴克明日起在中国施行消费入座",
+        "title": "星巴克明日起在中国施行消费入座",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 3,
+            "metric_text": "7,713,409 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E6%98%9F%E5%B7%B4%E5%85%8B%E6%98%8E%E6%97%A5%E8%B5%B7%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%96%BD%E8%A1%8C%E6%B6%88%E8%B4%B9%E5%85%A5%E5%BA%A7"
+          }
+        ],
+        "rank": 16,
+        "score": 86.5
+      },
+      {
+        "id": "c557c4b83f53",
+        "canonical": "path to doomsday avengers endgame new pve mode trailer marvel rivals",
+        "title": "Path to Doomsday - Avengers: Endgame | New PvE Mode Trailer | Marvel Rivals",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 4,
+            "metric_text": "591,324 views",
+            "source_url": "https://www.youtube.com/watch?v=RUEk4Bak3Xk"
+          }
+        ],
+        "rank": 17,
+        "score": 85.9
+      },
+      {
+        "id": "fc44892cc2db",
+        "canonical": "一组数字看震撼人心的伟大远征",
+        "title": "一组数字看震撼人心的伟大远征",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 3,
+            "metric_text": "869,535 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E4%B8%80%E7%BB%84%E6%95%B0%E5%AD%97%E7%9C%8B%E9%9C%87%E6%92%BC%E4%BA%BA%E5%BF%83%E7%9A%84%E4%BC%9F%E5%A4%A7%E8%BF%9C%E5%BE%81"
+          }
+        ],
+        "rank": 18,
+        "score": 85.1
+      },
+      {
+        "id": "44371798498e",
+        "canonical": "married men whats one thing unmarried men should know before getting married",
+        "title": "Married men, what’s one thing unmarried men should know before getting married?",
+        "channel_count": 1,
+        "channels": [
+          "reddit"
+        ],
+        "signals": [
+          {
+            "channel_code": "reddit",
+            "channel_name": "Reddit",
+            "rank": 2,
+            "metric_text": "AskReddit",
+            "source_url": "https://www.reddit.com/r/AskReddit/comments/1xb49gp/married_men_whats_one_thing_unmarried_men_should/"
+          }
+        ],
+        "rank": 19,
+        "score": 84.6
+      },
+      {
+        "id": "6ecd98fe4f11",
+        "canonical": "人间异想计划实机首曝",
+        "title": "人间异想计划实机首曝",
+        "channel_count": 1,
+        "channels": [
+          "bilibili"
+        ],
+        "signals": [
+          {
+            "channel_code": "bilibili",
+            "channel_name": "Bilibili",
+            "rank": 2,
+            "metric_text": "",
+            "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%BA%E9%97%B4%E5%BC%82%E6%83%B3%E8%AE%A1%E5%88%92%E5%AE%9E%E6%9C%BA%E9%A6%96%E6%9B%9D"
+          }
+        ],
+        "rank": 20,
+        "score": 84.6
+      },
+      {
+        "id": "8cd4c172ebe8",
+        "canonical": "wemby",
+        "title": "Wemby",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 3,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Wemby"
+          }
+        ],
+        "rank": 21,
+        "score": 84.3
+      },
+      {
+        "id": "1552824a9bf5",
+        "canonical": "三个维度看前三季度经济含金量",
+        "title": "三个维度看前三季度经济含金量",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 4,
+            "metric_text": "7,617,170 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B8%89%E4%B8%AA%E7%BB%B4%E5%BA%A6%E7%9C%8B%E5%89%8D%E4%B8%89%E5%AD%A3%E5%BA%A6%E7%BB%8F%E6%B5%8E%E5%90%AB%E9%87%91%E9%87%8F"
+          }
+        ],
+        "rank": 22,
+        "score": 82.9
+      },
+      {
+        "id": "ff96856ca6ef",
+        "canonical": "扁鹊老婆",
+        "title": "扁鹊老婆",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 4,
+            "metric_text": "850,794 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E6%89%81%E9%B9%8A%E8%80%81%E5%A9%86"
+          }
+        ],
+        "rank": 23,
+        "score": 81.5
+      },
+      {
+        "id": "681768024382",
+        "canonical": "pokémon tcg pocket dual fusion official trailer",
+        "title": "Pokémon TCG Pocket: Dual Fusion 🧬 | Official Trailer",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 5,
+            "metric_text": "251,620 views",
+            "source_url": "https://www.youtube.com/watch?v=fGszU4YxLBI"
+          }
+        ],
+        "rank": 24,
+        "score": 81.2
+      },
+      {
+        "id": "ad375da452d8",
+        "canonical": "musk ordered starlink slowdown for ukraine wsj",
+        "title": "Musk ordered Starlink slowdown for Ukraine: WSJ",
+        "channel_count": 1,
+        "channels": [
+          "reddit"
+        ],
+        "signals": [
+          {
+            "channel_code": "reddit",
+            "channel_name": "Reddit",
+            "rank": 3,
+            "metric_text": "worldnews",
+            "source_url": "https://www.reddit.com/r/worldnews/comments/1xb3sok/musk_ordered_starlink_slowdown_for_ukraine_wsj/"
+          }
+        ],
+        "rank": 25,
+        "score": 80.1
+      },
+      {
+        "id": "70b99761f59d",
+        "canonical": "巴黎42巴萨",
+        "title": "巴黎4-2巴萨",
+        "channel_count": 1,
+        "channels": [
+          "bilibili"
+        ],
+        "signals": [
+          {
+            "channel_code": "bilibili",
+            "channel_name": "Bilibili",
+            "rank": 3,
+            "metric_text": "",
+            "source_url": "https://search.bilibili.com/all?keyword=%E5%B7%B4%E9%BB%8E4-2%E5%B7%B4%E8%90%A8"
+          }
+        ],
+        "rank": 26,
+        "score": 80.1
+      },
+      {
+        "id": "b57bc101627e",
+        "canonical": "chet",
+        "title": "Chet",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 4,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Chet"
+          }
+        ],
+        "rank": 27,
+        "score": 79.5
+      },
+      {
+        "id": "00e5764ac86c",
+        "canonical": "宝马员工争着离职",
+        "title": "宝马员工争着离职",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 5,
+            "metric_text": "7,522,436 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E5%AE%9D%E9%A9%AC%E5%91%98%E5%B7%A5%E4%BA%89%E7%9D%80%E7%A6%BB%E8%81%8C"
+          }
+        ],
+        "rank": 28,
+        "score": 79.3
+      },
+      {
+        "id": "b245f1a587a6",
+        "canonical": "enquete a fazenda",
+        "title": "enquete a fazenda",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 4,
+            "metric_text": "200+",
+            "source_url": "https://trends.google.com/trends/explore?geo=BR&q=enquete+a+fazenda"
+          }
+        ],
+        "rank": 29,
+        "score": 77.9
+      },
+      {
+        "id": "f92eea14e364",
+        "canonical": "武志红 李雪",
+        "title": "武志红 李雪",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 5,
+            "metric_text": "797,558 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E6%AD%A6%E5%BF%97%E7%BA%A2+%E6%9D%8E%E9%9B%AA"
+          }
+        ],
+        "rank": 30,
+        "score": 77.8
+      }
+    ],
+    "breakout": [
+      {
+        "id": "38263c556dfa",
+        "canonical": "ramayana ravana tandav song namit m nitesh t ranbir yash ar rahman vishal d kumar v",
+        "title": "Ramayana: Ravana Tandav (Song) | Namit M, Nitesh T | Ranbir, Yash | AR Rahman, Vishal D, Kumar V",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 1,
+            "metric_text": "6,215,764 views",
+            "source_url": "https://www.youtube.com/watch?v=p1potl1sbjA"
+          }
+        ],
+        "rank": 1,
+        "score": 100.0,
+        "breakout_score": 62.0,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 1
+      },
+      {
+        "id": "9e90292f10f2",
+        "canonical": "spurs vs thunder",
+        "title": "spurs vs thunder",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 1,
+            "metric_text": "1000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=GB&q=spurs+vs+thunder"
+          }
+        ],
+        "rank": 2,
+        "score": 97.2,
+        "breakout_score": 60.3,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 2
+      },
+      {
+        "id": "b1fc0d62e35b",
+        "canonical": "paredes",
+        "title": "Paredes",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 1,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Paredes"
+          }
+        ],
+        "rank": 3,
+        "score": 93.8,
+        "breakout_score": 58.2,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 3
+      },
+      {
+        "id": "8f034c0ce0d2",
+        "canonical": "宝马员工争着离职挤崩系统",
+        "title": "宝马员工争着离职挤崩系统",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 1,
+            "metric_text": "2,380,230 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E5%AE%9D%E9%A9%AC%E5%91%98%E5%B7%A5%E4%BA%89%E7%9D%80%E7%A6%BB%E8%81%8C%E6%8C%A4%E5%B4%A9%E7%B3%BB%E7%BB%9F"
+          }
+        ],
+        "rank": 4,
+        "score": 93.8,
+        "breakout_score": 58.2,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 4
+      },
+      {
+        "id": "9630c57ecc8e",
+        "canonical": "红飘带闪耀新时代",
+        "title": "红飘带闪耀新时代",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 1,
+            "metric_text": "7,904,414 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E7%BA%A2%E9%A3%98%E5%B8%A6%E9%97%AA%E8%80%80%E6%96%B0%E6%97%B6%E4%BB%A3"
+          }
+        ],
+        "rank": 5,
+        "score": 93.8,
+        "breakout_score": 58.2,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 5
+      },
+      {
+        "id": "146684ab5334",
+        "canonical": "firestarter",
+        "title": "FIRESTARTER",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 2,
+            "metric_text": "737,831 views",
+            "source_url": "https://www.youtube.com/watch?v=miIihGHZ_7A"
+          }
+        ],
+        "rank": 6,
+        "score": 93.5,
+        "breakout_score": 58.0,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 6
+      },
+      {
+        "id": "e1c003bba131",
+        "canonical": "国台办点赞周杰伦",
+        "title": "国台办点赞周杰伦",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 2,
+            "metric_text": "7,808,806 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E5%9B%BD%E5%8F%B0%E5%8A%9E%E7%82%B9%E8%B5%9E%E5%91%A8%E6%9D%B0%E4%BC%A6"
+          }
+        ],
+        "rank": 8,
+        "score": 90.2,
+        "breakout_score": 55.9,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 7
+      },
+      {
+        "id": "6fb584caf0a5",
+        "canonical": "shrek 2 remastered announce trailer ps5 games",
+        "title": "Shrek 2 Remastered - Announce Trailer | PS5 Games",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 3,
+            "metric_text": "711,857 views",
+            "source_url": "https://www.youtube.com/watch?v=KtxiiD3IyAo"
+          }
+        ],
+        "rank": 9,
+        "score": 89.7,
+        "breakout_score": 55.6,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 8
+      },
+      {
+        "id": "d77f3cc92171",
+        "canonical": "i woke up with this text from my landlord",
+        "title": "I woke up with this text from my landlord.",
+        "channel_count": 1,
+        "channels": [
+          "reddit"
+        ],
+        "signals": [
+          {
+            "channel_code": "reddit",
+            "channel_name": "Reddit",
+            "rank": 1,
+            "metric_text": "mildlyinfuriating",
+            "source_url": "https://www.reddit.com/r/mildlyinfuriating/comments/1xazo63/i_woke_up_with_this_text_from_my_landlord/"
+          }
+        ],
+        "rank": 10,
+        "score": 89.1,
+        "breakout_score": 55.2,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 9
+      },
+      {
+        "id": "3abf4607a0ca",
+        "canonical": "徐静雨说詹姆斯王者归来",
+        "title": "徐静雨说詹姆斯王者归来",
+        "channel_count": 1,
+        "channels": [
+          "bilibili"
+        ],
+        "signals": [
+          {
+            "channel_code": "bilibili",
+            "channel_name": "Bilibili",
+            "rank": 1,
+            "metric_text": "",
+            "source_url": "https://search.bilibili.com/all?keyword=%E5%BE%90%E9%9D%99%E9%9B%A8%E8%AF%B4%E8%A9%B9%E5%A7%86%E6%96%AF%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5"
+          }
+        ],
+        "rank": 11,
+        "score": 89.1,
+        "breakout_score": 55.2,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 10
+      },
+      {
+        "id": "ab8b4a256f13",
+        "canonical": "maracanã",
+        "title": "Maracanã",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 2,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Maracan%C3%A3"
+          }
+        ],
+        "rank": 12,
+        "score": 89.0,
+        "breakout_score": 55.2,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 11
+      },
+      {
+        "id": "72b411080524",
+        "canonical": "拟出台的中国ai禁令震动全球",
+        "title": "拟出台的中国AI禁令震动全球",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 2,
+            "metric_text": "987,327 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E6%8B%9F%E5%87%BA%E5%8F%B0%E7%9A%84%E4%B8%AD%E5%9B%BDAI%E7%A6%81%E4%BB%A4%E9%9C%87%E5%8A%A8%E5%85%A8%E7%90%83"
+          }
+        ],
+        "rank": 13,
+        "score": 88.8,
+        "breakout_score": 55.1,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 12
+      },
+      {
+        "id": "7880d3e805fd",
+        "canonical": "10 things i hate about you",
+        "title": "10 things i hate about you",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 2,
+            "metric_text": "200+",
+            "source_url": "https://trends.google.com/trends/explore?geo=MX&q=10+things+i+hate+about+you"
+          }
+        ],
+        "rank": 14,
+        "score": 88.4,
+        "breakout_score": 54.8,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 13
+      },
+      {
+        "id": "2a3636299b56",
+        "canonical": "aday mara",
+        "title": "aday mara",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 3,
+            "metric_text": "500+",
+            "source_url": "https://trends.google.com/trends/explore?geo=MX&q=aday+mara"
+          }
+        ],
+        "rank": 15,
+        "score": 87.7,
+        "breakout_score": 54.4,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 14
+      },
+      {
+        "id": "03633c18b3d7",
+        "canonical": "星巴克明日起在中国施行消费入座",
+        "title": "星巴克明日起在中国施行消费入座",
+        "channel_count": 1,
+        "channels": [
+          "baidu"
+        ],
+        "signals": [
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 3,
+            "metric_text": "7,713,409 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E6%98%9F%E5%B7%B4%E5%85%8B%E6%98%8E%E6%97%A5%E8%B5%B7%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%96%BD%E8%A1%8C%E6%B6%88%E8%B4%B9%E5%85%A5%E5%BA%A7"
+          }
+        ],
+        "rank": 16,
+        "score": 86.5,
+        "breakout_score": 53.6,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 15
+      },
+      {
+        "id": "c557c4b83f53",
+        "canonical": "path to doomsday avengers endgame new pve mode trailer marvel rivals",
+        "title": "Path to Doomsday - Avengers: Endgame | New PvE Mode Trailer | Marvel Rivals",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 4,
+            "metric_text": "591,324 views",
+            "source_url": "https://www.youtube.com/watch?v=RUEk4Bak3Xk"
+          }
+        ],
+        "rank": 17,
+        "score": 85.9,
+        "breakout_score": 53.3,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 16
+      },
+      {
+        "id": "fc44892cc2db",
+        "canonical": "一组数字看震撼人心的伟大远征",
+        "title": "一组数字看震撼人心的伟大远征",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 3,
+            "metric_text": "869,535 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E4%B8%80%E7%BB%84%E6%95%B0%E5%AD%97%E7%9C%8B%E9%9C%87%E6%92%BC%E4%BA%BA%E5%BF%83%E7%9A%84%E4%BC%9F%E5%A4%A7%E8%BF%9C%E5%BE%81"
+          }
+        ],
+        "rank": 18,
+        "score": 85.1,
+        "breakout_score": 52.8,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 17
+      },
+      {
+        "id": "44371798498e",
+        "canonical": "married men whats one thing unmarried men should know before getting married",
+        "title": "Married men, what’s one thing unmarried men should know before getting married?",
+        "channel_count": 1,
+        "channels": [
+          "reddit"
+        ],
+        "signals": [
+          {
+            "channel_code": "reddit",
+            "channel_name": "Reddit",
+            "rank": 2,
+            "metric_text": "AskReddit",
+            "source_url": "https://www.reddit.com/r/AskReddit/comments/1xb49gp/married_men_whats_one_thing_unmarried_men_should/"
+          }
+        ],
+        "rank": 19,
+        "score": 84.6,
+        "breakout_score": 52.5,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 18
+      },
+      {
+        "id": "6ecd98fe4f11",
+        "canonical": "人间异想计划实机首曝",
+        "title": "人间异想计划实机首曝",
+        "channel_count": 1,
+        "channels": [
+          "bilibili"
+        ],
+        "signals": [
+          {
+            "channel_code": "bilibili",
+            "channel_name": "Bilibili",
+            "rank": 2,
+            "metric_text": "",
+            "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%BA%E9%97%B4%E5%BC%82%E6%83%B3%E8%AE%A1%E5%88%92%E5%AE%9E%E6%9C%BA%E9%A6%96%E6%9B%9D"
+          }
+        ],
+        "rank": 20,
+        "score": 84.6,
+        "breakout_score": 52.5,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 19
+      },
+      {
+        "id": "8cd4c172ebe8",
+        "canonical": "wemby",
+        "title": "Wemby",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 3,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=Wemby"
+          }
+        ],
+        "rank": 21,
+        "score": 84.3,
+        "breakout_score": 52.3,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 20
+      }
+    ]
+  },
+  "methodology": {
+    "global": "先把每个渠道名次归一化，再对同名/高相似话题聚合；跨渠道出现会获得额外权重。",
+    "breakout": "与上一次采集比较名次、综合分和渠道覆盖；首次出现的话题标记为 NEW。",
+    "caveat": "不同平台并不存在统一的“全球热搜”口径；综合榜是跨渠道信号指数，不等于绝对搜索量。"
+  }
+}

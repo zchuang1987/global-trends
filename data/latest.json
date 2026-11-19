@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-18T07:07:42.988160Z",
+  "generated_at": "2026-11-19T07:08:35.416509Z",
   "timezone": "Asia/Singapore",
   "title": "World Signal / 全球渠道热搜",
   "summary": {
     "channels_total": 9,
     "channels_active": 8,
     "signals_total": 143,
-    "cross_channel_topics": 2
+    "cross_channel_topics": 3
   },
   "health": [
     {
@@ -30,11 +30,11 @@
       "mark": "TT",
       "official": true,
       "source_url": "https://ads.tiktok.com/business/creativecenter/hashtag/statistics/pc/en",
-      "status": "ok",
-      "mode": "official_via_fetch_proxy",
+      "status": "stale",
+      "mode": "cached",
       "item_count": 3,
-      "note": "TikTok Creative Center 7 日热门标签；未登录页面只公开榜首样本",
-      "error": ""
+      "note": "本次采集失败，沿用上次成功数据",
+      "error": "RuntimeError: Failed after 2 attempts: HTTP Error 401: Unauthorized"
     },
     {
       "code": "x",
@@ -131,328 +131,323 @@
   "channel_items": {
     "google": [
       {
-        "title": "quentin grimes",
-        "canonical": "quentin grimes",
+        "title": "josh green",
+        "canonical": "josh green",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 1,
-        "metric_text": "1000+",
-        "metric": 1000,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=quentin+grimes",
-        "region": "IN",
-        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9L_5M106prBUl58FjGe1zmKYsUUo4Q1pDrP5Tsvsy5F8g2PoxZCW37wmjA9Q",
-        "regions": [
-          "IN",
-          "ID",
-          "NG"
-        ],
-        "region_count": 3,
-        "local_score": 98.0
-      },
-      {
-        "title": "lakers",
-        "canonical": "lakers",
-        "channel_code": "google",
-        "channel_name": "Google",
-        "rank": 2,
-        "metric_text": "1000+",
-        "metric": 1000,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=lakers",
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-11-19T05:40:00Z",
+        "age_hours": 1.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=josh+green",
         "region": "ID",
-        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIBZ4GWdb1HXCaSX4GC_NFRnDpFA9KSyAfon_ei0Wzxa_1TwJytSqJefT6O0E",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW6j8r9DwvozDLKmTwBHyagFN5tzVuSNVRGb95cQpttbYqFqVgM2SpKKAXsLM",
         "regions": [
           "ID",
           "BR"
         ],
         "region_count": 2,
-        "local_score": 91.1
+        "local_score": 90.0
       },
       {
-        "title": "xiaomi 18 pro max",
-        "canonical": "xiaomi 18 pro max",
+        "title": "kospi",
+        "canonical": "kospi",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 2,
+        "metric_text": "2000+",
+        "metric": 2000,
+        "published_at": "2026-11-19T06:40:00Z",
+        "age_hours": 0.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=kospi",
+        "region": "IN",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvwAb_K4KV4TovyDCHq6gYTSDmKiut04tPFDWmiZje2eShTyamrTtO0bhANgg",
+        "regions": [
+          "IN"
+        ],
+        "region_count": 1,
+        "local_score": 89.8
+      },
+      {
+        "title": "when is black friday 2026",
+        "canonical": "when is black friday 2026",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 3,
-        "metric_text": "200+",
-        "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=xiaomi+18+pro+max",
-        "region": "ID",
-        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6QP-bVnxUxGucu2_GgmXDXYrvYVjat__pTk6uHgVyD7wH0cCvmUSiAb4ESwc",
-        "regions": [
-          "ID",
-          "MX"
-        ],
-        "region_count": 2,
-        "local_score": 82.9
-      },
-      {
-        "title": "brandon miller",
-        "canonical": "brandon miller",
-        "channel_code": "google",
-        "channel_name": "Google",
-        "rank": 4,
-        "metric_text": "200+",
-        "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=brandon+miller",
-        "region": "BR",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg3nhzbcUwa0l2WnLvx7KHBAXq1u-6P8gSfkA5fhrkbo6PlUvPDGsWRp8Ol18",
-        "regions": [
-          "BR",
-          "DE"
-        ],
-        "region_count": 2,
-        "local_score": 79.3
-      },
-      {
-        "title": "carson cooper",
-        "canonical": "carson cooper",
-        "channel_code": "google",
-        "channel_name": "Google",
-        "rank": 5,
-        "metric_text": "200+",
-        "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=carson+cooper",
-        "region": "ID",
-        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTidC7yXvVkUDHbt9SnmNRbULZ2RBve-xcv9f2rlVzxeV1uSigNx-Ys4lvZ2d8",
-        "regions": [
-          "ID",
-          "MX"
-        ],
-        "region_count": 2,
-        "local_score": 75.7
-      },
-      {
-        "title": "rockstar gta 6 version 1.002.001",
-        "canonical": "rockstar gta 6 version 1002001",
-        "channel_code": "google",
-        "channel_name": "Google",
-        "rank": 6,
-        "metric_text": "2000+",
-        "metric": 2000,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=GB&q=rockstar+gta+6+version+1.002.001",
+        "metric_text": "1000+",
+        "metric": 1000,
+        "published_at": "2026-11-19T06:40:00Z",
+        "age_hours": 0.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=GB&q=when+is+black+friday+2026",
         "region": "GB",
-        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfuCzFQ0U4pkQxfYvebdhCswWh9X70OBpf3oX7dpAcq6txgulOU5tXj3tM8TY",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf_hxfBul07_akl4xdGg_mEhbTx-8AGIGlv4B5Yg1M_cRqvoe6V8slmicwdps",
         "regions": [
           "GB"
         ],
         "region_count": 1,
-        "local_score": 75.4
+        "local_score": 84.2
       },
       {
-        "title": "mega millions drawing november 17",
-        "canonical": "mega millions drawing november 17",
+        "title": "weather los angeles",
+        "canonical": "weather los angeles",
         "channel_code": "google",
         "channel_name": "Google",
-        "rank": 7,
+        "rank": 4,
         "metric_text": "1000+",
         "metric": 1000,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=US&q=mega+millions+drawing+november+17",
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=US&q=weather+los+angeles",
         "region": "US",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7mZdNw6_9yuXwKL357bdgmA1SkVSbUjGd-XtnjObq_5IrxhATZg43bGGIC-I",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTak4sLdxH-5a4vir7fqUgPHrT6KIWsavK99-uVlKiMvp32ax1YmdSRnsJoNIw",
         "regions": [
           "US"
         ],
         "region_count": 1,
-        "local_score": 69.9
+        "local_score": 80.6
       },
       {
-        "title": "mum vs goa",
-        "canonical": "mum vs goa",
+        "title": "トヨタ・カローラ",
+        "canonical": "トヨタカローラ",
         "channel_code": "google",
         "channel_name": "Google",
-        "rank": 8,
-        "metric_text": "500+",
-        "metric": 500,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=mum+vs+goa",
-        "region": "IN",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOdiJH4gDDTBlJ9_gwWuFarpC4-afNH8B4yN0nNfesyF02C0DIPHUWx694KIM",
-        "regions": [
-          "IN"
-        ],
-        "region_count": 1,
-        "local_score": 64.3
-      },
-      {
-        "title": "モナキ サカイjr",
-        "canonical": "モナキ サカイjr",
-        "channel_code": "google",
-        "channel_name": "Google",
-        "rank": 9,
-        "metric_text": "200+",
-        "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=JP&q=%E3%83%A2%E3%83%8A%E3%82%AD+%E3%82%B5%E3%82%AB%E3%82%A4jr",
+        "rank": 5,
+        "metric_text": "1000+",
+        "metric": 1000,
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=JP&q=%E3%83%88%E3%83%A8%E3%82%BF%E3%83%BB%E3%82%AB%E3%83%AD%E3%83%BC%E3%83%A9",
         "region": "JP",
-        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRKcMLZ8LhpApWAvh5tQIGKqmlR_EWTCnPpcZPVjHYPvuwcvGtU5C86pADxPg",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMFtMjvsbGyhplOuuqSywPzaGPP2gaO7DukiZvRxFrpDcKe90pwhKaunyjs7w",
         "regions": [
           "JP"
         ],
         "region_count": 1,
-        "local_score": 58.1
+        "local_score": 77.0
       },
       {
-        "title": "spritpreisdeckel",
-        "canonical": "spritpreisdeckel",
+        "title": "kernkraftwerk tschernobyl",
+        "canonical": "kernkraftwerk tschernobyl",
         "channel_code": "google",
         "channel_name": "Google",
-        "rank": 10,
+        "rank": 6,
         "metric_text": "200+",
         "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=DE&q=spritpreisdeckel",
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=DE&q=kernkraftwerk+tschernobyl",
         "region": "DE",
-        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc-3X-xGdfn_PMAzXrubYdeyKoBl1_zfTcoOVPbv1xA2mYCziyDbuPkNZqzw8",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6WqtLoP7ronOVe9h0SMuvgsrPokX-564UKFcxBxdxxk8PyKqYUkmWWgBUzrI",
         "regions": [
           "DE"
         ],
         "region_count": 1,
-        "local_score": 54.5
+        "local_score": 68.8
       },
       {
-        "title": "ahmad dhani",
-        "canonical": "ahmad dhani",
+        "title": "binance",
+        "canonical": "binance",
         "channel_code": "google",
         "channel_name": "Google",
-        "rank": 11,
+        "rank": 7,
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-11-19T05:00:00Z",
+        "age_hours": 2.14,
+        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=binance",
+        "region": "BR",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUIDp-lzjtleRylOnKuKK3-mevWeOmdrz5zpO6vSiZ0uyFzMmR4bO514DHOTc",
+        "regions": [
+          "BR"
+        ],
+        "region_count": 1,
+        "local_score": 65.2
+      },
+      {
+        "title": "joe hart",
+        "canonical": "joe hart",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 8,
         "metric_text": "100+",
         "metric": 100,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=ahmad+dhani",
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=joe+hart",
         "region": "ID",
-        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwiOixR-thtMDIwqKifXTFDeDu4aM9qsWFQDOBXj7UgYaebzqJ0NxwzBBZqAY",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStSTyg3wzG5vqzsWQSg6NjGotpXJr2FQa2wzuCVO2nCLgTdY0gt5skrr2L-4g",
         "regions": [
           "ID"
         ],
         "region_count": 1,
-        "local_score": 48.9
+        "local_score": 59.6
       },
       {
-        "title": "bsf admit card",
-        "canonical": "bsf admit card",
+        "title": "international mens day",
+        "canonical": "international mens day",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 9,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-11-19T06:20:00Z",
+        "age_hours": 0.81,
+        "source_url": "https://trends.google.com/trends/explore?geo=NG&q=international+mens+day",
+        "region": "NG",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9BuMw5Y201qhKb1r6YDgyzIH7BzoZfgVZRagWHc4xaH-Bmhm3_mWNlZEMKtU",
+        "regions": [
+          "NG"
+        ],
+        "region_count": 1,
+        "local_score": 56.1
+      },
+      {
+        "title": "jennifer lawrence",
+        "canonical": "jennifer lawrence",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 10,
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-11-19T06:20:00Z",
+        "age_hours": 0.81,
+        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=jennifer+lawrence",
+        "region": "MX",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRP_Hmoz4xxOH_-cJ2VcAHol_z7tI5D7ch4xssPXoVfUSsiNy2E4El5NkYJFJ8",
+        "regions": [
+          "MX"
+        ],
+        "region_count": 1,
+        "local_score": 52.5
+      },
+      {
+        "title": "enquetes a fazenda 18",
+        "canonical": "enquetes a fazenda 18",
+        "channel_code": "google",
+        "channel_name": "Google",
+        "rank": 11,
+        "metric_text": "2000+",
+        "metric": 2000,
+        "published_at": "2026-11-19T04:40:00Z",
+        "age_hours": 2.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=enquetes+a+fazenda+18",
+        "region": "BR",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTEu1AjefcSTQq9wly93QgWoKdp-7ehsR-7d_M2HMZKpVl35UleXvSDk7LhjY",
+        "regions": [
+          "BR"
+        ],
+        "region_count": 1,
+        "local_score": 57.5
+      },
+      {
+        "title": "kospi moneycontrol",
+        "canonical": "kospi moneycontrol",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 12,
-        "metric_text": "500+",
-        "metric": 500,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=bsf+admit+card",
+        "metric_text": "1000+",
+        "metric": 1000,
+        "published_at": "2026-11-19T06:40:00Z",
+        "age_hours": 0.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=IN&q=kospi+moneycontrol",
         "region": "IN",
-        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtFjzStA37p3tU5hD5uTSlEBxjU-nOu9wo2SOY9jqnKMvTXA0zHnNEheO2nE4",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQSGgLQDW5RnVnxkS1Q-Shqi4a1pfO13ETlVdEAVDty7Qz9JYlsbzE1Ld0dr8",
         "regions": [
           "IN"
         ],
         "region_count": 1,
-        "local_score": 50.0
+        "local_score": 52.0
       },
       {
-        "title": "grimes lakers",
-        "canonical": "grimes lakers",
+        "title": "qatar airways",
+        "canonical": "qatar airways",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 13,
-        "metric_text": "500+",
-        "metric": 500,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=US&q=grimes+lakers",
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=US&q=qatar+airways",
         "region": "US",
-        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9L_5M106prBUl58FjGe1zmKYsUUo4Q1pDrP5Tsvsy5F8g2PoxZCW37wmjA9Q",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT58ZvtXtu1rSkJYtwxsK-utkQ8-dh1T5fjHbTvglKwaEs2xt8k9DfA7r_mK7A",
         "regions": [
           "US"
         ],
         "region_count": 1,
-        "local_score": 46.4
+        "local_score": 43.7
       },
       {
-        "title": "レイカーズ",
-        "canonical": "レイカーズ",
+        "title": "biberdamm",
+        "canonical": "biberdamm",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 14,
         "metric_text": "200+",
         "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=JP&q=%E3%83%AC%E3%82%A4%E3%82%AB%E3%83%BC%E3%82%BA",
-        "region": "JP",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR74_y2N8z1L57goIlcIEsL0FJoPasCrf4h8gh0XyU8tPhzgenlL3zIHzo7fN0",
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=DE&q=biberdamm",
+        "region": "DE",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZpoK04Z3ynHyR-mW7I-KAx5iRZRMBoJ797qq8rvHolV6S8kFdKK5zJ0IXuHo",
         "regions": [
-          "JP"
+          "DE"
         ],
         "region_count": 1,
         "local_score": 40.2
       },
       {
-        "title": "enquete fazenda 18",
-        "canonical": "enquete fazenda 18",
+        "title": "nuggets vs celtics",
+        "canonical": "nuggets vs celtics",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 15,
         "metric_text": "200+",
         "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=BR&q=enquete+fazenda+18",
-        "region": "BR",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotxqQSihg4za5YqWLN919cpe4XyF4H5b_WmH8JMg0dRM3-7-rLA5yY4exCc0",
+        "published_at": "2026-11-19T05:40:00Z",
+        "age_hours": 1.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=NG&q=nuggets+vs+celtics",
+        "region": "NG",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbOGFywThX-25sNMeJpYiV504DVMyG6lqVa4Dq8ATtEI23z8w_GLYlKz16TaY",
         "regions": [
-          "BR"
+          "NG"
         ],
         "region_count": 1,
         "local_score": 36.6
       },
       {
-        "title": "brice sensabaugh",
-        "canonical": "brice sensabaugh",
+        "title": "tfl oyster photocard data breach",
+        "canonical": "tfl oyster photocard data breach",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 16,
-        "metric_text": "200+",
-        "metric": 200,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=DE&q=brice+sensabaugh",
-        "region": "DE",
-        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIBZ4GWdb1HXCaSX4GC_NFRnDpFA9KSyAfon_ei0Wzxa_1TwJytSqJefT6O0E",
+        "metric_text": "100+",
+        "metric": 100,
+        "published_at": "2026-11-19T06:40:00Z",
+        "age_hours": 0.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=GB&q=tfl+oyster+photocard+data+breach",
+        "region": "GB",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAKbPTBJM8v-bD2YzE5eOu5920Fe4NgF3jW7UDaw12BRLqVM4zKtsFWrBYTww",
         "regions": [
-          "DE"
+          "GB"
         ],
         "region_count": 1,
-        "local_score": 33.0
+        "local_score": 31.0
       },
       {
-        "title": "gta vi release date",
-        "canonical": "gta vi release date",
+        "title": "apec",
+        "canonical": "apec",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 17,
         "metric_text": "100+",
         "metric": 100,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=gta+vi+release+date",
+        "published_at": "2026-11-19T06:20:00Z",
+        "age_hours": 0.81,
+        "source_url": "https://trends.google.com/trends/explore?geo=ID&q=apec",
         "region": "ID",
-        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsJbTyNULGnsxXIUf7GK8H44DRQrWZl4nxMe56WOxHuQzK3a-cgnarCT944W0",
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwskTfFplb9y59OlaT2zhHdo4MiJeT_XkWzMy53yTRiTuq514mHV51yulEkKI",
         "regions": [
           "ID"
         ],
@@ -460,37 +455,37 @@
         "local_score": 27.4
       },
       {
-        "title": "manchester evening news",
-        "canonical": "manchester evening news",
+        "title": "日本中央競馬会",
+        "canonical": "日本中央競馬会",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 18,
         "metric_text": "100+",
         "metric": 100,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=GB&q=manchester+evening+news",
-        "region": "GB",
-        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIlUgSe5Lea9UFctxJbymKfHY2GDQoZOHfMkCboQ3GWvnyywK4InR2OxG6Aw",
+        "published_at": "2026-11-19T06:50:00Z",
+        "age_hours": 0.31,
+        "source_url": "https://trends.google.com/trends/explore?geo=JP&q=%E6%97%A5%E6%9C%AC%E4%B8%AD%E5%A4%AE%E7%AB%B6%E9%A6%AC%E4%BC%9A",
+        "region": "JP",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKQ1kJ0FQVCg5tFUISv_863SD5SuAjF-6MDQYIiTicpqVThVEldov-uzxUA",
         "regions": [
-          "GB"
+          "JP"
         ],
         "region_count": 1,
         "local_score": 23.8
       },
       {
-        "title": "coby white",
-        "canonical": "coby white",
+        "title": "joseph zada",
+        "canonical": "joseph zada",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 19,
         "metric_text": "100+",
         "metric": 100,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=coby+white",
+        "published_at": "2026-11-19T06:10:00Z",
+        "age_hours": 0.98,
+        "source_url": "https://trends.google.com/trends/explore?geo=MX&q=joseph+zada",
         "region": "MX",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcN9Mdg2dnvELHwGRhmOQNcGdIIWVka_JeTILJaDMsC1xeOM5PnT2ihcywI4s",
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6UtxXAoVwtZyjDAwbaeQvtQojMdHSAZ_afoFtHF_SJAmjZV3yz_1BjxKZIlw",
         "regions": [
           "MX"
         ],
@@ -498,23 +493,23 @@
         "local_score": 20.3
       },
       {
-        "title": "nollywood",
-        "canonical": "nollywood",
+        "title": "strip club gta 6 location",
+        "canonical": "strip club gta 6 location",
         "channel_code": "google",
         "channel_name": "Google",
         "rank": 20,
-        "metric_text": "100+",
-        "metric": 100,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://trends.google.com/trends/explore?geo=NG&q=nollywood",
-        "region": "NG",
-        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIZQj_Ip86JZYQLgSR6MNUv7n1mUhMSRKpxexnQaSgt6W6ged4a_14UajeIxU",
+        "metric_text": "200+",
+        "metric": 200,
+        "published_at": "2026-11-19T06:40:00Z",
+        "age_hours": 0.48,
+        "source_url": "https://trends.google.com/trends/explore?geo=US&q=strip+club+gta+6+location",
+        "region": "US",
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc81es-isrnV-OZjTzX6zUyJc_FX_GcwkcwQvV4MMXayB6xHu_LwGHSbiLXlo",
         "regions": [
-          "NG"
+          "US"
         ],
         "region_count": 1,
-        "local_score": 16.7
+        "local_score": 18.7
       }
     ],
     "tiktok": [
@@ -563,263 +558,263 @@
     ],
     "x": [
       {
-        "title": "毒うさぎ",
-        "canonical": "毒うさぎ",
+        "title": "재난문자",
+        "canonical": "재난문자",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 1,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%81%86%E3%81%95%E3%81%8E",
+        "source_url": "https://twitter.com/search?q=%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90",
         "local_score": 93.3
       },
       {
-        "title": "毒うさぎ",
-        "canonical": "毒うさぎ",
+        "title": "#水見式",
+        "canonical": "水見式",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 2,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%81%86%E3%81%95%E3%81%8E",
+        "source_url": "https://twitter.com/search?q=%23%E6%B0%B4%E8%A6%8B%E5%BC%8F",
         "local_score": 88.6
       },
       {
-        "title": "毒ウサギ",
-        "canonical": "毒ウサギ",
+        "title": "念の強さ",
+        "canonical": "念の強さ",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 3,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%82%A6%E3%82%B5%E3%82%AE",
+        "source_url": "https://twitter.com/search?q=%E5%BF%B5%E3%81%AE%E5%BC%B7%E3%81%95",
         "local_score": 83.9
       },
       {
-        "title": "Grimes",
-        "canonical": "grimes",
+        "title": "#InternationalMensDay",
+        "canonical": "internationalmensday",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 4,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=Grimes",
+        "source_url": "https://twitter.com/search?q=%23InternationalMensDay",
         "local_score": 79.1
       },
       {
-        "title": "#RLHolidaySG",
-        "canonical": "rlholidaysg",
+        "title": "#今年もマックにグラコロがやってくる",
+        "canonical": "今年もマックにグラコロがやってくる",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 5,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%23RLHolidaySG",
+        "source_url": "https://twitter.com/search?q=%23%E4%BB%8A%E5%B9%B4%E3%82%82%E3%83%9E%E3%83%83%E3%82%AF%E3%81%AB%E3%82%B0%E3%83%A9%E3%82%B3%E3%83%AD%E3%81%8C%E3%82%84%E3%81%A3%E3%81%A6%E3%81%8F%E3%82%8B",
         "local_score": 74.4
       },
       {
-        "title": "#RalphLaurenSG",
-        "canonical": "ralphlaurensg",
+        "title": "#TümMagdurlarBugunSPKda",
+        "canonical": "tümmagdurlarbugunspkda",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 6,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%23RalphLaurenSG",
+        "source_url": "https://twitter.com/search?q=%23T%C3%BCmMagdurlarBugunSPKda",
         "local_score": 69.6
       },
       {
-        "title": "ミャクミャク",
-        "canonical": "ミャクミャク",
+        "title": "#AnaParaVeTUFEHakkimiz",
+        "canonical": "anaparavetufehakkimiz",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 7,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E3%83%9F%E3%83%A3%E3%82%AF%E3%83%9F%E3%83%A3%E3%82%AF",
+        "source_url": "https://twitter.com/search?q=%23AnaParaVeTUFEHakkimiz",
         "local_score": 64.9
       },
       {
-        "title": "#SorryNotSorryPERTH",
-        "canonical": "sorrynotsorryperth",
+        "title": "Siraj",
+        "canonical": "siraj",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 8,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%23SorryNotSorryPERTH",
+        "source_url": "https://twitter.com/search?q=Siraj",
         "local_score": 60.2
       },
       {
-        "title": "#auPAYで超チャンス",
-        "canonical": "aupayで超チャンス",
+        "title": "심정지 상태",
+        "canonical": "심정지 상태",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 9,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%23auPAY%E3%81%A7%E8%B6%85%E3%83%81%E3%83%A3%E3%83%B3%E3%82%B9",
+        "source_url": "https://twitter.com/search?q=%EC%8B%AC%EC%A0%95%EC%A7%80%20%EC%83%81%ED%83%9C",
         "local_score": 55.4
       },
       {
-        "title": "#dwts",
-        "canonical": "dwts",
+        "title": "INDIA REDEMPTION ARC",
+        "canonical": "india redemption arc",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 10,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%23dwts",
+        "source_url": "https://twitter.com/search?q=INDIA%20REDEMPTION%20ARC",
         "local_score": 50.7
       },
       {
-        "title": "MAYBELLINE TANGHULU OHAE",
-        "canonical": "maybelline tanghulu ohae",
+        "title": "Rapat Paripurna DPR RI",
+        "canonical": "rapat paripurna dpr ri",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 11,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=MAYBELLINE%20TANGHULU%20OHAE",
+        "source_url": "https://twitter.com/search?q=Rapat%20Paripurna%20DPR%20RI",
         "local_score": 46.0
       },
       {
-        "title": "JR東日本",
-        "canonical": "jr東日本",
+        "title": "Lucia",
+        "canonical": "lucia",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 12,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=JR%E6%9D%B1%E6%97%A5%E6%9C%AC",
+        "source_url": "https://twitter.com/search?q=Lucia",
         "local_score": 41.2
       },
       {
-        "title": "ビーアン",
-        "canonical": "ビーアン",
+        "title": "Corinthians",
+        "canonical": "corinthians",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 13,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E3%83%93%E3%83%BC%E3%82%A2%E3%83%B3",
+        "source_url": "https://twitter.com/search?q=Corinthians",
         "local_score": 36.5
       },
       {
-        "title": "Hornets",
-        "canonical": "hornets",
+        "title": "TMK AT MARNI SHOP",
+        "canonical": "tmk at marni shop",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 14,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=Hornets",
+        "source_url": "https://twitter.com/search?q=TMK%20AT%20MARNI%20SHOP",
         "local_score": 31.8
       },
       {
-        "title": "INFOBAR",
-        "canonical": "infobar",
+        "title": "ロマシン",
+        "canonical": "ロマシン",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 15,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=INFOBAR",
+        "source_url": "https://twitter.com/search?q=%E3%83%AD%E3%83%9E%E3%82%B7%E3%83%B3",
         "local_score": 27.0
       },
       {
-        "title": "票の操作",
-        "canonical": "票の操作",
+        "title": "Lienel",
+        "canonical": "lienel",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 16,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E7%A5%A8%E3%81%AE%E6%93%8D%E4%BD%9C",
+        "source_url": "https://twitter.com/search?q=Lienel",
         "local_score": 22.3
       },
       {
-        "title": "紫のやつ",
-        "canonical": "紫のやつ",
+        "title": "アンソロピック",
+        "canonical": "アンソロピック",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 17,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E7%B4%AB%E3%81%AE%E3%82%84%E3%81%A4",
+        "source_url": "https://twitter.com/search?q=%E3%82%A2%E3%83%B3%E3%82%BD%E3%83%AD%E3%83%94%E3%83%83%E3%82%AF",
         "local_score": 17.5
       },
       {
-        "title": "オレンジの子",
-        "canonical": "オレンジの子",
+        "title": "Henry Nicholls",
+        "canonical": "henry nicholls",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 18,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%E3%81%AE%E5%AD%90",
+        "source_url": "https://twitter.com/search?q=Henry%20Nicholls",
         "local_score": 12.8
       },
       {
-        "title": "A案とC案",
-        "canonical": "a案とc案",
+        "title": "Jason",
+        "canonical": "jason",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 19,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=A%E6%A1%88%E3%81%A8C%E6%A1%88",
+        "source_url": "https://twitter.com/search?q=Jason",
         "local_score": 8.1
       },
       {
-        "title": "FOURTH WITH JELLYCAT",
-        "canonical": "fourth with jellycat",
+        "title": "Gambhir",
+        "canonical": "gambhir",
         "channel_code": "x",
         "channel_name": "X / Twitter",
         "rank": 20,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://twitter.com/search?q=FOURTH%20WITH%20JELLYCAT",
+        "source_url": "https://twitter.com/search?q=Gambhir",
         "local_score": 3.3
       }
     ],
@@ -1107,328 +1102,392 @@
     ],
     "youtube": [
       {
-        "title": "I.N \"NO RETURN\" | [Stray Kids : SKZ-PLAYER]",
-        "canonical": "in no return stray kids skzplayer",
+        "title": "Avengers: Doomsday | The Return | In Theaters December 18",
+        "canonical": "avengers doomsday the return in theaters december 18",
         "channel_code": "youtube",
         "channel_name": "YouTube",
         "rank": 1,
-        "metric_text": "1,465,083 views",
-        "metric": 1465083,
-        "published_at": "2026-11-17T09:00:01Z",
-        "age_hours": 22.13,
-        "source_url": "https://www.youtube.com/watch?v=masFBnN7jsA",
-        "region": "GB",
-        "video_id": "masFBnN7jsA",
-        "channel_title": "Stray Kids",
-        "image": "https://i.ytimg.com/vi/masFBnN7jsA/hqdefault.jpg",
+        "metric_text": "5,435,660 views",
+        "metric": 5435660,
+        "published_at": "2026-11-18T17:00:01Z",
+        "age_hours": 14.14,
+        "source_url": "https://www.youtube.com/watch?v=Fg0jyss_YnU",
+        "region": "US",
+        "video_id": "Fg0jyss_YnU",
+        "channel_title": "Marvel Entertainment",
+        "image": "https://i.ytimg.com/vi/Fg0jyss_YnU/hqdefault.jpg",
         "regions": [
-          "GB",
           "US",
           "BR",
-          "JP"
+          "JP",
+          "GB",
+          "IN"
         ],
-        "region_count": 4,
-        "local_score": 96.1
+        "region_count": 5,
+        "local_score": 98.5
       },
       {
-        "title": "Avengers: Doomsday | TV SPOT “DARKNESS” CONCEPT | Marvel Studios",
-        "canonical": "avengers doomsday tv spot darkness concept marvel studios",
+        "title": "Yeh Prem Mol Liya – Official Trailer | Ayushmann, Sharvari, Sooraj Barjatya | Himesh Reshammiya",
+        "canonical": "yeh prem mol liya official trailer ayushmann sharvari sooraj barjatya himesh reshammiya",
         "channel_code": "youtube",
         "channel_name": "YouTube",
         "rank": 2,
-        "metric_text": "1,458,910 views",
-        "metric": 1458910,
-        "published_at": "2026-11-17T14:30:15Z",
-        "age_hours": 16.62,
-        "source_url": "https://www.youtube.com/watch?v=z59xy3GvSrk",
-        "region": "GB",
-        "video_id": "z59xy3GvSrk",
-        "channel_title": "MovieTrailers Entertainment",
-        "image": "https://i.ytimg.com/vi/z59xy3GvSrk/hqdefault.jpg",
+        "metric_text": "16,105,592 views",
+        "metric": 16105592,
+        "published_at": "2026-11-18T12:39:55Z",
+        "age_hours": 18.48,
+        "source_url": "https://www.youtube.com/watch?v=vdhNar4uxm4",
+        "region": "US",
+        "video_id": "vdhNar4uxm4",
+        "channel_title": "Rajshri",
+        "image": "https://i.ytimg.com/vi/vdhNar4uxm4/hqdefault.jpg",
         "regions": [
-          "GB",
           "US",
-          "BR",
+          "GB",
           "IN"
         ],
-        "region_count": 4,
-        "local_score": 92.5
+        "region_count": 3,
+        "local_score": 96.3
       },
       {
-        "title": "\"PINKY UP\" (Official EYEKONS Video) | KATSEYE",
-        "canonical": "pinky up official eyekons video katseye",
+        "title": "Bruce Dickinson - Speaking In Tongues (Official Video)",
+        "canonical": "bruce dickinson speaking in tongues official video",
         "channel_code": "youtube",
         "channel_name": "YouTube",
         "rank": 3,
-        "metric_text": "1,526,228 views",
-        "metric": 1526228,
-        "published_at": "2026-11-17T16:01:18Z",
-        "age_hours": 15.11,
-        "source_url": "https://www.youtube.com/watch?v=Cp-72VPlBzQ",
+        "metric_text": "426,420 views",
+        "metric": 426420,
+        "published_at": "2026-11-18T14:50:10Z",
+        "age_hours": 16.31,
+        "source_url": "https://www.youtube.com/watch?v=a6fnB86xlyM",
+        "region": "BR",
+        "video_id": "a6fnB86xlyM",
+        "channel_title": "Bruce Dickinson",
+        "image": "https://i.ytimg.com/vi/a6fnB86xlyM/hqdefault.jpg",
+        "regions": [
+          "BR",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 84.6
+      },
+      {
+        "title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 1)",
+        "canonical": "playing gta 6 for the first time part 1",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 4,
+        "metric_text": "11,399,781 views",
+        "metric": 11399781,
+        "published_at": "2026-11-19T01:28:04Z",
+        "age_hours": 5.68,
+        "source_url": "https://www.youtube.com/watch?v=VZqAPdUvqnQ",
+        "region": "US",
+        "video_id": "VZqAPdUvqnQ",
+        "channel_title": "Kai Cenat Live",
+        "image": "https://i.ytimg.com/vi/VZqAPdUvqnQ/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 85.4
+      },
+      {
+        "title": "GTA 6 LAUNCH STREAM! Playing GTA 6 for the First Time",
+        "canonical": "gta 6 launch stream playing gta 6 for the first time",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 5,
+        "metric_text": "9,071,278 views",
+        "metric": 9071278,
+        "published_at": "2026-11-18T21:25:01Z",
+        "age_hours": 9.73,
+        "source_url": "https://www.youtube.com/watch?v=xMXp80Cntxw",
         "region": "GB",
-        "video_id": "Cp-72VPlBzQ",
-        "channel_title": "KATSEYE",
-        "image": "https://i.ytimg.com/vi/Cp-72VPlBzQ/hqdefault.jpg",
+        "video_id": "xMXp80Cntxw",
+        "channel_title": "TGG",
+        "image": "https://i.ytimg.com/vi/xMXp80Cntxw/hqdefault.jpg",
         "regions": [
           "GB",
-          "US",
-          "BR"
+          "IN"
         ],
-        "region_count": 3,
-        "local_score": 89.0
+        "region_count": 2,
+        "local_score": 81.5
+      },
+      {
+        "title": "LITTLEFOOT | Official Trailer | Land Before Time Reimagining",
+        "canonical": "littlefoot official trailer land before time reimagining",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 6,
+        "metric_text": "451,228 views",
+        "metric": 451228,
+        "published_at": "2026-11-18T14:57:34Z",
+        "age_hours": 16.18,
+        "source_url": "https://www.youtube.com/watch?v=cJRsJQMAVYY",
+        "region": "US",
+        "video_id": "cJRsJQMAVYY",
+        "channel_title": "Joey Lever",
+        "image": "https://i.ytimg.com/vi/cJRsJQMAVYY/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 74.0
+      },
+      {
+        "title": "🔴 LIVE! - GTA 6 EARLY ACCESS! FREE ROAM GAMEPLAY LIVE! (PS5 PRO)",
+        "canonical": "live gta 6 early access free roam gameplay live ps5 pro",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 7,
+        "metric_text": "7,004,583 views",
+        "metric": 7004583,
+        "published_at": "2026-11-18T19:56:16Z",
+        "age_hours": 11.21,
+        "source_url": "https://www.youtube.com/watch?v=3QjXNSf6keg",
+        "region": "US",
+        "video_id": "3QjXNSf6keg",
+        "channel_title": "Typical Gamer",
+        "image": "https://i.ytimg.com/vi/3QjXNSf6keg/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 74.0
+      },
+      {
+        "title": "GTA 6 Gameplay Walkthrough Part 1 FULL GAME [4K PS5 PRO] - No Commentary",
+        "canonical": "gta 6 gameplay walkthrough part 1 full game 4k ps5 pro no commentary",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 8,
+        "metric_text": "3,157,603 views",
+        "metric": 3157603,
+        "published_at": "2026-11-18T18:23:40Z",
+        "age_hours": 12.75,
+        "source_url": "https://www.youtube.com/watch?v=YDNs_sPEcJc",
+        "region": "US",
+        "video_id": "YDNs_sPEcJc",
+        "channel_title": "MKIceAndFire",
+        "image": "https://i.ytimg.com/vi/YDNs_sPEcJc/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 69.4
+      },
+      {
+        "title": "Artificial - Official Trailer - In Select Theaters Christmas Day, Everywhere January 8",
+        "canonical": "artificial official trailer in select theaters christmas day everywhere january 8",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 9,
+        "metric_text": "3,229,814 views",
+        "metric": 3229814,
+        "published_at": "2026-11-18T17:00:10Z",
+        "age_hours": 14.14,
+        "source_url": "https://www.youtube.com/watch?v=ufeJbTNq-BI",
+        "region": "US",
+        "video_id": "ufeJbTNq-BI",
+        "channel_title": "NEON",
+        "image": "https://i.ytimg.com/vi/ufeJbTNq-BI/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 65.8
+      },
+      {
+        "title": "GTA 6 - Before You Buy",
+        "canonical": "gta 6 before you buy",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 10,
+        "metric_text": "3,679,578 views",
+        "metric": 3679578,
+        "published_at": "2026-11-18T15:47:51Z",
+        "age_hours": 15.35,
+        "source_url": "https://www.youtube.com/watch?v=vVVIWEGciKk",
+        "region": "US",
+        "video_id": "vVVIWEGciKk",
+        "channel_title": "gameranx",
+        "image": "https://i.ytimg.com/vi/vVVIWEGciKk/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 62.4
+      },
+      {
+        "title": "LISA - Leave With Me (Featured in Always Lalisa) (Official Music Video)",
+        "canonical": "lisa leave with me featured in always lalisa official music video",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 11,
+        "metric_text": "1,766,417 views",
+        "metric": 1766417,
+        "published_at": "2026-11-18T15:00:05Z",
+        "age_hours": 16.14,
+        "source_url": "https://www.youtube.com/watch?v=M8fO5lQpfrc",
+        "region": "US",
+        "video_id": "M8fO5lQpfrc",
+        "channel_title": "LISAOfficialVEVO",
+        "image": "https://i.ytimg.com/vi/M8fO5lQpfrc/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 57.9
+      },
+      {
+        "title": "The Comeback King | Official Trailer",
+        "canonical": "the comeback king official trailer",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 12,
+        "metric_text": "4,674,745 views",
+        "metric": 4674745,
+        "published_at": "2026-11-18T16:00:05Z",
+        "age_hours": 15.14,
+        "source_url": "https://www.youtube.com/watch?v=dlpxXcC8nPk",
+        "region": "US",
+        "video_id": "dlpxXcC8nPk",
+        "channel_title": "Universal Pictures",
+        "image": "https://i.ytimg.com/vi/dlpxXcC8nPk/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 55.6
+      },
+      {
+        "title": "GTA 6 Walkthrough Gameplay Part 1 - INTRO (GRAND THEFT AUTO 6)",
+        "canonical": "gta 6 walkthrough gameplay part 1 intro grand theft auto 6",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 13,
+        "metric_text": "4,090,483 views",
+        "metric": 4090483,
+        "published_at": "2026-11-18T16:20:10Z",
+        "age_hours": 14.81,
+        "source_url": "https://www.youtube.com/watch?v=rQLEb0W7REo",
+        "region": "US",
+        "video_id": "rQLEb0W7REo",
+        "channel_title": "theRadBrad",
+        "image": "https://i.ytimg.com/vi/rQLEb0W7REo/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 51.8
+      },
+      {
+        "title": "My Singing Monsters - Legendary Poser ft. @danielthrasher (The \"First Verchuoso\" Official Trailer)",
+        "canonical": "my singing monsters legendary poser ft danielthrasher the first verchuoso official trailer",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 14,
+        "metric_text": "204,779 views",
+        "metric": 204779,
+        "published_at": "2026-11-18T15:00:07Z",
+        "age_hours": 16.14,
+        "source_url": "https://www.youtube.com/watch?v=Bg67nynO_OA",
+        "region": "BR",
+        "video_id": "Bg67nynO_OA",
+        "channel_title": "My Singing Monsters",
+        "image": "https://i.ytimg.com/vi/Bg67nynO_OA/hqdefault.jpg",
+        "regions": [
+          "BR",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 44.3
+      },
+      {
+        "title": "AVENGERS 5: DOOMSDAY Official “Doctor Doom” Special Look (2026) Marvel",
+        "canonical": "avengers 5 doomsday official doctor doom special look 2026 marvel",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 15,
+        "metric_text": "573,493 views",
+        "metric": 573493,
+        "published_at": "2026-11-18T17:17:18Z",
+        "age_hours": 13.85,
+        "source_url": "https://www.youtube.com/watch?v=2tHNP_le1gM",
+        "region": "US",
+        "video_id": "2tHNP_le1gM",
+        "channel_title": "KinoCheck.com",
+        "image": "https://i.ytimg.com/vi/2tHNP_le1gM/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 42.1
+      },
+      {
+        "title": "PLAYING GTA 6 FOR THE FIRST TIME",
+        "canonical": "playing gta 6 for the first time",
+        "channel_code": "youtube",
+        "channel_name": "YouTube",
+        "rank": 16,
+        "metric_text": "2,721,653 views",
+        "metric": 2721653,
+        "published_at": "2026-11-19T04:30:37Z",
+        "age_hours": 2.63,
+        "source_url": "https://www.youtube.com/watch?v=k3esjgmbphQ",
+        "region": "US",
+        "video_id": "k3esjgmbphQ",
+        "channel_title": "Jynxzi",
+        "image": "https://i.ytimg.com/vi/k3esjgmbphQ/hqdefault.jpg",
+        "regions": [
+          "US",
+          "GB"
+        ],
+        "region_count": 2,
+        "local_score": 40.5
       },
       {
         "title": "EETHA - Ji Ji Re Ji (Video) Shraddha Kapoor | Ajay-Atul, Shreya G, Amitabh B | In Cinemas 4th Dec",
         "canonical": "eetha ji ji re ji video shraddha kapoor ajayatul shreya g amitabh b in cinemas 4th dec",
         "channel_code": "youtube",
         "channel_name": "YouTube",
-        "rank": 4,
-        "metric_text": "9,216,991 views",
-        "metric": 9216991,
+        "rank": 17,
+        "metric_text": "17,356,257 views",
+        "metric": 17356257,
         "published_at": "2026-11-17T07:45:09Z",
-        "age_hours": 23.38,
+        "age_hours": 47.39,
         "source_url": "https://www.youtube.com/watch?v=0HPTMnDgH5U",
-        "region": "GB",
+        "region": "IN",
         "video_id": "0HPTMnDgH5U",
         "channel_title": "Universal Music India",
         "image": "https://i.ytimg.com/vi/0HPTMnDgH5U/hqdefault.jpg",
         "regions": [
-          "GB",
           "IN"
         ],
-        "region_count": 2,
-        "local_score": 84.4
-      },
-      {
-        "title": "Lil Baby - Aint Goin (Official Music Video)",
-        "canonical": "lil baby aint goin official music video",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 5,
-        "metric_text": "263,979 views",
-        "metric": 263979,
-        "published_at": "2026-11-17T18:00:06Z",
-        "age_hours": 13.13,
-        "source_url": "https://www.youtube.com/watch?v=BBYdzzyWhTU",
-        "region": "GB",
-        "video_id": "BBYdzzyWhTU",
-        "channel_title": "Lil Baby Official ",
-        "image": "https://i.ytimg.com/vi/BBYdzzyWhTU/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 76.3
-      },
-      {
-        "title": "Top Christmas Songs of All Time Playlist 🎄 Best Christmas Music 2027 🎅 Christmas Songs Playlist",
-        "canonical": "top christmas songs of all time playlist best christmas music 2027 christmas songs playlist",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 6,
-        "metric_text": "146,608 views",
-        "metric": 146608,
-        "published_at": "2026-11-16T20:18:15Z",
-        "age_hours": 34.82,
-        "source_url": "https://www.youtube.com/watch?v=bZXBgchXJc8",
-        "region": "GB",
-        "video_id": "bZXBgchXJc8",
-        "channel_title": "Christmas Songs and Carols - Love to Sing",
-        "image": "https://i.ytimg.com/vi/bZXBgchXJc8/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 71.9
-      },
-      {
-        "title": "3 Body Problem: Season 2 | Official Teaser | Netflix",
-        "canonical": "3 body problem season 2 official teaser netflix",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 7,
-        "metric_text": "1,067,740 views",
-        "metric": 1067740,
-        "published_at": "2026-11-17T15:00:00Z",
-        "age_hours": 16.13,
-        "source_url": "https://www.youtube.com/watch?v=KInfw7kCPkc",
-        "region": "GB",
-        "video_id": "KInfw7kCPkc",
-        "channel_title": "Netflix",
-        "image": "https://i.ytimg.com/vi/KInfw7kCPkc/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 70.9
-      },
-      {
-        "title": "Twilight (But Better) Teaser Trailer",
-        "canonical": "twilight but better teaser trailer",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 8,
-        "metric_text": "414,305 views",
-        "metric": 414305,
-        "published_at": "2026-11-17T15:00:08Z",
-        "age_hours": 16.13,
-        "source_url": "https://www.youtube.com/watch?v=5GB00NsVH3Q",
-        "region": "GB",
-        "video_id": "5GB00NsVH3Q",
-        "channel_title": "Grace Reiter",
-        "image": "https://i.ytimg.com/vi/5GB00NsVH3Q/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 66.1
-      },
-      {
-        "title": "THE GAME AWARDS: 2026 Nominee Reveal! (Game of the Year)",
-        "canonical": "the game awards 2026 nominee reveal game of the year",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 9,
-        "metric_text": "1,168,055 views",
-        "metric": 1168055,
-        "published_at": "2026-11-17T17:15:04Z",
-        "age_hours": 13.88,
-        "source_url": "https://www.youtube.com/watch?v=_e0oJSfmIFU",
-        "region": "GB",
-        "video_id": "_e0oJSfmIFU",
-        "channel_title": "thegameawards",
-        "image": "https://i.ytimg.com/vi/_e0oJSfmIFU/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 63.9
-      },
-      {
-        "title": "XG - DEPENDS (Performance Video)",
-        "canonical": "xg depends performance video",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 10,
-        "metric_text": "1,151,817 views",
-        "metric": 1151817,
-        "published_at": "2026-11-17T02:00:39Z",
-        "age_hours": 29.12,
-        "source_url": "https://www.youtube.com/watch?v=_B0QvdeXjdE",
-        "region": "US",
-        "video_id": "_B0QvdeXjdE",
-        "channel_title": "XG",
-        "image": "https://i.ytimg.com/vi/_B0QvdeXjdE/hqdefault.jpg",
-        "regions": [
-          "US",
-          "JP"
-        ],
-        "region_count": 2,
-        "local_score": 60.3
-      },
-      {
-        "title": "Only Murders in London | Official Trailer | Hulu",
-        "canonical": "only murders in london official trailer hulu",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 11,
-        "metric_text": "3,217,549 views",
-        "metric": 3217549,
-        "published_at": "2026-11-17T15:59:47Z",
-        "age_hours": 15.13,
-        "source_url": "https://www.youtube.com/watch?v=Pqb80zv19V4",
-        "region": "GB",
-        "video_id": "Pqb80zv19V4",
-        "channel_title": "Hulu",
-        "image": "https://i.ytimg.com/vi/Pqb80zv19V4/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 58.0
-      },
-      {
-        "title": "GTA 6 Just Got a MASSIVE Last Minute Info Dump...",
-        "canonical": "gta 6 just got a massive last minute info dump",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 12,
-        "metric_text": "575,070 views",
-        "metric": 575070,
-        "published_at": "2026-11-17T21:15:28Z",
-        "age_hours": 9.87,
-        "source_url": "https://www.youtube.com/watch?v=jwwDSn-HW0o",
-        "region": "GB",
-        "video_id": "jwwDSn-HW0o",
-        "channel_title": "Hazard",
-        "image": "https://i.ytimg.com/vi/jwwDSn-HW0o/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 52.2
-      },
-      {
-        "title": "Ted: The Animated Series | Official Trailer | Peacock Original",
-        "canonical": "ted the animated series official trailer peacock original",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 13,
-        "metric_text": "456,947 views",
-        "metric": 456947,
-        "published_at": "2026-11-17T16:30:34Z",
-        "age_hours": 14.62,
-        "source_url": "https://www.youtube.com/watch?v=5cK2fXepkoU",
-        "region": "GB",
-        "video_id": "5cK2fXepkoU",
-        "channel_title": "Peacock",
-        "image": "https://i.ytimg.com/vi/5cK2fXepkoU/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "US"
-        ],
-        "region_count": 2,
-        "local_score": 48.3
-      },
-      {
-        "title": "The Beatles - In My Life (Official Teaser Trailer starring Owen Cooper)",
-        "canonical": "the beatles in my life official teaser trailer starring owen cooper",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 14,
-        "metric_text": "170,044 views",
-        "metric": 170044,
-        "published_at": "2026-11-17T16:00:02Z",
-        "age_hours": 15.13,
-        "source_url": "https://www.youtube.com/watch?v=usvWh-7lPyw",
-        "region": "GB",
-        "video_id": "usvWh-7lPyw",
-        "channel_title": "The Beatles",
-        "image": "https://i.ytimg.com/vi/usvWh-7lPyw/hqdefault.jpg",
-        "regions": [
-          "GB",
-          "BR"
-        ],
-        "region_count": 2,
-        "local_score": 43.5
+        "region_count": 1,
+        "local_score": 36.1
       },
       {
         "title": "Juice=Juice『華麗なるリベンジャー』(Music Video)",
         "canonical": "juicejuice華麗なるリベンジャーmusic video",
         "channel_code": "youtube",
         "channel_name": "YouTube",
-        "rank": 15,
-        "metric_text": "344,601 views",
-        "metric": 344601,
+        "rank": 18,
+        "metric_text": "567,621 views",
+        "metric": 567621,
         "published_at": "2026-11-17T12:00:11Z",
-        "age_hours": 19.13,
+        "age_hours": 43.14,
         "source_url": "https://www.youtube.com/watch?v=mliE57khf_g",
         "region": "JP",
         "video_id": "mliE57khf_g",
@@ -1438,267 +1497,204 @@
           "JP"
         ],
         "region_count": 1,
-        "local_score": 37.5
+        "local_score": 28.0
       },
       {
-        "title": "ELA DA PRA NOS | MC GP, MC Ryan SP, MC LELE JP, MC IG, Mc KANHOTO ,Mc MURILO MT, MC Bruno MS, MC J9",
-        "canonical": "ela da pra nos mc gp mc ryan sp mc lele jp mc ig mc kanhoto mc murilo mt mc bruno ms mc j9",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 16,
-        "metric_text": "58,890 views",
-        "metric": 58890,
-        "published_at": "2026-11-17T23:00:11Z",
-        "age_hours": 8.13,
-        "source_url": "https://www.youtube.com/watch?v=15suV1c-zOU",
-        "region": "BR",
-        "video_id": "15suV1c-zOU",
-        "channel_title": "MC GP",
-        "image": "https://i.ytimg.com/vi/15suV1c-zOU/hqdefault.jpg",
-        "regions": [
-          "BR"
-        ],
-        "region_count": 1,
-        "local_score": 31.7
-      },
-      {
-        "title": "O.M - Trailer | Dhanush | Mammootty | Sai Pallavi | Sreeleela | Rajkumar Periasamy | Sai Abhyankkar",
-        "canonical": "om trailer dhanush mammootty sai pallavi sreeleela rajkumar periasamy sai abhyankkar",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 17,
-        "metric_text": "30,803,607 views",
-        "metric": 30803607,
-        "published_at": "2026-11-13T17:54:20Z",
-        "age_hours": 109.22,
-        "source_url": "https://www.youtube.com/watch?v=aGSOpb_6kv8",
-        "region": "IN",
-        "video_id": "aGSOpb_6kv8",
-        "channel_title": "Divo Music",
-        "image": "https://i.ytimg.com/vi/aGSOpb_6kv8/hqdefault.jpg",
-        "regions": [
-          "IN"
-        ],
-        "region_count": 1,
-        "local_score": 36.1
-      },
-      {
-        "title": "O Problema dos 3 Corpos: Temporada 2 | Teaser oficial | Netflix",
-        "canonical": "o problema dos 3 corpos temporada 2 teaser oficial netflix",
-        "channel_code": "youtube",
-        "channel_name": "YouTube",
-        "rank": 18,
-        "metric_text": "133,969 views",
-        "metric": 133969,
-        "published_at": "2026-11-17T15:00:02Z",
-        "age_hours": 16.13,
-        "source_url": "https://www.youtube.com/watch?v=0ckRTchffS0",
-        "region": "BR",
-        "video_id": "0ckRTchffS0",
-        "channel_title": "Netflix Brasil",
-        "image": "https://i.ytimg.com/vi/0ckRTchffS0/hqdefault.jpg",
-        "regions": [
-          "BR"
-        ],
-        "region_count": 1,
-        "local_score": 25.6
-      },
-      {
-        "title": "『三体』シーズン2 ティーザー予告編 - Netflix",
-        "canonical": "三体シーズン2 ティーザー予告編 netflix",
+        "title": "Top 100 Christmas Songs of All Time 2027 🎅 Best Pop Christmas Hits & Holiday Music Playlist 🎁🎄",
+        "canonical": "top 100 christmas songs of all time 2027 best pop christmas hits holiday music playlist",
         "channel_code": "youtube",
         "channel_name": "YouTube",
         "rank": 19,
-        "metric_text": "73,951 views",
-        "metric": 73951,
-        "published_at": "2026-11-17T15:00:03Z",
-        "age_hours": 16.13,
-        "source_url": "https://www.youtube.com/watch?v=as7mUPzi-6A",
-        "region": "JP",
-        "video_id": "as7mUPzi-6A",
-        "channel_title": "Netflix Japan",
-        "image": "https://i.ytimg.com/vi/as7mUPzi-6A/hqdefault.jpg",
+        "metric_text": "65,707 views",
+        "metric": 65707,
+        "published_at": "2026-11-18T11:43:45Z",
+        "age_hours": 19.41,
+        "source_url": "https://www.youtube.com/watch?v=Ri5o5HPwxSQ",
+        "region": "US",
+        "video_id": "Ri5o5HPwxSQ",
+        "channel_title": "Merry Christmas Vibes",
+        "image": "https://i.ytimg.com/vi/Ri5o5HPwxSQ/hqdefault.jpg",
         "regions": [
-          "JP"
+          "US"
         ],
         "region_count": 1,
-        "local_score": 21.2
+        "local_score": 21.6
       },
       {
-        "title": "WE BOUGHT THE MOST EXPENSIVE HOUSE | GTA 5 GAMEPLAY #172",
-        "canonical": "we bought the most expensive house gta 5 gameplay 172",
+        "title": "Humberto e Ronaldo - Eu Só Penso em Você/ Preciso Ser Amado [ Copo Sujo 4 ]",
+        "canonical": "humberto e ronaldo eu só penso em você preciso ser amado copo sujo 4",
         "channel_code": "youtube",
         "channel_name": "YouTube",
         "rank": 20,
-        "metric_text": "6,176,319 views",
-        "metric": 6176319,
-        "published_at": "2026-11-17T13:16:57Z",
-        "age_hours": 17.85,
-        "source_url": "https://www.youtube.com/watch?v=3oSyJwGLzAw",
-        "region": "IN",
-        "video_id": "3oSyJwGLzAw",
-        "channel_title": "Techno Gamerz",
-        "image": "https://i.ytimg.com/vi/3oSyJwGLzAw/hqdefault.jpg",
+        "metric_text": "54,538 views",
+        "metric": 54538,
+        "published_at": "2026-11-13T13:00:05Z",
+        "age_hours": 138.14,
+        "source_url": "https://www.youtube.com/watch?v=taVZ5oGoM5k",
+        "region": "BR",
+        "video_id": "taVZ5oGoM5k",
+        "channel_title": "Humberto e Ronaldo",
+        "image": "https://i.ytimg.com/vi/taVZ5oGoM5k/hqdefault.jpg",
         "regions": [
-          "IN"
+          "BR"
         ],
         "region_count": 1,
-        "local_score": 23.3
+        "local_score": 17.7
       }
     ],
     "instagram": [],
     "bilibili": [
       {
-        "title": "习近平会见俄罗斯总统普京",
-        "canonical": "习近平会见俄罗斯总统普京",
+        "title": "习近平会见美国总统特朗普",
+        "canonical": "习近平会见美国总统特朗普",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 1,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC",
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE",
         "image": "",
         "local_score": 93.3
       },
       {
-        "title": "十五五规划是面向全球工商界的合作邀约",
-        "canonical": "十五五规划是面向全球工商界的合作邀约",
+        "title": "亚太大家庭的成员同在一条船上",
+        "canonical": "亚太大家庭的成员同在一条船上",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 2,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E5%8D%81%E4%BA%94%E4%BA%94%E8%A7%84%E5%88%92%E6%98%AF%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83%E5%B7%A5%E5%95%86%E7%95%8C%E7%9A%84%E5%90%88%E4%BD%9C%E9%82%80%E7%BA%A6",
-        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%9A%E5%A4%AA%E5%A4%A7%E5%AE%B6%E5%BA%AD%E7%9A%84%E6%88%90%E5%91%98%E5%90%8C%E5%9C%A8%E4%B8%80%E6%9D%A1%E8%88%B9%E4%B8%8A",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png",
         "local_score": 88.6
       },
       {
-        "title": "习近平会见韩国总统李在明",
-        "canonical": "习近平会见韩国总统李在明",
+        "title": "我国成功发射实践二十四号卫星",
+        "canonical": "我国成功发射实践二十四号卫星",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 3,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E9%9F%A9%E5%9B%BD%E6%80%BB%E7%BB%9F%E6%9D%8E%E5%9C%A8%E6%98%8E",
+        "source_url": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%9B%BD%E6%88%90%E5%8A%9F%E5%8F%91%E5%B0%84%E5%AE%9E%E8%B7%B5%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7%E5%8D%AB%E6%98%9F",
         "image": "",
         "local_score": 83.9
       },
       {
-        "title": "国创发布会官宣嘉宾",
-        "canonical": "国创发布会官宣嘉宾",
+        "title": "中俄美元首同框",
+        "canonical": "中俄美元首同框",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 4,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E5%9B%BD%E5%88%9B%E5%8F%91%E5%B8%83%E4%BC%9A",
-        "image": "https://i0.hdslb.com/bfs/legacy/cc76c9df4fe9a176b2872c4dab2ba151becc8194.png",
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%90%8C%E6%A1%86",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221213/eaf2dd702d7cc14d8d9511190245d057/lrx9rnKo24.png",
         "local_score": 79.1
       },
       {
-        "title": "2万一张的S16门票体验如何",
-        "canonical": "2万一张的s16门票体验如何",
+        "title": "云南人早上6点起来吃烧烤",
+        "canonical": "云南人早上6点起来吃烧烤",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 5,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=2%E4%B8%87%E4%B8%80%E5%BC%A0%E7%9A%84S16%E9%97%A8%E7%A5%A8%E4%BD%93%E9%AA%8C%E5%A6%82%E4%BD%95",
-        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20240304/fbb6ffcfd09815bd66290b6b7bde1196/OBQYPHMTcv.png",
+        "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%91%E5%8D%97%E4%BA%BA%E6%97%A9%E4%B8%8A6%E7%82%B9%E8%B5%B7%E6%9D%A5%E5%90%83%E7%83%A7%E7%83%A4",
+        "image": "https://i0.hdslb.com/bfs/legacy/68107970fb977195a2b1401c087a0e77aa2ce23f.png",
         "local_score": 74.4
       },
       {
-        "title": "APEC吸引外国友人华强北扫货",
-        "canonical": "apec吸引外国友人华强北扫货",
+        "title": "参加中美元首会晤的美方代表有哪些",
+        "canonical": "参加中美元首会晤的美方代表有哪些",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 6,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=APEC%E5%90%B8%E5%BC%95%E5%A4%96%E5%9B%BD%E5%8F%8B%E4%BA%BA%E5%8D%8E%E5%BC%BA%E5%8C%97%E6%89%AB%E8%B4%A7",
-        "image": "",
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%8F%82%E5%8A%A0%E4%B8%AD%E7%BE%8E%E5%85%83%E9%A6%96%E4%BC%9A%E6%99%A4%E7%9A%84%E7%BE%8E%E6%96%B9%E4%BB%A3%E8%A1%A8%E6%9C%89%E5%93%AA%E4%BA%9B",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
         "local_score": 69.6
       },
       {
-        "title": "森林狼战胜开拓者获两连胜",
-        "canonical": "森林狼战胜开拓者获两连胜",
+        "title": "最美奋斗者叶连平老师逝世",
+        "canonical": "最美奋斗者叶连平老师逝世",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 7,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E6%A3%AE%E6%9E%97%E7%8B%BC%E6%88%98%E8%83%9C%E5%BC%80%E6%8B%93%E8%80%85%E8%8E%B7%E4%B8%A4%E8%BF%9E%E8%83%9C",
-        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "source_url": "https://search.bilibili.com/all?keyword=%E6%9C%80%E7%BE%8E%E5%A5%8B%E6%96%97%E8%80%85%E5%8F%B6%E8%BF%9E%E5%B9%B3%E8%80%81%E5%B8%88%E9%80%9D%E4%B8%96",
+        "image": "",
         "local_score": 64.9
       },
       {
-        "title": "GEN不敌BLG后要拆队重组吗",
-        "canonical": "gen不敌blg后要拆队重组吗",
+        "title": "秘鲁总统帮智利总统整理围巾",
+        "canonical": "秘鲁总统帮智利总统整理围巾",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 8,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=GEN%E4%B8%8D%E6%95%8CBLG%E5%90%8E%E8%A6%81%E6%8B%86%E9%98%9F%E9%87%8D%E7%BB%84%E5%90%97",
-        "image": "",
+        "source_url": "https://search.bilibili.com/all?keyword=%E7%A7%98%E9%B2%81%E6%80%BB%E7%BB%9F%E5%B8%AE%E6%99%BA%E5%88%A9%E6%80%BB%E7%BB%9F%E6%95%B4%E7%90%86%E5%9B%B4%E5%B7%BE",
+        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
         "local_score": 60.2
       },
       {
-        "title": "活塞球星坎宁安1打3劈扣文班",
-        "canonical": "活塞球星坎宁安1打3劈扣文班",
+        "title": "詹姆斯最后一攻一传终结比赛",
+        "canonical": "詹姆斯最后一攻一传终结比赛",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 9,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E6%B4%BB%E5%A1%9E%E7%90%83%E6%98%9F%E5%9D%8E%E5%AE%81%E5%AE%891%E6%89%933%E5%8A%88%E6%89%A3%E6%96%87%E7%8F%AD",
+        "source_url": "https://search.bilibili.com/all?keyword=%E8%A9%B9%E5%A7%86%E6%96%AF%E6%9C%80%E5%90%8E%E4%B8%80%E6%94%BB%E4%B8%80%E4%BC%A0%E7%BB%88%E7%BB%93%E6%AF%94%E8%B5%9B",
         "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
         "local_score": 55.4
       },
       {
-        "title": "AI论文暴增对学术界有何影响",
-        "canonical": "ai论文暴增对学术界有何影响",
+        "title": "深圳APEC的首张全家福",
+        "canonical": "深圳apec的首张全家福",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 10,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=AI%E8%AE%BA%E6%96%87%E6%9A%B4%E5%A2%9E%E5%AF%B9%E5%AD%A6%E6%9C%AF%E7%95%8C%E6%9C%89%E4%BD%95%E5%BD%B1%E5%93%8D",
+        "source_url": "https://search.bilibili.com/all?keyword=%E6%B7%B1%E5%9C%B3APEC%E7%9A%84%E9%A6%96%E5%BC%A0%E5%85%A8%E5%AE%B6%E7%A6%8F",
         "image": "",
         "local_score": 50.7
       },
       {
-        "title": "TGA2026全提名名单公布",
-        "canonical": "tga2026全提名名单公布",
+        "title": "把Win10装进哔哩哔哩",
+        "canonical": "把win10装进哔哩哔哩",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 11,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=TGA2026%E5%85%A8%E6%8F%90%E5%90%8D%E5%90%8D%E5%8D%95%E5%85%AC%E5%B8%83",
+        "source_url": "https://search.bilibili.com/all?keyword=%E6%8A%8AWin10%E8%A3%85%E8%BF%9B%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9",
         "image": "",
         "local_score": 46.0
       },
@@ -1710,696 +1706,696 @@
         "rank": 12,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
         "source_url": "https://search.bilibili.com/all?keyword=%E5%93%88%E5%88%A9%E6%B3%A2%E7%89%B9%E4%B8%8E%E6%AD%BB%E4%BA%A1%E7%81%AB%E5%99%A8",
         "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221117/eaf2dd702d7cc14d8d9511190245d057/EeuqbMwao9.png",
         "local_score": 41.2
       },
       {
-        "title": "Fnatic选手打出1-20战绩",
-        "canonical": "fnatic选手打出120战绩",
+        "title": "地表最强数值怪竟然是大象",
+        "canonical": "地表最强数值怪竟然是大象",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 13,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=Fnatic%E9%80%89%E6%89%8B%E6%89%93%E5%87%BA1-20%E6%88%98%E7%BB%A9",
-        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%9C%B0%E8%A1%A8%E6%9C%80%E5%BC%BA%E6%95%B0%E5%80%BC%E6%80%AA%E7%AB%9F%E7%84%B6%E6%98%AF%E5%A4%A7%E8%B1%A1",
+        "image": "",
         "local_score": 36.5
       },
       {
-        "title": "欧国联 威尔士2-3葡萄牙",
-        "canonical": "欧国联 威尔士23葡萄牙",
+        "title": "CS2新音乐盒试听",
+        "canonical": "cs2新音乐盒试听",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 14,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E6%AC%A7%E5%9B%BD%E8%81%94+%E5%A8%81%E5%B0%94%E5%A3%AB2-3%E8%91%A1%E8%90%84%E7%89%99",
+        "source_url": "https://search.bilibili.com/all?keyword=CS2%E6%96%B0%E9%9F%B3%E4%B9%90%E7%9B%92%E8%AF%95%E5%90%AC",
         "image": "",
         "local_score": 31.8
-      },
-      {
-        "title": "丹麦2-3挪威 哈兰德绝杀",
-        "canonical": "丹麦23挪威 哈兰德绝杀",
-        "channel_code": "bilibili",
-        "channel_name": "Bilibili",
-        "rank": 15,
-        "metric_text": "",
-        "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E4%B8%B9%E9%BA%A62-3%E6%8C%AA%E5%A8%81+%E5%93%88%E5%85%B0%E5%BE%B7%E7%BB%9D%E6%9D%80",
-        "image": "",
-        "local_score": 27.0
-      },
-      {
-        "title": "后会友期 谁在按剧本演戏",
-        "canonical": "后会友期 谁在按剧本演戏",
-        "channel_code": "bilibili",
-        "channel_name": "Bilibili",
-        "rank": 16,
-        "metric_text": "",
-        "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F+%E8%B0%81%E5%9C%A8%E6%8C%89%E5%89%A7%E6%9C%AC%E6%BC%94%E6%88%8F",
-        "image": "",
-        "local_score": 22.3
-      },
-      {
-        "title": "非凡之爱蜘蛛侠真人版",
-        "canonical": "非凡之爱蜘蛛侠真人版",
-        "channel_code": "bilibili",
-        "channel_name": "Bilibili",
-        "rank": 17,
-        "metric_text": "",
-        "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
-        "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E9%9D%9E%E5%87%A1%E4%B9%8B%E7%88%B1%E8%9C%98%E8%9B%9B%E4%BE%A0%E7%9C%9F%E4%BA%BA%E7%89%88",
-        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221117/eaf2dd702d7cc14d8d9511190245d057/EeuqbMwao9.png",
-        "local_score": 17.5
       },
       {
         "title": "黄金矿工派对狂欢实机演示",
         "canonical": "黄金矿工派对狂欢实机演示",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
+        "rank": 15,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-11-19T07:08:35.416509Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E9%BB%84%E9%87%91%E7%9F%BF%E5%B7%A5%E6%B4%BE%E5%AF%B9%E7%8B%82%E6%AC%A2%E5%AE%9E%E6%9C%BA%E6%BC%94%E7%A4%BA",
+        "image": "",
+        "local_score": 27.0
+      },
+      {
+        "title": "闪存价格两周下跌20%",
+        "canonical": "闪存价格两周下跌20",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 16,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-11-19T07:08:35.416509Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=%E9%97%AA%E5%AD%98%E4%BB%B7%E6%A0%BC%E4%B8%A4%E5%91%A8%E4%B8%8B%E8%B7%8C20%25",
+        "image": "",
+        "local_score": 22.3
+      },
+      {
+        "title": "3A游戏行业会崩溃吗",
+        "canonical": "3a游戏行业会崩溃吗",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
+        "rank": 17,
+        "metric_text": "",
+        "metric": 0,
+        "published_at": "2026-11-19T07:08:35.416509Z",
+        "age_hours": 0.0,
+        "source_url": "https://search.bilibili.com/all?keyword=3A%E6%B8%B8%E6%88%8F%E8%A1%8C%E4%B8%9A%E4%BC%9A%E5%B4%A9%E6%BA%83%E5%90%97",
+        "image": "",
+        "local_score": 17.5
+      },
+      {
+        "title": "TGA2026全提名名单公布",
+        "canonical": "tga2026全提名名单公布",
+        "channel_code": "bilibili",
+        "channel_name": "Bilibili",
         "rank": 18,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=%E9%BB%84%E9%87%91%E7%9F%BF%E5%B7%A5%E6%B4%BE%E5%AF%B9%E7%8B%82%E6%AC%A2%E5%AE%9E%E6%9C%BA%E6%BC%94%E7%A4%BA",
-        "image": "http://i0.hdslb.com/bfs/activity-plat/static/20221118/eaf2dd702d7cc14d8d9511190245d057/UF7B1wVKT2.png",
+        "source_url": "https://search.bilibili.com/all?keyword=TGA2026%E5%85%A8%E6%8F%90%E5%90%8D%E5%90%8D%E5%8D%95%E5%85%AC%E5%B8%83",
+        "image": "",
         "local_score": 12.8
       },
       {
-        "title": "GTA6获TGA八项提名",
-        "canonical": "gta6获tga八项提名",
+        "title": "如何避免太空垃圾变成宇宙暗器",
+        "canonical": "如何避免太空垃圾变成宇宙暗器",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 19,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=GTA6%E8%8E%B7TGA%E5%85%AB%E9%A1%B9%E6%8F%90%E5%90%8D",
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E5%A4%AA%E7%A9%BA%E5%9E%83%E5%9C%BE%E5%8F%98%E6%88%90%E5%AE%87%E5%AE%99%E6%9A%97%E5%99%A8",
         "image": "",
         "local_score": 8.1
       },
       {
-        "title": "OpenAI新模型遭差评海啸",
-        "canonical": "openai新模型遭差评海啸",
+        "title": "寒潮深入南下",
+        "canonical": "寒潮深入南下",
         "channel_code": "bilibili",
         "channel_name": "Bilibili",
         "rank": 20,
         "metric_text": "",
         "metric": 0,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://search.bilibili.com/all?keyword=OpenAI%E6%96%B0%E6%A8%A1%E5%9E%8B%E9%81%AD%E5%B7%AE%E8%AF%84%E6%B5%B7%E5%95%B8",
+        "source_url": "https://search.bilibili.com/all?keyword=%E5%AF%92%E6%BD%AE%E6%B7%B1%E5%85%A5%E5%8D%97%E4%B8%8B",
         "image": "",
         "local_score": 3.3
       }
     ],
     "baidu": [
       {
-        "title": "元首外交“深圳时间”开启",
-        "canonical": "元首外交深圳时间开启",
+        "title": "与时偕行 共创亚太光明未来",
+        "canonical": "与时偕行 共创亚太光明未来",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 1,
-        "metric_text": "7,904,381 热度",
-        "metric": 7904381,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,904,780 热度",
+        "metric": 7904780,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E5%85%83%E9%A6%96%E5%A4%96%E4%BA%A4%E2%80%9C%E6%B7%B1%E5%9C%B3%E6%97%B6%E9%97%B4%E2%80%9D%E5%BC%80%E5%90%AF",
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%8E%E6%97%B6%E5%81%95%E8%A1%8C+%E5%85%B1%E5%88%9B%E4%BA%9A%E5%A4%AA%E5%85%89%E6%98%8E%E6%9C%AA%E6%9D%A5",
         "local_score": 93.3
       },
       {
-        "title": "习近平会见俄罗斯总统普京",
-        "canonical": "习近平会见俄罗斯总统普京",
+        "title": "习近平会见美国总统特朗普",
+        "canonical": "习近平会见美国总统特朗普",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 2,
-        "metric_text": "7,808,638 热度",
-        "metric": 7808638,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,808,037 热度",
+        "metric": 7808037,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC",
+        "source_url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE",
         "local_score": 89.7
       },
       {
-        "title": "李在明随行人员开启“拍拍拍”模式",
-        "canonical": "李在明随行人员开启拍拍拍模式",
+        "title": "APEC领导人互相整理围巾",
+        "canonical": "apec领导人互相整理围巾",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 3,
-        "metric_text": "7,713,356 热度",
-        "metric": 7713356,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,714,229 热度",
+        "metric": 7714229,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%9C%A8%E6%98%8E%E9%9A%8F%E8%A1%8C%E4%BA%BA%E5%91%98%E5%BC%80%E5%90%AF%E2%80%9C%E6%8B%8D%E6%8B%8D%E6%8B%8D%E2%80%9D%E6%A8%A1%E5%BC%8F",
+        "source_url": "https://www.baidu.com/s?wd=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%BA%92%E7%9B%B8%E6%95%B4%E7%90%86%E5%9B%B4%E5%B7%BE",
         "local_score": 86.1
       },
       {
-        "title": "什么是亚太共同体 如何促进共同繁荣",
-        "canonical": "什么是亚太共同体 如何促进共同繁荣",
+        "title": "APEC时间 外媒记者点赞深圳",
+        "canonical": "apec时间 外媒记者点赞深圳",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 4,
-        "metric_text": "7,616,247 热度",
-        "metric": 7616247,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,619,528 热度",
+        "metric": 7619528,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%9A%E5%A4%AA%E5%85%B1%E5%90%8C%E4%BD%93+%E5%A6%82%E4%BD%95%E4%BF%83%E8%BF%9B%E5%85%B1%E5%90%8C%E7%B9%81%E8%8D%A3",
+        "source_url": "https://www.baidu.com/s?wd=APEC%E6%97%B6%E9%97%B4+%E5%A4%96%E5%AA%92%E8%AE%B0%E8%80%85%E7%82%B9%E8%B5%9E%E6%B7%B1%E5%9C%B3",
         "local_score": 82.5
       },
       {
-        "title": "普京：感谢中国",
-        "canonical": "普京感谢中国",
+        "title": "马斯克：我是中国的超级粉丝",
+        "canonical": "马斯克我是中国的超级粉丝",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 5,
-        "metric_text": "7,522,566 热度",
-        "metric": 7522566,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,521,464 热度",
+        "metric": 7521464,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%99%AE%E4%BA%AC%EF%BC%9A%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD",
+        "source_url": "https://www.baidu.com/s?wd=%E9%A9%AC%E6%96%AF%E5%85%8B%EF%BC%9A%E6%88%91%E6%98%AF%E4%B8%AD%E5%9B%BD%E7%9A%84%E8%B6%85%E7%BA%A7%E7%B2%89%E4%B8%9D",
         "local_score": 78.9
       },
       {
-        "title": "上万斤爱媛无人收 博主包下请网友摘",
-        "canonical": "上万斤爱媛无人收 博主包下请网友摘",
+        "title": "深圳市民在街头偶遇各国政要",
+        "canonical": "深圳市民在街头偶遇各国政要",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 6,
-        "metric_text": "7,425,947 热度",
-        "metric": 7425947,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,424,378 热度",
+        "metric": 7424378,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E4%B8%8A%E4%B8%87%E6%96%A4%E7%88%B1%E5%AA%9B%E6%97%A0%E4%BA%BA%E6%94%B6+%E5%8D%9A%E4%B8%BB%E5%8C%85%E4%B8%8B%E8%AF%B7%E7%BD%91%E5%8F%8B%E6%91%98",
+        "source_url": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%B8%82%E6%B0%91%E5%9C%A8%E8%A1%97%E5%A4%B4%E5%81%B6%E9%81%87%E5%90%84%E5%9B%BD%E6%94%BF%E8%A6%81",
         "local_score": 75.4
       },
       {
-        "title": "深圳宝安机场停满领导人专机",
-        "canonical": "深圳宝安机场停满领导人专机",
+        "title": "特朗普见普京时开玩笑问“他是谁”",
+        "canonical": "特朗普见普京时开玩笑问他是谁",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 7,
-        "metric_text": "7,331,859 热度",
-        "metric": 7331859,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,329,945 热度",
+        "metric": 7329945,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E6%9C%BA%E5%9C%BA%E5%81%9C%E6%BB%A1%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%B8%93%E6%9C%BA",
+        "source_url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%9C%97%E6%99%AE%E8%A7%81%E6%99%AE%E4%BA%AC%E6%97%B6%E5%BC%80%E7%8E%A9%E7%AC%91%E9%97%AE%E2%80%9C%E4%BB%96%E6%98%AF%E8%B0%81%E2%80%9D",
         "local_score": 71.8
       },
       {
-        "title": "魏建军回应于东来复购310辆坦克700",
-        "canonical": "魏建军回应于东来复购310辆坦克700",
+        "title": "“多让孩子啃苹果能省下一个金镯子”",
+        "canonical": "多让孩子啃苹果能省下一个金镯子",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 8,
-        "metric_text": "7,234,086 热度",
-        "metric": 7234086,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,238,623 热度",
+        "metric": 7238623,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E9%AD%8F%E5%BB%BA%E5%86%9B%E5%9B%9E%E5%BA%94%E4%BA%8E%E4%B8%9C%E6%9D%A5%E5%A4%8D%E8%B4%AD310%E8%BE%86%E5%9D%A6%E5%85%8B700",
+        "source_url": "https://www.baidu.com/s?wd=%E2%80%9C%E5%A4%9A%E8%AE%A9%E5%AD%A9%E5%AD%90%E5%95%83%E8%8B%B9%E6%9E%9C%E8%83%BD%E7%9C%81%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%87%91%E9%95%AF%E5%AD%90%E2%80%9D",
         "local_score": 68.2
       },
       {
-        "title": "包3000个饺子囤够东北猫冬",
-        "canonical": "包3000个饺子囤够东北猫冬",
+        "title": "APEC围巾图案取自“中国年”会标",
+        "canonical": "apec围巾图案取自中国年会标",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 9,
-        "metric_text": "7,142,718 热度",
-        "metric": 7142718,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,141,869 热度",
+        "metric": 7141869,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E5%8C%853000%E4%B8%AA%E9%A5%BA%E5%AD%90%E5%9B%A4%E5%A4%9F%E4%B8%9C%E5%8C%97%E7%8C%AB%E5%86%AC",
+        "source_url": "https://www.baidu.com/s?wd=APEC%E5%9B%B4%E5%B7%BE%E5%9B%BE%E6%A1%88%E5%8F%96%E8%87%AA%E2%80%9C%E4%B8%AD%E5%9B%BD%E5%B9%B4%E2%80%9D%E4%BC%9A%E6%A0%87",
         "local_score": 64.6
       },
       {
-        "title": "从一份议程单看亚太新机遇",
-        "canonical": "从一份议程单看亚太新机遇",
+        "title": "从一枚车厘子读懂亚太合作的甜头",
+        "canonical": "从一枚车厘子读懂亚太合作的甜头",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 10,
-        "metric_text": "7,044,454 热度",
-        "metric": 7044454,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "7,046,625 热度",
+        "metric": 7046625,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E4%BB%8E%E4%B8%80%E4%BB%BD%E8%AE%AE%E7%A8%8B%E5%8D%95%E7%9C%8B%E4%BA%9A%E5%A4%AA%E6%96%B0%E6%9C%BA%E9%81%87",
+        "source_url": "https://www.baidu.com/s?wd=%E4%BB%8E%E4%B8%80%E6%9E%9A%E8%BD%A6%E5%8E%98%E5%AD%90%E8%AF%BB%E6%87%82%E4%BA%9A%E5%A4%AA%E5%90%88%E4%BD%9C%E7%9A%84%E7%94%9C%E5%A4%B4",
         "local_score": 61.0
       },
       {
-        "title": "博主回村拍老人涨粉400万",
-        "canonical": "博主回村拍老人涨粉400万",
+        "title": "二手房价格连涨8个月",
+        "canonical": "二手房价格连涨8个月",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 11,
-        "metric_text": "6,953,580 热度",
-        "metric": 6953580,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,947,302 热度",
+        "metric": 6947302,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E5%8D%9A%E4%B8%BB%E5%9B%9E%E6%9D%91%E6%8B%8D%E8%80%81%E4%BA%BA%E6%B6%A8%E7%B2%89400%E4%B8%87",
+        "source_url": "https://www.baidu.com/s?wd=%E4%BA%8C%E6%89%8B%E6%88%BF%E4%BB%B7%E6%A0%BC%E8%BF%9E%E6%B6%A88%E4%B8%AA%E6%9C%88",
         "local_score": 57.4
       },
       {
-        "title": "小獬豸捉“妖”记",
-        "canonical": "小獬豸捉妖记",
+        "title": "摘掉小番茄“甜=长胖”标签",
+        "canonical": "摘掉小番茄甜长胖标签",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 12,
-        "metric_text": "6,851,134 热度",
-        "metric": 6851134,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,852,876 热度",
+        "metric": 6852876,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E5%B0%8F%E7%8D%AC%E8%B1%B8%E6%8D%89%E2%80%9C%E5%A6%96%E2%80%9D%E8%AE%B0",
+        "source_url": "https://www.baidu.com/s?wd=%E6%91%98%E6%8E%89%E5%B0%8F%E7%95%AA%E8%8C%84%E2%80%9C%E7%94%9C%3D%E9%95%BF%E8%83%96%E2%80%9D%E6%A0%87%E7%AD%BE",
         "local_score": 53.8
       },
       {
-        "title": "游客曝1600的烤全羊剥不出1两肉",
-        "canonical": "游客曝1600的烤全羊剥不出1两肉",
+        "title": "马斯克小儿子玩具都是中国制造",
+        "canonical": "马斯克小儿子玩具都是中国制造",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 13,
-        "metric_text": "6,762,456 热度",
-        "metric": 6762456,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,758,250 热度",
+        "metric": 6758250,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%B8%B8%E5%AE%A2%E6%9B%9D1600%E7%9A%84%E7%83%A4%E5%85%A8%E7%BE%8A%E5%89%A5%E4%B8%8D%E5%87%BA1%E4%B8%A4%E8%82%89",
+        "source_url": "https://www.baidu.com/s?wd=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E7%8E%A9%E5%85%B7%E9%83%BD%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0",
         "local_score": 50.2
       },
       {
-        "title": "男子结婚8年给妻子买10柜子衣服",
-        "canonical": "男子结婚8年给妻子买10柜子衣服",
+        "title": "参加中美元首会晤的美方代表都有谁",
+        "canonical": "参加中美元首会晤的美方代表都有谁",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 14,
-        "metric_text": "6,660,934 热度",
-        "metric": 6660934,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,656,979 热度",
+        "metric": 6656979,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E7%BB%93%E5%A9%9A8%E5%B9%B4%E7%BB%99%E5%A6%BB%E5%AD%90%E4%B9%B010%E6%9F%9C%E5%AD%90%E8%A1%A3%E6%9C%8D",
+        "source_url": "https://www.baidu.com/s?wd=%E5%8F%82%E5%8A%A0%E4%B8%AD%E7%BE%8E%E5%85%83%E9%A6%96%E4%BC%9A%E6%99%A4%E7%9A%84%E7%BE%8E%E6%96%B9%E4%BB%A3%E8%A1%A8%E9%83%BD%E6%9C%89%E8%B0%81",
         "local_score": 46.6
       },
       {
-        "title": "文莱领导人握手前 中方安保1秒摘手套",
-        "canonical": "文莱领导人握手前 中方安保1秒摘手套",
+        "title": "中俄美元首座驾首次同框",
+        "canonical": "中俄美元首座驾首次同框",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 15,
-        "metric_text": "6,563,328 热度",
-        "metric": 6563328,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,567,887 热度",
+        "metric": 6567887,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%96%87%E8%8E%B1%E9%A2%86%E5%AF%BC%E4%BA%BA%E6%8F%A1%E6%89%8B%E5%89%8D+%E4%B8%AD%E6%96%B9%E5%AE%89%E4%BF%9D1%E7%A7%92%E6%91%98%E6%89%8B%E5%A5%97",
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%BA%A7%E9%A9%BE%E9%A6%96%E6%AC%A1%E5%90%8C%E6%A1%86",
         "local_score": 43.0
       },
       {
-        "title": "普京APEC发表讲话点赞深圳",
-        "canonical": "普京apec发表讲话点赞深圳",
+        "title": "特朗普：期待同习主席、普京总统会晤",
+        "canonical": "特朗普期待同习主席普京总统会晤",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 16,
-        "metric_text": "6,477,663 热度",
-        "metric": 6477663,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,477,000 热度",
+        "metric": 6477000,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%99%AE%E4%BA%ACAPEC%E5%8F%91%E8%A1%A8%E8%AE%B2%E8%AF%9D%E7%82%B9%E8%B5%9E%E6%B7%B1%E5%9C%B3",
+        "source_url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%9C%97%E6%99%AE%EF%BC%9A%E6%9C%9F%E5%BE%85%E5%90%8C%E4%B9%A0%E4%B8%BB%E5%B8%AD%E3%80%81%E6%99%AE%E4%BA%AC%E6%80%BB%E7%BB%9F%E4%BC%9A%E6%99%A4",
         "local_score": 39.4
       },
       {
-        "title": "深圳人全妆出街迎APEC",
-        "canonical": "深圳人全妆出街迎apec",
+        "title": "一群玩家把电影院看成了“电竞主场”",
+        "canonical": "一群玩家把电影院看成了电竞主场",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 17,
-        "metric_text": "6,372,538 热度",
-        "metric": 6372538,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,368,530 热度",
+        "metric": 6368530,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E6%B7%B1%E5%9C%B3%E4%BA%BA%E5%85%A8%E5%A6%86%E5%87%BA%E8%A1%97%E8%BF%8EAPEC",
+        "source_url": "https://www.baidu.com/s?wd=%E4%B8%80%E7%BE%A4%E7%8E%A9%E5%AE%B6%E6%8A%8A%E7%94%B5%E5%BD%B1%E9%99%A2%E7%9C%8B%E6%88%90%E4%BA%86%E2%80%9C%E7%94%B5%E7%AB%9E%E4%B8%BB%E5%9C%BA%E2%80%9D",
         "local_score": 35.8
       },
       {
-        "title": "特朗普启程前往深圳参加APEC会议",
-        "canonical": "特朗普启程前往深圳参加apec会议",
+        "title": "宁德向理想一天发3封要钱邮件",
+        "canonical": "宁德向理想一天发3封要钱邮件",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 18,
-        "metric_text": "6,287,047 热度",
-        "metric": 6287047,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,283,086 热度",
+        "metric": 6283086,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=%E7%89%B9%E6%9C%97%E6%99%AE%E5%90%AF%E7%A8%8B%E5%89%8D%E5%BE%80%E6%B7%B1%E5%9C%B3%E5%8F%82%E5%8A%A0APEC%E4%BC%9A%E8%AE%AE",
+        "source_url": "https://www.baidu.com/s?wd=%E5%AE%81%E5%BE%B7%E5%90%91%E7%90%86%E6%83%B3%E4%B8%80%E5%A4%A9%E5%8F%913%E5%B0%81%E8%A6%81%E9%92%B1%E9%82%AE%E4%BB%B6",
         "local_score": 32.2
       },
       {
-        "title": "APEC会议近700辆红旗车全流程接待",
-        "canonical": "apec会议近700辆红旗车全流程接待",
+        "title": "北大时期张泉灵美成女儿国国王了",
+        "canonical": "北大时期张泉灵美成女儿国国王了",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 19,
-        "metric_text": "6,181,339 热度",
-        "metric": 6181339,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,175,853 热度",
+        "metric": 6175853,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=APEC%E4%BC%9A%E8%AE%AE%E8%BF%91700%E8%BE%86%E7%BA%A2%E6%97%97%E8%BD%A6%E5%85%A8%E6%B5%81%E7%A8%8B%E6%8E%A5%E5%BE%85",
+        "source_url": "https://www.baidu.com/s?wd=%E5%8C%97%E5%A4%A7%E6%97%B6%E6%9C%9F%E5%BC%A0%E6%B3%89%E7%81%B5%E7%BE%8E%E6%88%90%E5%A5%B3%E5%84%BF%E5%9B%BD%E5%9B%BD%E7%8E%8B%E4%BA%86",
         "local_score": 28.6
       },
       {
-        "title": "BLG战队凯旋",
-        "canonical": "blg战队凯旋",
+        "title": "姥爷网购3万斤薯条来当作猪饲料",
+        "canonical": "姥爷网购3万斤薯条来当作猪饲料",
         "channel_code": "baidu",
         "channel_name": "百度",
         "rank": 20,
-        "metric_text": "6,081,744 热度",
-        "metric": 6081744,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "6,083,280 热度",
+        "metric": 6083280,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://www.baidu.com/s?wd=BLG%E6%88%98%E9%98%9F%E5%87%AF%E6%97%8B",
+        "source_url": "https://www.baidu.com/s?wd=%E5%A7%A5%E7%88%B7%E7%BD%91%E8%B4%AD3%E4%B8%87%E6%96%A4%E8%96%AF%E6%9D%A1%E6%9D%A5%E5%BD%93%E4%BD%9C%E7%8C%AA%E9%A5%B2%E6%96%99",
         "local_score": 25.0
       }
     ],
     "weibo": [
       {
-        "title": "APEC",
-        "canonical": "apec",
+        "title": "中美元首深圳会晤",
+        "canonical": "中美元首深圳会晤",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 1,
-        "metric_text": "1,045,617 热度",
-        "metric": 1045617,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "1,328,883 热度",
+        "metric": 1328883,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=APEC",
+        "source_url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E7%BE%8E%E5%85%83%E9%A6%96%E6%B7%B1%E5%9C%B3%E4%BC%9A%E6%99%A4",
         "category": "国内时政",
-        "label": "沸",
+        "label": "",
         "local_score": 93.3
       },
       {
-        "title": "文莱领导人握手中方安保1秒摘手套",
-        "canonical": "文莱领导人握手中方安保1秒摘手套",
+        "title": "马斯克小儿子玩具都是中国制造",
+        "canonical": "马斯克小儿子玩具都是中国制造",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 2,
-        "metric_text": "842,556 热度",
-        "metric": 842556,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "1,104,810 热度",
+        "metric": 1104810,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%96%87%E8%8E%B1%E9%A2%86%E5%AF%BC%E4%BA%BA%E6%8F%A1%E6%89%8B%E4%B8%AD%E6%96%B9%E5%AE%89%E4%BF%9D1%E7%A7%92%E6%91%98%E6%89%8B%E5%A5%97",
-        "category": "国际时政",
-        "label": "",
-        "local_score": 89.4
+        "source_url": "https://s.weibo.com/weibo?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E7%8E%A9%E5%85%B7%E9%83%BD%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0",
+        "category": "民生新闻",
+        "label": "新",
+        "local_score": 89.5
       },
       {
-        "title": "APEC中国年这些知识点不容错过",
-        "canonical": "apec中国年这些知识点不容错过",
+        "title": "共创亚太光明未来",
+        "canonical": "共创亚太光明未来",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 3,
-        "metric_text": "737,994 热度",
-        "metric": 737994,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "716,839 热度",
+        "metric": 716839,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=APEC%E4%B8%AD%E5%9B%BD%E5%B9%B4%E8%BF%99%E4%BA%9B%E7%9F%A5%E8%AF%86%E7%82%B9%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87",
+        "source_url": "https://s.weibo.com/weibo?q=%E5%85%B1%E5%88%9B%E4%BA%9A%E5%A4%AA%E5%85%89%E6%98%8E%E6%9C%AA%E6%9D%A5",
         "category": "国内时政",
         "label": "",
-        "local_score": 85.6
+        "local_score": 85.2
       },
       {
-        "title": "深圳机场一眼望去全是专机",
-        "canonical": "深圳机场一眼望去全是专机",
+        "title": "APEC领导人休息室温馨画面",
+        "canonical": "apec领导人休息室温馨画面",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 4,
-        "metric_text": "696,096 热度",
-        "metric": 696096,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "643,279 热度",
+        "metric": 643279,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%B7%B1%E5%9C%B3%E6%9C%BA%E5%9C%BA%E4%B8%80%E7%9C%BC%E6%9C%9B%E5%8E%BB%E5%85%A8%E6%98%AF%E4%B8%93%E6%9C%BA",
-        "category": "民生新闻",
+        "source_url": "https://s.weibo.com/weibo?q=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%BC%91%E6%81%AF%E5%AE%A4%E6%B8%A9%E9%A6%A8%E7%94%BB%E9%9D%A2",
+        "category": "国内时政",
         "label": "新",
-        "local_score": 82.0
+        "local_score": 81.5
       },
       {
-        "title": "普京说感谢中国",
-        "canonical": "普京说感谢中国",
+        "title": "APEC重要讲话",
+        "canonical": "apec重要讲话",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 5,
-        "metric_text": "364,820 热度",
-        "metric": 364820,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "559,984 热度",
+        "metric": 559984,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%99%AE%E4%BA%AC%E8%AF%B4%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD",
+        "source_url": "https://s.weibo.com/weibo?q=APEC%E9%87%8D%E8%A6%81%E8%AE%B2%E8%AF%9D",
         "category": "国内时政",
         "label": "",
-        "local_score": 77.3
+        "local_score": 77.7
       },
       {
-        "title": "刘耀文许飞知音难寻",
-        "canonical": "刘耀文许飞知音难寻",
+        "title": "王子璇白眼",
+        "canonical": "王子璇白眼",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 6,
-        "metric_text": "364,745 热度",
-        "metric": 364745,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "539,310 热度",
+        "metric": 539310,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E5%88%98%E8%80%80%E6%96%87%E8%AE%B8%E9%A3%9E%E7%9F%A5%E9%9F%B3%E9%9A%BE%E5%AF%BB",
+        "source_url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E5%AD%90%E7%92%87%E7%99%BD%E7%9C%BC",
         "category": "综艺",
         "label": "新",
-        "local_score": 73.8
+        "local_score": 74.0
       },
       {
-        "title": "PEL",
-        "canonical": "pel",
+        "title": "伊能静 张萌马天宇不适合做朋友",
+        "canonical": "伊能静 张萌马天宇不适合做朋友",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 7,
-        "metric_text": "364,448 热度",
-        "metric": 364448,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "513,758 热度",
+        "metric": 513758,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=PEL",
-        "category": "电竞",
-        "label": "新",
-        "local_score": 70.2
+        "source_url": "https://s.weibo.com/weibo?q=%E4%BC%8A%E8%83%BD%E9%9D%99+%E5%BC%A0%E8%90%8C%E9%A9%AC%E5%A4%A9%E5%AE%87%E4%B8%8D%E9%80%82%E5%90%88%E5%81%9A%E6%9C%8B%E5%8F%8B",
+        "category": "综艺",
+        "label": "热",
+        "local_score": 70.4
       },
       {
-        "title": "BLG直播",
-        "canonical": "blg直播",
+        "title": "微博竞燃之夜",
+        "canonical": "微博竞燃之夜",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 8,
-        "metric_text": "364,287 热度",
-        "metric": 364287,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "471,577 热度",
+        "metric": 471577,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=BLG%E7%9B%B4%E6%92%AD",
+        "source_url": "https://s.weibo.com/weibo?q=%E5%BE%AE%E5%8D%9A%E7%AB%9E%E7%87%83%E4%B9%8B%E5%A4%9C",
         "category": "电竞",
-        "label": "",
-        "local_score": 66.6
+        "label": "新",
+        "local_score": 66.7
       },
       {
-        "title": "峨眉山来了群女弟子",
-        "canonical": "峨眉山来了群女弟子",
+        "title": "APEC中国年亚太共同体建设启新程",
+        "canonical": "apec中国年亚太共同体建设启新程",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 9,
-        "metric_text": "363,948 热度",
-        "metric": 363948,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "428,850 热度",
+        "metric": 428850,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E5%B3%A8%E7%9C%89%E5%B1%B1%E6%9D%A5%E4%BA%86%E7%BE%A4%E5%A5%B3%E5%BC%9F%E5%AD%90",
-        "category": "综艺",
+        "source_url": "https://s.weibo.com/weibo?q=APEC%E4%B8%AD%E5%9B%BD%E5%B9%B4%E4%BA%9A%E5%A4%AA%E5%85%B1%E5%90%8C%E4%BD%93%E5%BB%BA%E8%AE%BE%E5%90%AF%E6%96%B0%E7%A8%8B",
+        "category": "国内时政",
         "label": "",
-        "local_score": 63.0
+        "local_score": 62.9
       },
       {
-        "title": "湖人黄蜂加时",
-        "canonical": "湖人黄蜂加时",
+        "title": "中俄美元首座驾首次同框",
+        "canonical": "中俄美元首座驾首次同框",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 10,
-        "metric_text": "363,718 热度",
-        "metric": 363718,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "411,934 热度",
+        "metric": 411934,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%B9%96%E4%BA%BA%E9%BB%84%E8%9C%82%E5%8A%A0%E6%97%B6",
-        "category": "体育",
-        "label": "新",
-        "local_score": 59.4
+        "source_url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%BA%A7%E9%A9%BE%E9%A6%96%E6%AC%A1%E5%90%8C%E6%A1%86",
+        "category": "国内时政",
+        "label": "",
+        "local_score": 59.3
       },
       {
-        "title": "冯薪朵钟正未婚先孕",
-        "canonical": "冯薪朵钟正未婚先孕",
+        "title": "胖东来撤走后降到四百万依然没有人接盘",
+        "canonical": "胖东来撤走后降到四百万依然没有人接盘",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 11,
-        "metric_text": "363,581 热度",
-        "metric": 363581,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "411,568 热度",
+        "metric": 411568,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E5%86%AF%E8%96%AA%E6%9C%B5%E9%92%9F%E6%AD%A3%E6%9C%AA%E5%A9%9A%E5%85%88%E5%AD%95",
-        "category": "综艺",
+        "source_url": "https://s.weibo.com/weibo?q=%E8%83%96%E4%B8%9C%E6%9D%A5%E6%92%A4%E8%B5%B0%E5%90%8E%E9%99%8D%E5%88%B0%E5%9B%9B%E7%99%BE%E4%B8%87%E4%BE%9D%E7%84%B6%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%8E%A5%E7%9B%98",
+        "category": "民生新闻",
         "label": "热",
-        "local_score": 55.9
+        "local_score": 55.7
       },
       {
-        "title": "内娱第一个把孩子说成是子宫肌瘤的",
-        "canonical": "内娱第一个把孩子说成是子宫肌瘤的",
+        "title": "王子璇说只有文吉儿换了软卧包间",
+        "canonical": "王子璇说只有文吉儿换了软卧包间",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 12,
-        "metric_text": "363,338 热度",
-        "metric": 363338,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "410,408 热度",
+        "metric": 410408,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E5%86%85%E5%A8%B1%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%8A%8A%E5%AD%A9%E5%AD%90%E8%AF%B4%E6%88%90%E6%98%AF%E5%AD%90%E5%AE%AB%E8%82%8C%E7%98%A4%E7%9A%84",
-        "category": "艺人",
+        "source_url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E5%AD%90%E7%92%87%E8%AF%B4%E5%8F%AA%E6%9C%89%E6%96%87%E5%90%89%E5%84%BF%E6%8D%A2%E4%BA%86%E8%BD%AF%E5%8D%A7%E5%8C%85%E9%97%B4",
+        "category": "综艺",
         "label": "新",
-        "local_score": 52.3
+        "local_score": 52.1
       },
       {
-        "title": "陆毅女儿贝儿正式出道",
-        "canonical": "陆毅女儿贝儿正式出道",
+        "title": "青稚 先救根儿",
+        "canonical": "青稚 先救根儿",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 13,
-        "metric_text": "363,191 热度",
-        "metric": 363191,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "409,846 热度",
+        "metric": 409846,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E9%99%86%E6%AF%85%E5%A5%B3%E5%84%BF%E8%B4%9D%E5%84%BF%E6%AD%A3%E5%BC%8F%E5%87%BA%E9%81%93",
-        "category": "艺人",
-        "label": "热",
-        "local_score": 48.7
+        "source_url": "https://s.weibo.com/weibo?q=%E9%9D%92%E7%A8%9A+%E5%85%88%E6%95%91%E6%A0%B9%E5%84%BF",
+        "category": "综艺",
+        "label": "新",
+        "local_score": 48.6
       },
       {
-        "title": "普京盛赞深圳",
-        "canonical": "普京盛赞深圳",
+        "title": "马斯克小儿子说爱中国",
+        "canonical": "马斯克小儿子说爱中国",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 14,
-        "metric_text": "362,963 热度",
-        "metric": 362963,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "409,239 热度",
+        "metric": 409239,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%99%AE%E4%BA%AC%E7%9B%9B%E8%B5%9E%E6%B7%B1%E5%9C%B3",
+        "source_url": "https://s.weibo.com/weibo?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E8%AF%B4%E7%88%B1%E4%B8%AD%E5%9B%BD",
         "category": "国内时政",
         "label": "新",
-        "local_score": 45.1
+        "local_score": 45.0
       },
       {
-        "title": "内娱下星二代了",
-        "canonical": "内娱下星二代了",
+        "title": "APEC第33次领导人非正式会议举行",
+        "canonical": "apec第33次领导人非正式会议举行",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 15,
-        "metric_text": "362,726 热度",
-        "metric": 362726,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "408,864 热度",
+        "metric": 408864,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E5%86%85%E5%A8%B1%E4%B8%8B%E6%98%9F%E4%BA%8C%E4%BB%A3%E4%BA%86",
-        "category": "艺人",
-        "label": "热",
-        "local_score": 41.5
+        "source_url": "https://s.weibo.com/weibo?q=APEC%E7%AC%AC33%E6%AC%A1%E9%A2%86%E5%AF%BC%E4%BA%BA%E9%9D%9E%E6%AD%A3%E5%BC%8F%E4%BC%9A%E8%AE%AE%E4%B8%BE%E8%A1%8C",
+        "category": "国内时政",
+        "label": "",
+        "local_score": 41.4
       },
       {
-        "title": "高市早苗向中方代表打招呼姿态引热议",
-        "canonical": "高市早苗向中方代表打招呼姿态引热议",
+        "title": "于东来不还价撤店",
+        "canonical": "于东来不还价撤店",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 16,
-        "metric_text": "362,452 热度",
-        "metric": 362452,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "406,826 热度",
+        "metric": 406826,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E5%90%91%E4%B8%AD%E6%96%B9%E4%BB%A3%E8%A1%A8%E6%89%93%E6%8B%9B%E5%91%BC%E5%A7%BF%E6%80%81%E5%BC%95%E7%83%AD%E8%AE%AE",
-        "category": "国际时政",
-        "label": "热",
-        "local_score": 38.0
+        "source_url": "https://s.weibo.com/weibo?q=%E4%BA%8E%E4%B8%9C%E6%9D%A5%E4%B8%8D%E8%BF%98%E4%BB%B7%E6%92%A4%E5%BA%97",
+        "category": "财经",
+        "label": "新",
+        "local_score": 37.8
       },
       {
-        "title": "李嘉格听到冯薪朵生了孩子的反应",
-        "canonical": "李嘉格听到冯薪朵生了孩子的反应",
+        "title": "纯稚",
+        "canonical": "纯稚",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 17,
-        "metric_text": "362,174 热度",
-        "metric": 362174,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "404,130 热度",
+        "metric": 404130,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%9D%8E%E5%98%89%E6%A0%BC%E5%90%AC%E5%88%B0%E5%86%AF%E8%96%AA%E6%9C%B5%E7%94%9F%E4%BA%86%E5%AD%A9%E5%AD%90%E7%9A%84%E5%8F%8D%E5%BA%94",
-        "category": "综艺",
-        "label": "新",
-        "local_score": 34.4
+        "source_url": "https://s.weibo.com/weibo?q=%E7%BA%AF%E7%A8%9A",
+        "category": "综艺,电竞",
+        "label": "",
+        "local_score": 34.2
       },
       {
-        "title": "游客曝1600的烤全羊剥不出1两肉",
-        "canonical": "游客曝1600的烤全羊剥不出1两肉",
+        "title": "甄嬛传剧组故意没让颖儿学礼仪",
+        "canonical": "甄嬛传剧组故意没让颖儿学礼仪",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 18,
-        "metric_text": "362,009 热度",
-        "metric": 362009,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "401,337 热度",
+        "metric": 401337,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%B8%B8%E5%AE%A2%E6%9B%9D1600%E7%9A%84%E7%83%A4%E5%85%A8%E7%BE%8A%E5%89%A5%E4%B8%8D%E5%87%BA1%E4%B8%A4%E8%82%89",
-        "category": "民生新闻",
+        "source_url": "https://s.weibo.com/weibo?q=%E7%94%84%E5%AC%9B%E4%BC%A0%E5%89%A7%E7%BB%84%E6%95%85%E6%84%8F%E6%B2%A1%E8%AE%A9%E9%A2%96%E5%84%BF%E5%AD%A6%E7%A4%BC%E4%BB%AA",
+        "category": "剧集",
         "label": "",
-        "local_score": 30.8
+        "local_score": 30.6
       },
       {
-        "title": "杨瀚森 开拓者",
-        "canonical": "杨瀚森 开拓者",
+        "title": "华为超薄表",
+        "canonical": "华为超薄表",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 19,
-        "metric_text": "361,797 热度",
-        "metric": 361797,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "398,202 热度",
+        "metric": 398202,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=%E6%9D%A8%E7%80%9A%E6%A3%AE+%E5%BC%80%E6%8B%93%E8%80%85",
-        "category": "体育",
+        "source_url": "https://s.weibo.com/weibo?q=%E5%8D%8E%E4%B8%BA%E8%B6%85%E8%96%84%E8%A1%A8",
+        "category": "数码",
         "label": "",
-        "local_score": 27.2
+        "local_score": 27.0
       },
       {
-        "title": "Tim称苹果整个纽约的服务炸了",
-        "canonical": "tim称苹果整个纽约的服务炸了",
+        "title": "普京高度评价中国工作",
+        "canonical": "普京高度评价中国工作",
         "channel_code": "weibo",
         "channel_name": "微博",
         "rank": 20,
-        "metric_text": "361,572 热度",
-        "metric": 361572,
-        "published_at": "2026-11-18T07:07:42.988160Z",
+        "metric_text": "396,832 热度",
+        "metric": 396832,
+        "published_at": "2026-11-19T07:08:35.416509Z",
         "age_hours": 0.0,
-        "source_url": "https://s.weibo.com/weibo?q=Tim%E7%A7%B0%E8%8B%B9%E6%9E%9C%E6%95%B4%E4%B8%AA%E7%BA%BD%E7%BA%A6%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%82%B8%E4%BA%86",
-        "category": "数码",
+        "source_url": "https://s.weibo.com/weibo?q=%E6%99%AE%E4%BA%AC%E9%AB%98%E5%BA%A6%E8%AF%84%E4%BB%B7%E4%B8%AD%E5%9B%BD%E5%B7%A5%E4%BD%9C",
+        "category": "国内时政",
         "label": "新",
-        "local_score": 23.6
+        "local_score": 23.4
       }
     ]
   },
   "rankings": {
     "global": [
       {
-        "id": "8d303c65b4ae",
-        "canonical": "习近平会见俄罗斯总统普京",
-        "title": "习近平会见俄罗斯总统普京",
+        "id": "55f68b8fc615",
+        "canonical": "习近平会见美国总统特朗普",
+        "title": "习近平会见美国总统特朗普",
         "channel_count": 2,
         "channels": [
           "baidu",
@@ -2411,23 +2407,23 @@
             "channel_name": "Bilibili",
             "rank": 1,
             "metric_text": "",
-            "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC"
+            "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE"
           },
           {
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 2,
-            "metric_text": "7,808,638 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC"
+            "metric_text": "7,808,037 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE"
           }
         ],
         "rank": 1,
         "score": 100.0
       },
       {
-        "id": "1a10e5ef5f7f",
-        "canonical": "游客曝1600的烤全羊剥不出1两肉",
-        "title": "游客曝1600的烤全羊剥不出1两肉",
+        "id": "20bf289a02d7",
+        "canonical": "马斯克小儿子玩具都是中国制造",
+        "title": "马斯克小儿子玩具都是中国制造",
         "channel_count": 2,
         "channels": [
           "baidu",
@@ -2435,47 +2431,55 @@
         ],
         "signals": [
           {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 2,
+            "metric_text": "1,104,810 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E7%8E%A9%E5%85%B7%E9%83%BD%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0"
+          },
+          {
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 13,
-            "metric_text": "6,762,456 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E6%B8%B8%E5%AE%A2%E6%9B%9D1600%E7%9A%84%E7%83%A4%E5%85%A8%E7%BE%8A%E5%89%A5%E4%B8%8D%E5%87%BA1%E4%B8%A4%E8%82%89"
-          },
-          {
-            "channel_code": "weibo",
-            "channel_name": "微博",
-            "rank": 18,
-            "metric_text": "362,009 热度",
-            "source_url": "https://s.weibo.com/weibo?q=%E6%B8%B8%E5%AE%A2%E6%9B%9D1600%E7%9A%84%E7%83%A4%E5%85%A8%E7%BE%8A%E5%89%A5%E4%B8%8D%E5%87%BA1%E4%B8%A4%E8%82%89"
+            "metric_text": "6,758,250 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E7%8E%A9%E5%85%B7%E9%83%BD%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0"
           }
         ],
         "rank": 2,
-        "score": 61.5
+        "score": 99.8
       },
       {
-        "id": "40723815d8ab",
-        "canonical": "quentin grimes",
-        "title": "quentin grimes",
-        "channel_count": 1,
+        "id": "2eda5f0c6c9f",
+        "canonical": "中俄美元首座驾首次同框",
+        "title": "中俄美元首座驾首次同框",
+        "channel_count": 2,
         "channels": [
-          "google"
+          "baidu",
+          "weibo"
         ],
         "signals": [
           {
-            "channel_code": "google",
-            "channel_name": "Google",
-            "rank": 1,
-            "metric_text": "1000+",
-            "source_url": "https://trends.google.com/trends/explore?geo=IN&q=quentin+grimes"
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 10,
+            "metric_text": "411,934 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%BA%A7%E9%A9%BE%E9%A6%96%E6%AC%A1%E5%90%8C%E6%A1%86"
+          },
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 15,
+            "metric_text": "6,567,887 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%BA%A7%E9%A9%BE%E9%A6%96%E6%AC%A1%E5%90%8C%E6%A1%86"
           }
         ],
         "rank": 3,
-        "score": 95.4
+        "score": 70.4
       },
       {
-        "id": "8ce193af5c8e",
-        "canonical": "in no return stray kids skzplayer",
-        "title": "I.N \"NO RETURN\" | [Stray Kids : SKZ-PLAYER]",
+        "id": "7d8f420655c6",
+        "canonical": "avengers doomsday the return in theaters december 18",
+        "title": "Avengers: Doomsday | The Return | In Theaters December 18",
         "channel_count": 1,
         "channels": [
           "youtube"
@@ -2485,37 +2489,37 @@
             "channel_code": "youtube",
             "channel_name": "YouTube",
             "rank": 1,
-            "metric_text": "1,465,083 views",
-            "source_url": "https://www.youtube.com/watch?v=masFBnN7jsA"
+            "metric_text": "5,435,660 views",
+            "source_url": "https://www.youtube.com/watch?v=Fg0jyss_YnU"
           }
         ],
         "rank": 4,
-        "score": 93.6
+        "score": 95.9
       },
       {
-        "id": "c4ad10a0bffa",
-        "canonical": "apec",
-        "title": "APEC",
+        "id": "5c90adcde582",
+        "canonical": "yeh prem mol liya official trailer ayushmann sharvari sooraj barjatya himesh reshammiya",
+        "title": "Yeh Prem Mol Liya – Official Trailer | Ayushmann, Sharvari, Sooraj Barjatya | Himesh Reshammiya",
         "channel_count": 1,
         "channels": [
-          "weibo"
+          "youtube"
         ],
         "signals": [
           {
-            "channel_code": "weibo",
-            "channel_name": "微博",
-            "rank": 1,
-            "metric_text": "1,045,617 热度",
-            "source_url": "https://s.weibo.com/weibo?q=APEC"
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 2,
+            "metric_text": "16,105,592 views",
+            "source_url": "https://www.youtube.com/watch?v=vdhNar4uxm4"
           }
         ],
         "rank": 5,
-        "score": 90.8
+        "score": 93.8
       },
       {
-        "id": "960aa5f8edbb",
-        "canonical": "元首外交深圳时间开启",
-        "title": "元首外交“深圳时间”开启",
+        "id": "e84118c85ccc",
+        "canonical": "与时偕行 共创亚太光明未来",
+        "title": "与时偕行 共创亚太光明未来",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -2525,17 +2529,37 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 1,
-            "metric_text": "7,904,381 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E5%85%83%E9%A6%96%E5%A4%96%E4%BA%A4%E2%80%9C%E6%B7%B1%E5%9C%B3%E6%97%B6%E9%97%B4%E2%80%9D%E5%BC%80%E5%90%AF"
+            "metric_text": "7,904,780 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B8%8E%E6%97%B6%E5%81%95%E8%A1%8C+%E5%85%B1%E5%88%9B%E4%BA%9A%E5%A4%AA%E5%85%89%E6%98%8E%E6%9C%AA%E6%9D%A5"
           }
         ],
         "rank": 6,
         "score": 90.8
       },
       {
-        "id": "9dda4840f855",
-        "canonical": "毒うさぎ",
-        "title": "毒うさぎ",
+        "id": "24af48fd4f2b",
+        "canonical": "中美元首深圳会晤",
+        "title": "中美元首深圳会晤",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 1,
+            "metric_text": "1,328,883 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E7%BE%8E%E5%85%83%E9%A6%96%E6%B7%B1%E5%9C%B3%E4%BC%9A%E6%99%A4"
+          }
+        ],
+        "rank": 7,
+        "score": 90.8
+      },
+      {
+        "id": "17f396168fab",
+        "canonical": "재난문자",
+        "title": "재난문자",
         "channel_count": 1,
         "channels": [
           "x"
@@ -2546,38 +2570,11 @@
             "channel_name": "X / Twitter",
             "rank": 1,
             "metric_text": "",
-            "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%81%86%E3%81%95%E3%81%8E"
-          },
-          {
-            "channel_code": "x",
-            "channel_name": "X / Twitter",
-            "rank": 2,
-            "metric_text": "",
-            "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%81%86%E3%81%95%E3%81%8E"
-          }
-        ],
-        "rank": 7,
-        "score": 90.8
-      },
-      {
-        "id": "89971a6a7462",
-        "canonical": "avengers doomsday tv spot darkness concept marvel studios",
-        "title": "Avengers: Doomsday | TV SPOT “DARKNESS” CONCEPT | Marvel Studios",
-        "channel_count": 1,
-        "channels": [
-          "youtube"
-        ],
-        "signals": [
-          {
-            "channel_code": "youtube",
-            "channel_name": "YouTube",
-            "rank": 2,
-            "metric_text": "1,458,910 views",
-            "source_url": "https://www.youtube.com/watch?v=z59xy3GvSrk"
+            "source_url": "https://twitter.com/search?q=%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90"
           }
         ],
         "rank": 8,
-        "score": 90.1
+        "score": 90.8
       },
       {
         "id": "51c7e69d03ff",
@@ -2600,9 +2597,29 @@
         "score": 89.2
       },
       {
-        "id": "7f2be99d71f3",
-        "canonical": "lakers",
-        "title": "lakers",
+        "id": "3b43f6352fce",
+        "canonical": "josh green",
+        "title": "josh green",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 1,
+            "metric_text": "200+",
+            "source_url": "https://trends.google.com/trends/explore?geo=BR&q=josh+green"
+          }
+        ],
+        "rank": 10,
+        "score": 87.6
+      },
+      {
+        "id": "8dffaddb371e",
+        "canonical": "kospi",
+        "title": "kospi",
         "channel_count": 1,
         "channels": [
           "google"
@@ -2612,52 +2629,12 @@
             "channel_code": "google",
             "channel_name": "Google",
             "rank": 2,
-            "metric_text": "1000+",
-            "source_url": "https://trends.google.com/trends/explore?geo=ID&q=lakers"
-          }
-        ],
-        "rank": 10,
-        "score": 88.7
-      },
-      {
-        "id": "1e5c549339e3",
-        "canonical": "文莱领导人握手中方安保1秒摘手套",
-        "title": "文莱领导人握手中方安保1秒摘手套",
-        "channel_count": 1,
-        "channels": [
-          "weibo"
-        ],
-        "signals": [
-          {
-            "channel_code": "weibo",
-            "channel_name": "微博",
-            "rank": 2,
-            "metric_text": "842,556 热度",
-            "source_url": "https://s.weibo.com/weibo?q=%E6%96%87%E8%8E%B1%E9%A2%86%E5%AF%BC%E4%BA%BA%E6%8F%A1%E6%89%8B%E4%B8%AD%E6%96%B9%E5%AE%89%E4%BF%9D1%E7%A7%92%E6%91%98%E6%89%8B%E5%A5%97"
+            "metric_text": "2000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=IN&q=kospi"
           }
         ],
         "rank": 11,
-        "score": 87.0
-      },
-      {
-        "id": "5bcff48623f7",
-        "canonical": "pinky up official eyekons video katseye",
-        "title": "\"PINKY UP\" (Official EYEKONS Video) | KATSEYE",
-        "channel_count": 1,
-        "channels": [
-          "youtube"
-        ],
-        "signals": [
-          {
-            "channel_code": "youtube",
-            "channel_name": "YouTube",
-            "rank": 3,
-            "metric_text": "1,526,228 views",
-            "source_url": "https://www.youtube.com/watch?v=Cp-72VPlBzQ"
-          }
-        ],
-        "rank": 12,
-        "score": 86.7
+        "score": 87.4
       },
       {
         "id": "31dd4fbe3fa2",
@@ -2676,13 +2653,33 @@
             "source_url": "https://www.reddit.com/r/interesting/comments/1xyc9uq/ultimate_uno_reverse_card/"
           }
         ],
+        "rank": 12,
+        "score": 86.3
+      },
+      {
+        "id": "72feb0faad15",
+        "canonical": "水見式",
+        "title": "#水見式",
+        "channel_count": 1,
+        "channels": [
+          "x"
+        ],
+        "signals": [
+          {
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 2,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=%23%E6%B0%B4%E8%A6%8B%E5%BC%8F"
+          }
+        ],
         "rank": 13,
         "score": 86.3
       },
       {
-        "id": "fb129584dda5",
-        "canonical": "李在明随行人员开启拍拍拍模式",
-        "title": "李在明随行人员开启“拍拍拍”模式",
+        "id": "6ae32f597557",
+        "canonical": "apec领导人互相整理围巾",
+        "title": "APEC领导人互相整理围巾",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -2692,37 +2689,17 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 3,
-            "metric_text": "7,713,356 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%9C%A8%E6%98%8E%E9%9A%8F%E8%A1%8C%E4%BA%BA%E5%91%98%E5%BC%80%E5%90%AF%E2%80%9C%E6%8B%8D%E6%8B%8D%E6%8B%8D%E2%80%9D%E6%A8%A1%E5%BC%8F"
+            "metric_text": "7,714,229 热度",
+            "source_url": "https://www.baidu.com/s?wd=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%BA%92%E7%9B%B8%E6%95%B4%E7%90%86%E5%9B%B4%E5%B7%BE"
           }
         ],
         "rank": 14,
         "score": 83.8
       },
       {
-        "id": "c743eb98a800",
-        "canonical": "apec中国年这些知识点不容错过",
-        "title": "APEC中国年这些知识点不容错过",
-        "channel_count": 1,
-        "channels": [
-          "weibo"
-        ],
-        "signals": [
-          {
-            "channel_code": "weibo",
-            "channel_name": "微博",
-            "rank": 3,
-            "metric_text": "737,994 热度",
-            "source_url": "https://s.weibo.com/weibo?q=APEC%E4%B8%AD%E5%9B%BD%E5%B9%B4%E8%BF%99%E4%BA%9B%E7%9F%A5%E8%AF%86%E7%82%B9%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87"
-          }
-        ],
-        "rank": 15,
-        "score": 83.3
-      },
-      {
-        "id": "a4a91f586d02",
-        "canonical": "eetha ji ji re ji video shraddha kapoor ajayatul shreya g amitabh b in cinemas 4th dec",
-        "title": "EETHA - Ji Ji Re Ji (Video) Shraddha Kapoor | Ajay-Atul, Shreya G, Amitabh B | In Cinemas 4th Dec",
+        "id": "6d30b41d6434",
+        "canonical": "playing gta 6 for the first time part 1",
+        "title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 1)",
         "channel_count": 1,
         "channels": [
           "youtube"
@@ -2732,12 +2709,79 @@
             "channel_code": "youtube",
             "channel_name": "YouTube",
             "rank": 4,
-            "metric_text": "9,216,991 views",
-            "source_url": "https://www.youtube.com/watch?v=0HPTMnDgH5U"
+            "metric_text": "11,399,781 views",
+            "source_url": "https://www.youtube.com/watch?v=VZqAPdUvqnQ"
+          },
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 16,
+            "metric_text": "2,721,653 views",
+            "source_url": "https://www.youtube.com/watch?v=k3esjgmbphQ"
+          }
+        ],
+        "rank": 15,
+        "score": 83.2
+      },
+      {
+        "id": "63edb3a94a7c",
+        "canonical": "共创亚太光明未来",
+        "title": "共创亚太光明未来",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 3,
+            "metric_text": "716,839 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E5%85%B1%E5%88%9B%E4%BA%9A%E5%A4%AA%E5%85%89%E6%98%8E%E6%9C%AA%E6%9D%A5"
           }
         ],
         "rank": 16,
-        "score": 82.2
+        "score": 83.0
+      },
+      {
+        "id": "c271bf743fe8",
+        "canonical": "bruce dickinson speaking in tongues official video",
+        "title": "Bruce Dickinson - Speaking In Tongues (Official Video)",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 3,
+            "metric_text": "426,420 views",
+            "source_url": "https://www.youtube.com/watch?v=a6fnB86xlyM"
+          }
+        ],
+        "rank": 17,
+        "score": 82.4
+      },
+      {
+        "id": "16f692407ee5",
+        "canonical": "when is black friday 2026",
+        "title": "when is black friday 2026",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 3,
+            "metric_text": "1000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=GB&q=when+is+black+friday+2026"
+          }
+        ],
+        "rank": 18,
+        "score": 82.0
       },
       {
         "id": "41bd381ab180",
@@ -2756,13 +2800,13 @@
             "source_url": "https://www.reddit.com/r/movies/comments/1xxrjzr/robert_pattinson_to_play_james_bond_in_denis/"
           }
         ],
-        "rank": 17,
+        "rank": 19,
         "score": 82.0
       },
       {
-        "id": "ae66a0947f14",
-        "canonical": "十五五规划是面向全球工商界的合作邀约",
-        "title": "十五五规划是面向全球工商界的合作邀约",
+        "id": "a397cbce9112",
+        "canonical": "亚太大家庭的成员同在一条船上",
+        "title": "亚太大家庭的成员同在一条船上",
         "channel_count": 1,
         "channels": [
           "bilibili"
@@ -2773,16 +2817,16 @@
             "channel_name": "Bilibili",
             "rank": 2,
             "metric_text": "",
-            "source_url": "https://search.bilibili.com/all?keyword=%E5%8D%81%E4%BA%94%E4%BA%94%E8%A7%84%E5%88%92%E6%98%AF%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83%E5%B7%A5%E5%95%86%E7%95%8C%E7%9A%84%E5%90%88%E4%BD%9C%E9%82%80%E7%BA%A6"
+            "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%9A%E5%A4%AA%E5%A4%A7%E5%AE%B6%E5%BA%AD%E7%9A%84%E6%88%90%E5%91%98%E5%90%8C%E5%9C%A8%E4%B8%80%E6%9D%A1%E8%88%B9%E4%B8%8A"
           }
         ],
-        "rank": 18,
+        "rank": 20,
         "score": 82.0
       },
       {
-        "id": "d2290ff18561",
-        "canonical": "毒ウサギ",
-        "title": "毒ウサギ",
+        "id": "0fb3a73886a4",
+        "canonical": "念の強さ",
+        "title": "念の強さ",
         "channel_count": 1,
         "channels": [
           "x"
@@ -2793,36 +2837,16 @@
             "channel_name": "X / Twitter",
             "rank": 3,
             "metric_text": "",
-            "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%82%A6%E3%82%B5%E3%82%AE"
+            "source_url": "https://twitter.com/search?q=%E5%BF%B5%E3%81%AE%E5%BC%B7%E3%81%95"
           }
         ],
-        "rank": 19,
+        "rank": 21,
         "score": 81.7
       },
       {
-        "id": "732962a466b6",
-        "canonical": "xiaomi 18 pro max",
-        "title": "xiaomi 18 pro max",
-        "channel_count": 1,
-        "channels": [
-          "google"
-        ],
-        "signals": [
-          {
-            "channel_code": "google",
-            "channel_name": "Google",
-            "rank": 3,
-            "metric_text": "200+",
-            "source_url": "https://trends.google.com/trends/explore?geo=ID&q=xiaomi+18+pro+max"
-          }
-        ],
-        "rank": 20,
-        "score": 80.7
-      },
-      {
-        "id": "a8b2975500ce",
-        "canonical": "什么是亚太共同体 如何促进共同繁荣",
-        "title": "什么是亚太共同体 如何促进共同繁荣",
+        "id": "65042ed194bb",
+        "canonical": "apec时间 外媒记者点赞深圳",
+        "title": "APEC时间 外媒记者点赞深圳",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -2832,17 +2856,17 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 4,
-            "metric_text": "7,616,247 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%9A%E5%A4%AA%E5%85%B1%E5%90%8C%E4%BD%93+%E5%A6%82%E4%BD%95%E4%BF%83%E8%BF%9B%E5%85%B1%E5%90%8C%E7%B9%81%E8%8D%A3"
+            "metric_text": "7,619,528 热度",
+            "source_url": "https://www.baidu.com/s?wd=APEC%E6%97%B6%E9%97%B4+%E5%A4%96%E5%AA%92%E8%AE%B0%E8%80%85%E7%82%B9%E8%B5%9E%E6%B7%B1%E5%9C%B3"
           }
         ],
-        "rank": 21,
+        "rank": 22,
         "score": 80.3
       },
       {
-        "id": "94b38bf6d089",
-        "canonical": "深圳机场一眼望去全是专机",
-        "title": "深圳机场一眼望去全是专机",
+        "id": "bf7239f2b0e5",
+        "canonical": "apec领导人休息室温馨画面",
+        "title": "APEC领导人休息室温馨画面",
         "channel_count": 1,
         "channels": [
           "weibo"
@@ -2852,12 +2876,52 @@
             "channel_code": "weibo",
             "channel_name": "微博",
             "rank": 4,
-            "metric_text": "696,096 热度",
-            "source_url": "https://s.weibo.com/weibo?q=%E6%B7%B1%E5%9C%B3%E6%9C%BA%E5%9C%BA%E4%B8%80%E7%9C%BC%E6%9C%9B%E5%8E%BB%E5%85%A8%E6%98%AF%E4%B8%93%E6%9C%BA"
+            "metric_text": "643,279 热度",
+            "source_url": "https://s.weibo.com/weibo?q=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%BC%91%E6%81%AF%E5%AE%A4%E6%B8%A9%E9%A6%A8%E7%94%BB%E9%9D%A2"
           }
         ],
-        "rank": 22,
-        "score": 79.8
+        "rank": 23,
+        "score": 79.4
+      },
+      {
+        "id": "f0c8abce5a86",
+        "canonical": "gta 6 launch stream playing gta 6 for the first time",
+        "title": "GTA 6 LAUNCH STREAM! Playing GTA 6 for the First Time",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 5,
+            "metric_text": "9,071,278 views",
+            "source_url": "https://www.youtube.com/watch?v=xMXp80Cntxw"
+          }
+        ],
+        "rank": 24,
+        "score": 79.4
+      },
+      {
+        "id": "a8b402bae264",
+        "canonical": "weather los angeles",
+        "title": "weather los angeles",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 4,
+            "metric_text": "1000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=US&q=weather+los+angeles"
+          }
+        ],
+        "rank": 25,
+        "score": 78.5
       },
       {
         "id": "fa56c1ac93be",
@@ -2876,13 +2940,13 @@
             "source_url": "https://www.reddit.com/r/news/comments/1xy9enm/pentagon_fails_ninth_straight_audit/"
           }
         ],
-        "rank": 23,
+        "rank": 26,
         "score": 77.6
       },
       {
-        "id": "b325bd767644",
-        "canonical": "习近平会见韩国总统李在明",
-        "title": "习近平会见韩国总统李在明",
+        "id": "d7ae71b1c5ab",
+        "canonical": "我国成功发射实践二十四号卫星",
+        "title": "我国成功发射实践二十四号卫星",
         "channel_count": 1,
         "channels": [
           "bilibili"
@@ -2893,36 +2957,16 @@
             "channel_name": "Bilibili",
             "rank": 3,
             "metric_text": "",
-            "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E9%9F%A9%E5%9B%BD%E6%80%BB%E7%BB%9F%E6%9D%8E%E5%9C%A8%E6%98%8E"
+            "source_url": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%9B%BD%E6%88%90%E5%8A%9F%E5%8F%91%E5%B0%84%E5%AE%9E%E8%B7%B5%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7%E5%8D%AB%E6%98%9F"
           }
         ],
-        "rank": 24,
+        "rank": 27,
         "score": 77.6
       },
       {
-        "id": "d0ac25d6268e",
-        "canonical": "brandon miller",
-        "title": "brandon miller",
-        "channel_count": 1,
-        "channels": [
-          "google"
-        ],
-        "signals": [
-          {
-            "channel_code": "google",
-            "channel_name": "Google",
-            "rank": 4,
-            "metric_text": "200+",
-            "source_url": "https://trends.google.com/trends/explore?geo=BR&q=brandon+miller"
-          }
-        ],
-        "rank": 25,
-        "score": 77.2
-      },
-      {
-        "id": "ff3e3d3ffe3f",
-        "canonical": "grimes",
-        "title": "Grimes",
+        "id": "e76ba553a497",
+        "canonical": "internationalmensday",
+        "title": "#InternationalMensDay",
         "channel_count": 1,
         "channels": [
           "x"
@@ -2933,16 +2977,16 @@
             "channel_name": "X / Twitter",
             "rank": 4,
             "metric_text": "",
-            "source_url": "https://twitter.com/search?q=Grimes"
+            "source_url": "https://twitter.com/search?q=%23InternationalMensDay"
           }
         ],
-        "rank": 26,
+        "rank": 28,
         "score": 77.0
       },
       {
-        "id": "314dd2902257",
-        "canonical": "普京感谢中国",
-        "title": "普京：感谢中国",
+        "id": "7f671bc8aa26",
+        "canonical": "马斯克我是中国的超级粉丝",
+        "title": "马斯克：我是中国的超级粉丝",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -2952,17 +2996,17 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 5,
-            "metric_text": "7,522,566 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E6%99%AE%E4%BA%AC%EF%BC%9A%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD"
+            "metric_text": "7,521,464 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E9%A9%AC%E6%96%AF%E5%85%8B%EF%BC%9A%E6%88%91%E6%98%AF%E4%B8%AD%E5%9B%BD%E7%9A%84%E8%B6%85%E7%BA%A7%E7%B2%89%E4%B8%9D"
           }
         ],
-        "rank": 27,
+        "rank": 29,
         "score": 76.8
       },
       {
-        "id": "c17dd33b1ae1",
-        "canonical": "普京说感谢中国",
-        "title": "普京说感谢中国",
+        "id": "4af50ee58e5e",
+        "canonical": "apec重要讲话",
+        "title": "APEC重要讲话",
         "channel_count": 1,
         "channels": [
           "weibo"
@@ -2972,59 +3016,19 @@
             "channel_code": "weibo",
             "channel_name": "微博",
             "rank": 5,
-            "metric_text": "364,820 热度",
-            "source_url": "https://s.weibo.com/weibo?q=%E6%99%AE%E4%BA%AC%E8%AF%B4%E6%84%9F%E8%B0%A2%E4%B8%AD%E5%9B%BD"
-          }
-        ],
-        "rank": 28,
-        "score": 75.3
-      },
-      {
-        "id": "f95a21ca8c84",
-        "canonical": "lil baby aint goin official music video",
-        "title": "Lil Baby - Aint Goin (Official Music Video)",
-        "channel_count": 1,
-        "channels": [
-          "youtube"
-        ],
-        "signals": [
-          {
-            "channel_code": "youtube",
-            "channel_name": "YouTube",
-            "rank": 5,
-            "metric_text": "263,979 views",
-            "source_url": "https://www.youtube.com/watch?v=BBYdzzyWhTU"
-          }
-        ],
-        "rank": 29,
-        "score": 74.3
-      },
-      {
-        "id": "ac5f87de8683",
-        "canonical": "carson cooper",
-        "title": "carson cooper",
-        "channel_count": 1,
-        "channels": [
-          "google"
-        ],
-        "signals": [
-          {
-            "channel_code": "google",
-            "channel_name": "Google",
-            "rank": 5,
-            "metric_text": "200+",
-            "source_url": "https://trends.google.com/trends/explore?geo=ID&q=carson+cooper"
+            "metric_text": "559,984 热度",
+            "source_url": "https://s.weibo.com/weibo?q=APEC%E9%87%8D%E8%A6%81%E8%AE%B2%E8%AF%9D"
           }
         ],
         "rank": 30,
-        "score": 73.7
+        "score": 75.7
       }
     ],
     "breakout": [
       {
-        "id": "8d303c65b4ae",
-        "canonical": "习近平会见俄罗斯总统普京",
-        "title": "习近平会见俄罗斯总统普京",
+        "id": "55f68b8fc615",
+        "canonical": "习近平会见美国总统特朗普",
+        "title": "习近平会见美国总统特朗普",
         "channel_count": 2,
         "channels": [
           "baidu",
@@ -3036,14 +3040,14 @@
             "channel_name": "Bilibili",
             "rank": 1,
             "metric_text": "",
-            "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC"
+            "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE"
           },
           {
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 2,
-            "metric_text": "7,808,638 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E4%BF%84%E7%BD%97%E6%96%AF%E6%80%BB%E7%BB%9F%E6%99%AE%E4%BA%AC"
+            "metric_text": "7,808,037 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E7%89%B9%E6%9C%97%E6%99%AE"
           }
         ],
         "rank": 1,
@@ -3056,25 +3060,33 @@
         "breakout_rank": 1
       },
       {
-        "id": "40723815d8ab",
-        "canonical": "quentin grimes",
-        "title": "quentin grimes",
-        "channel_count": 1,
+        "id": "20bf289a02d7",
+        "canonical": "马斯克小儿子玩具都是中国制造",
+        "title": "马斯克小儿子玩具都是中国制造",
+        "channel_count": 2,
         "channels": [
-          "google"
+          "baidu",
+          "weibo"
         ],
         "signals": [
           {
-            "channel_code": "google",
-            "channel_name": "Google",
-            "rank": 1,
-            "metric_text": "1000+",
-            "source_url": "https://trends.google.com/trends/explore?geo=IN&q=quentin+grimes"
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 2,
+            "metric_text": "1,104,810 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E7%8E%A9%E5%85%B7%E9%83%BD%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0"
+          },
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 13,
+            "metric_text": "6,758,250 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E9%A9%AC%E6%96%AF%E5%85%8B%E5%B0%8F%E5%84%BF%E5%AD%90%E7%8E%A9%E5%85%B7%E9%83%BD%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%88%B6%E9%80%A0"
           }
         ],
-        "rank": 3,
-        "score": 95.4,
-        "breakout_score": 59.1,
+        "rank": 2,
+        "score": 99.8,
+        "breakout_score": 69.9,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3082,9 +3094,9 @@
         "breakout_rank": 2
       },
       {
-        "id": "8ce193af5c8e",
-        "canonical": "in no return stray kids skzplayer",
-        "title": "I.N \"NO RETURN\" | [Stray Kids : SKZ-PLAYER]",
+        "id": "7d8f420655c6",
+        "canonical": "avengers doomsday the return in theaters december 18",
+        "title": "Avengers: Doomsday | The Return | In Theaters December 18",
         "channel_count": 1,
         "channels": [
           "youtube"
@@ -3094,13 +3106,13 @@
             "channel_code": "youtube",
             "channel_name": "YouTube",
             "rank": 1,
-            "metric_text": "1,465,083 views",
-            "source_url": "https://www.youtube.com/watch?v=masFBnN7jsA"
+            "metric_text": "5,435,660 views",
+            "source_url": "https://www.youtube.com/watch?v=Fg0jyss_YnU"
           }
         ],
         "rank": 4,
-        "score": 93.6,
-        "breakout_score": 58.0,
+        "score": 95.9,
+        "breakout_score": 59.5,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3108,25 +3120,25 @@
         "breakout_rank": 3
       },
       {
-        "id": "c4ad10a0bffa",
-        "canonical": "apec",
-        "title": "APEC",
+        "id": "5c90adcde582",
+        "canonical": "yeh prem mol liya official trailer ayushmann sharvari sooraj barjatya himesh reshammiya",
+        "title": "Yeh Prem Mol Liya – Official Trailer | Ayushmann, Sharvari, Sooraj Barjatya | Himesh Reshammiya",
         "channel_count": 1,
         "channels": [
-          "weibo"
+          "youtube"
         ],
         "signals": [
           {
-            "channel_code": "weibo",
-            "channel_name": "微博",
-            "rank": 1,
-            "metric_text": "1,045,617 热度",
-            "source_url": "https://s.weibo.com/weibo?q=APEC"
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 2,
+            "metric_text": "16,105,592 views",
+            "source_url": "https://www.youtube.com/watch?v=vdhNar4uxm4"
           }
         ],
         "rank": 5,
-        "score": 90.8,
-        "breakout_score": 56.3,
+        "score": 93.8,
+        "breakout_score": 58.2,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3134,9 +3146,9 @@
         "breakout_rank": 4
       },
       {
-        "id": "960aa5f8edbb",
-        "canonical": "元首外交深圳时间开启",
-        "title": "元首外交“深圳时间”开启",
+        "id": "e84118c85ccc",
+        "canonical": "与时偕行 共创亚太光明未来",
+        "title": "与时偕行 共创亚太光明未来",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -3146,8 +3158,8 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 1,
-            "metric_text": "7,904,381 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E5%85%83%E9%A6%96%E5%A4%96%E4%BA%A4%E2%80%9C%E6%B7%B1%E5%9C%B3%E6%97%B6%E9%97%B4%E2%80%9D%E5%BC%80%E5%90%AF"
+            "metric_text": "7,904,780 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B8%8E%E6%97%B6%E5%81%95%E8%A1%8C+%E5%85%B1%E5%88%9B%E4%BA%9A%E5%A4%AA%E5%85%89%E6%98%8E%E6%9C%AA%E6%9D%A5"
           }
         ],
         "rank": 6,
@@ -3160,27 +3172,20 @@
         "breakout_rank": 5
       },
       {
-        "id": "9dda4840f855",
-        "canonical": "毒うさぎ",
-        "title": "毒うさぎ",
+        "id": "24af48fd4f2b",
+        "canonical": "中美元首深圳会晤",
+        "title": "中美元首深圳会晤",
         "channel_count": 1,
         "channels": [
-          "x"
+          "weibo"
         ],
         "signals": [
           {
-            "channel_code": "x",
-            "channel_name": "X / Twitter",
+            "channel_code": "weibo",
+            "channel_name": "微博",
             "rank": 1,
-            "metric_text": "",
-            "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%81%86%E3%81%95%E3%81%8E"
-          },
-          {
-            "channel_code": "x",
-            "channel_name": "X / Twitter",
-            "rank": 2,
-            "metric_text": "",
-            "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%81%86%E3%81%95%E3%81%8E"
+            "metric_text": "1,328,883 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E7%BE%8E%E5%85%83%E9%A6%96%E6%B7%B1%E5%9C%B3%E4%BC%9A%E6%99%A4"
           }
         ],
         "rank": 7,
@@ -3193,25 +3198,25 @@
         "breakout_rank": 6
       },
       {
-        "id": "89971a6a7462",
-        "canonical": "avengers doomsday tv spot darkness concept marvel studios",
-        "title": "Avengers: Doomsday | TV SPOT “DARKNESS” CONCEPT | Marvel Studios",
+        "id": "17f396168fab",
+        "canonical": "재난문자",
+        "title": "재난문자",
         "channel_count": 1,
         "channels": [
-          "youtube"
+          "x"
         ],
         "signals": [
           {
-            "channel_code": "youtube",
-            "channel_name": "YouTube",
-            "rank": 2,
-            "metric_text": "1,458,910 views",
-            "source_url": "https://www.youtube.com/watch?v=z59xy3GvSrk"
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
+            "rank": 1,
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=%EC%9E%AC%EB%82%9C%EB%AC%B8%EC%9E%90"
           }
         ],
         "rank": 8,
-        "score": 90.1,
-        "breakout_score": 55.9,
+        "score": 90.8,
+        "breakout_score": 56.3,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3219,25 +3224,25 @@
         "breakout_rank": 7
       },
       {
-        "id": "51c7e69d03ff",
-        "canonical": "marvelrivalss11",
-        "title": "#marvelrivalss11",
+        "id": "3b43f6352fce",
+        "canonical": "josh green",
+        "title": "josh green",
         "channel_count": 1,
         "channels": [
-          "tiktok"
+          "google"
         ],
         "signals": [
           {
-            "channel_code": "tiktok",
-            "channel_name": "TikTok",
+            "channel_code": "google",
+            "channel_name": "Google",
             "rank": 1,
-            "metric_text": "139.2K posts · 25.2M views",
-            "source_url": "https://www.tiktok.com/tag/marvelrivalss11"
+            "metric_text": "200+",
+            "source_url": "https://trends.google.com/trends/explore?geo=BR&q=josh+green"
           }
         ],
-        "rank": 9,
-        "score": 89.2,
-        "breakout_score": 55.3,
+        "rank": 10,
+        "score": 87.6,
+        "breakout_score": 54.3,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3245,9 +3250,9 @@
         "breakout_rank": 8
       },
       {
-        "id": "7f2be99d71f3",
-        "canonical": "lakers",
-        "title": "lakers",
+        "id": "8dffaddb371e",
+        "canonical": "kospi",
+        "title": "kospi",
         "channel_count": 1,
         "channels": [
           "google"
@@ -3257,13 +3262,13 @@
             "channel_code": "google",
             "channel_name": "Google",
             "rank": 2,
-            "metric_text": "1000+",
-            "source_url": "https://trends.google.com/trends/explore?geo=ID&q=lakers"
+            "metric_text": "2000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=IN&q=kospi"
           }
         ],
-        "rank": 10,
-        "score": 88.7,
-        "breakout_score": 55.0,
+        "rank": 11,
+        "score": 87.4,
+        "breakout_score": 54.2,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3271,25 +3276,25 @@
         "breakout_rank": 9
       },
       {
-        "id": "1e5c549339e3",
-        "canonical": "文莱领导人握手中方安保1秒摘手套",
-        "title": "文莱领导人握手中方安保1秒摘手套",
+        "id": "72feb0faad15",
+        "canonical": "水見式",
+        "title": "#水見式",
         "channel_count": 1,
         "channels": [
-          "weibo"
+          "x"
         ],
         "signals": [
           {
-            "channel_code": "weibo",
-            "channel_name": "微博",
+            "channel_code": "x",
+            "channel_name": "X / Twitter",
             "rank": 2,
-            "metric_text": "842,556 热度",
-            "source_url": "https://s.weibo.com/weibo?q=%E6%96%87%E8%8E%B1%E9%A2%86%E5%AF%BC%E4%BA%BA%E6%8F%A1%E6%89%8B%E4%B8%AD%E6%96%B9%E5%AE%89%E4%BF%9D1%E7%A7%92%E6%91%98%E6%89%8B%E5%A5%97"
+            "metric_text": "",
+            "source_url": "https://twitter.com/search?q=%23%E6%B0%B4%E8%A6%8B%E5%BC%8F"
           }
         ],
-        "rank": 11,
-        "score": 87.0,
-        "breakout_score": 53.9,
+        "rank": 13,
+        "score": 86.3,
+        "breakout_score": 53.5,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3297,35 +3302,9 @@
         "breakout_rank": 10
       },
       {
-        "id": "5bcff48623f7",
-        "canonical": "pinky up official eyekons video katseye",
-        "title": "\"PINKY UP\" (Official EYEKONS Video) | KATSEYE",
-        "channel_count": 1,
-        "channels": [
-          "youtube"
-        ],
-        "signals": [
-          {
-            "channel_code": "youtube",
-            "channel_name": "YouTube",
-            "rank": 3,
-            "metric_text": "1,526,228 views",
-            "source_url": "https://www.youtube.com/watch?v=Cp-72VPlBzQ"
-          }
-        ],
-        "rank": 12,
-        "score": 86.7,
-        "breakout_score": 53.8,
-        "movement": "NEW",
-        "rise": null,
-        "score_delta": null,
-        "coverage_delta": null,
-        "breakout_rank": 11
-      },
-      {
-        "id": "fb129584dda5",
-        "canonical": "李在明随行人员开启拍拍拍模式",
-        "title": "李在明随行人员开启“拍拍拍”模式",
+        "id": "6ae32f597557",
+        "canonical": "apec领导人互相整理围巾",
+        "title": "APEC领导人互相整理围巾",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -3335,8 +3314,8 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 3,
-            "metric_text": "7,713,356 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E6%9D%8E%E5%9C%A8%E6%98%8E%E9%9A%8F%E8%A1%8C%E4%BA%BA%E5%91%98%E5%BC%80%E5%90%AF%E2%80%9C%E6%8B%8D%E6%8B%8D%E6%8B%8D%E2%80%9D%E6%A8%A1%E5%BC%8F"
+            "metric_text": "7,714,229 热度",
+            "source_url": "https://www.baidu.com/s?wd=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%BA%92%E7%9B%B8%E6%95%B4%E7%90%86%E5%9B%B4%E5%B7%BE"
           }
         ],
         "rank": 14,
@@ -3346,38 +3325,46 @@
         "rise": null,
         "score_delta": null,
         "coverage_delta": null,
-        "breakout_rank": 12
+        "breakout_rank": 11
       },
       {
-        "id": "c743eb98a800",
-        "canonical": "apec中国年这些知识点不容错过",
-        "title": "APEC中国年这些知识点不容错过",
-        "channel_count": 1,
+        "id": "2eda5f0c6c9f",
+        "canonical": "中俄美元首座驾首次同框",
+        "title": "中俄美元首座驾首次同框",
+        "channel_count": 2,
         "channels": [
+          "baidu",
           "weibo"
         ],
         "signals": [
           {
             "channel_code": "weibo",
             "channel_name": "微博",
-            "rank": 3,
-            "metric_text": "737,994 热度",
-            "source_url": "https://s.weibo.com/weibo?q=APEC%E4%B8%AD%E5%9B%BD%E5%B9%B4%E8%BF%99%E4%BA%9B%E7%9F%A5%E8%AF%86%E7%82%B9%E4%B8%8D%E5%AE%B9%E9%94%99%E8%BF%87"
+            "rank": 10,
+            "metric_text": "411,934 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%BA%A7%E9%A9%BE%E9%A6%96%E6%AC%A1%E5%90%8C%E6%A1%86"
+          },
+          {
+            "channel_code": "baidu",
+            "channel_name": "百度",
+            "rank": 15,
+            "metric_text": "6,567,887 热度",
+            "source_url": "https://www.baidu.com/s?wd=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%BA%A7%E9%A9%BE%E9%A6%96%E6%AC%A1%E5%90%8C%E6%A1%86"
           }
         ],
-        "rank": 15,
-        "score": 83.3,
+        "rank": 3,
+        "score": 70.4,
         "breakout_score": 51.6,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
         "coverage_delta": null,
-        "breakout_rank": 13
+        "breakout_rank": 12
       },
       {
-        "id": "a4a91f586d02",
-        "canonical": "eetha ji ji re ji video shraddha kapoor ajayatul shreya g amitabh b in cinemas 4th dec",
-        "title": "EETHA - Ji Ji Re Ji (Video) Shraddha Kapoor | Ajay-Atul, Shreya G, Amitabh B | In Cinemas 4th Dec",
+        "id": "6d30b41d6434",
+        "canonical": "playing gta 6 for the first time part 1",
+        "title": "PLAYING GTA 6 FOR THE FIRST TIME (PART 1)",
         "channel_count": 1,
         "channels": [
           "youtube"
@@ -3387,13 +3374,46 @@
             "channel_code": "youtube",
             "channel_name": "YouTube",
             "rank": 4,
-            "metric_text": "9,216,991 views",
-            "source_url": "https://www.youtube.com/watch?v=0HPTMnDgH5U"
+            "metric_text": "11,399,781 views",
+            "source_url": "https://www.youtube.com/watch?v=VZqAPdUvqnQ"
+          },
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 16,
+            "metric_text": "2,721,653 views",
+            "source_url": "https://www.youtube.com/watch?v=k3esjgmbphQ"
+          }
+        ],
+        "rank": 15,
+        "score": 83.2,
+        "breakout_score": 51.6,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 13
+      },
+      {
+        "id": "63edb3a94a7c",
+        "canonical": "共创亚太光明未来",
+        "title": "共创亚太光明未来",
+        "channel_count": 1,
+        "channels": [
+          "weibo"
+        ],
+        "signals": [
+          {
+            "channel_code": "weibo",
+            "channel_name": "微博",
+            "rank": 3,
+            "metric_text": "716,839 热度",
+            "source_url": "https://s.weibo.com/weibo?q=%E5%85%B1%E5%88%9B%E4%BA%9A%E5%A4%AA%E5%85%89%E6%98%8E%E6%9C%AA%E6%9D%A5"
           }
         ],
         "rank": 16,
-        "score": 82.2,
-        "breakout_score": 51.0,
+        "score": 83.0,
+        "breakout_score": 51.5,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
@@ -3401,9 +3421,61 @@
         "breakout_rank": 14
       },
       {
-        "id": "ae66a0947f14",
-        "canonical": "十五五规划是面向全球工商界的合作邀约",
-        "title": "十五五规划是面向全球工商界的合作邀约",
+        "id": "c271bf743fe8",
+        "canonical": "bruce dickinson speaking in tongues official video",
+        "title": "Bruce Dickinson - Speaking In Tongues (Official Video)",
+        "channel_count": 1,
+        "channels": [
+          "youtube"
+        ],
+        "signals": [
+          {
+            "channel_code": "youtube",
+            "channel_name": "YouTube",
+            "rank": 3,
+            "metric_text": "426,420 views",
+            "source_url": "https://www.youtube.com/watch?v=a6fnB86xlyM"
+          }
+        ],
+        "rank": 17,
+        "score": 82.4,
+        "breakout_score": 51.1,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 15
+      },
+      {
+        "id": "16f692407ee5",
+        "canonical": "when is black friday 2026",
+        "title": "when is black friday 2026",
+        "channel_count": 1,
+        "channels": [
+          "google"
+        ],
+        "signals": [
+          {
+            "channel_code": "google",
+            "channel_name": "Google",
+            "rank": 3,
+            "metric_text": "1000+",
+            "source_url": "https://trends.google.com/trends/explore?geo=GB&q=when+is+black+friday+2026"
+          }
+        ],
+        "rank": 18,
+        "score": 82.0,
+        "breakout_score": 50.8,
+        "movement": "NEW",
+        "rise": null,
+        "score_delta": null,
+        "coverage_delta": null,
+        "breakout_rank": 16
+      },
+      {
+        "id": "a397cbce9112",
+        "canonical": "亚太大家庭的成员同在一条船上",
+        "title": "亚太大家庭的成员同在一条船上",
         "channel_count": 1,
         "channels": [
           "bilibili"
@@ -3414,22 +3486,22 @@
             "channel_name": "Bilibili",
             "rank": 2,
             "metric_text": "",
-            "source_url": "https://search.bilibili.com/all?keyword=%E5%8D%81%E4%BA%94%E4%BA%94%E8%A7%84%E5%88%92%E6%98%AF%E9%9D%A2%E5%90%91%E5%85%A8%E7%90%83%E5%B7%A5%E5%95%86%E7%95%8C%E7%9A%84%E5%90%88%E4%BD%9C%E9%82%80%E7%BA%A6"
+            "source_url": "https://search.bilibili.com/all?keyword=%E4%BA%9A%E5%A4%AA%E5%A4%A7%E5%AE%B6%E5%BA%AD%E7%9A%84%E6%88%90%E5%91%98%E5%90%8C%E5%9C%A8%E4%B8%80%E6%9D%A1%E8%88%B9%E4%B8%8A"
           }
         ],
-        "rank": 18,
+        "rank": 20,
         "score": 82.0,
         "breakout_score": 50.8,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
         "coverage_delta": null,
-        "breakout_rank": 15
+        "breakout_rank": 17
       },
       {
-        "id": "d2290ff18561",
-        "canonical": "毒ウサギ",
-        "title": "毒ウサギ",
+        "id": "0fb3a73886a4",
+        "canonical": "念の強さ",
+        "title": "念の強さ",
         "channel_count": 1,
         "channels": [
           "x"
@@ -3440,48 +3512,22 @@
             "channel_name": "X / Twitter",
             "rank": 3,
             "metric_text": "",
-            "source_url": "https://twitter.com/search?q=%E6%AF%92%E3%82%A6%E3%82%B5%E3%82%AE"
+            "source_url": "https://twitter.com/search?q=%E5%BF%B5%E3%81%AE%E5%BC%B7%E3%81%95"
           }
         ],
-        "rank": 19,
+        "rank": 21,
         "score": 81.7,
         "breakout_score": 50.7,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
         "coverage_delta": null,
-        "breakout_rank": 16
+        "breakout_rank": 18
       },
       {
-        "id": "732962a466b6",
-        "canonical": "xiaomi 18 pro max",
-        "title": "xiaomi 18 pro max",
-        "channel_count": 1,
-        "channels": [
-          "google"
-        ],
-        "signals": [
-          {
-            "channel_code": "google",
-            "channel_name": "Google",
-            "rank": 3,
-            "metric_text": "200+",
-            "source_url": "https://trends.google.com/trends/explore?geo=ID&q=xiaomi+18+pro+max"
-          }
-        ],
-        "rank": 20,
-        "score": 80.7,
-        "breakout_score": 50.0,
-        "movement": "NEW",
-        "rise": null,
-        "score_delta": null,
-        "coverage_delta": null,
-        "breakout_rank": 17
-      },
-      {
-        "id": "a8b2975500ce",
-        "canonical": "什么是亚太共同体 如何促进共同繁荣",
-        "title": "什么是亚太共同体 如何促进共同繁荣",
+        "id": "65042ed194bb",
+        "canonical": "apec时间 外媒记者点赞深圳",
+        "title": "APEC时间 外媒记者点赞深圳",
         "channel_count": 1,
         "channels": [
           "baidu"
@@ -3491,23 +3537,23 @@
             "channel_code": "baidu",
             "channel_name": "百度",
             "rank": 4,
-            "metric_text": "7,616,247 热度",
-            "source_url": "https://www.baidu.com/s?wd=%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%9A%E5%A4%AA%E5%85%B1%E5%90%8C%E4%BD%93+%E5%A6%82%E4%BD%95%E4%BF%83%E8%BF%9B%E5%85%B1%E5%90%8C%E7%B9%81%E8%8D%A3"
+            "metric_text": "7,619,528 热度",
+            "source_url": "https://www.baidu.com/s?wd=APEC%E6%97%B6%E9%97%B4+%E5%A4%96%E5%AA%92%E8%AE%B0%E8%80%85%E7%82%B9%E8%B5%9E%E6%B7%B1%E5%9C%B3"
           }
         ],
-        "rank": 21,
+        "rank": 22,
         "score": 80.3,
         "breakout_score": 49.8,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
         "coverage_delta": null,
-        "breakout_rank": 18
+        "breakout_rank": 19
       },
       {
-        "id": "94b38bf6d089",
-        "canonical": "深圳机场一眼望去全是专机",
-        "title": "深圳机场一眼望去全是专机",
+        "id": "bf7239f2b0e5",
+        "canonical": "apec领导人休息室温馨画面",
+        "title": "APEC领导人休息室温馨画面",
         "channel_count": 1,
         "channels": [
           "weibo"
@@ -3517,39 +3563,13 @@
             "channel_code": "weibo",
             "channel_name": "微博",
             "rank": 4,
-            "metric_text": "696,096 热度",
-            "source_url": "https://s.weibo.com/weibo?q=%E6%B7%B1%E5%9C%B3%E6%9C%BA%E5%9C%BA%E4%B8%80%E7%9C%BC%E6%9C%9B%E5%8E%BB%E5%85%A8%E6%98%AF%E4%B8%93%E6%9C%BA"
+            "metric_text": "643,279 热度",
+            "source_url": "https://s.weibo.com/weibo?q=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E4%BC%91%E6%81%AF%E5%AE%A4%E6%B8%A9%E9%A6%A8%E7%94%BB%E9%9D%A2"
           }
         ],
-        "rank": 22,
-        "score": 79.8,
-        "breakout_score": 49.5,
-        "movement": "NEW",
-        "rise": null,
-        "score_delta": null,
-        "coverage_delta": null,
-        "breakout_rank": 19
-      },
-      {
-        "id": "b325bd767644",
-        "canonical": "习近平会见韩国总统李在明",
-        "title": "习近平会见韩国总统李在明",
-        "channel_count": 1,
-        "channels": [
-          "bilibili"
-        ],
-        "signals": [
-          {
-            "channel_code": "bilibili",
-            "channel_name": "Bilibili",
-            "rank": 3,
-            "metric_text": "",
-            "source_url": "https://search.bilibili.com/all?keyword=%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%BC%9A%E8%A7%81%E9%9F%A9%E5%9B%BD%E6%80%BB%E7%BB%9F%E6%9D%8E%E5%9C%A8%E6%98%8E"
-          }
-        ],
-        "rank": 24,
-        "score": 77.6,
-        "breakout_score": 48.1,
+        "rank": 23,
+        "score": 79.4,
+        "breakout_score": 49.2,
         "movement": "NEW",
         "rise": null,
         "score_delta": null,
